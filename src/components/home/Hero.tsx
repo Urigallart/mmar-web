@@ -10,7 +10,7 @@ import { Container } from "@/components/Container";
 import { IconBadge, type IconBadgeSpec } from "@/components/IconBadge";
 
 const LEFT_X = "-10%";
-const RIGHT_X = "-10%";
+const RIGHT_X = "-4%";
 
 const STICKERS: IconBadgeSpec[] = [
   {
