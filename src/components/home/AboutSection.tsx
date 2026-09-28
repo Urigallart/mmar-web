@@ -45,29 +45,53 @@ export default function AboutSection() {
             <Reveal y={20} delay={0.1}>
               <p>
                 Soc psicopedagoga i coach i, al llarg de la meva trajectòria,
-                he acompanyat infants, joves, adults i famílies en processos
-                relacionats amb l&apos;aprenentatge, l&apos;autonomia, la
-                motivació i el desenvolupament personal.
+                he acompanyat infants, joves i famílies en diferents etapes
+                del seu procés educatiu i personal, treballant aspectes
+                relacionats amb l&apos;aprenentatge, la motivació,
+                l&apos;autonomia i el desenvolupament personal.
+                L&apos;esport ha estat també un àmbit molt present en la meva
+                trajectòria, donant suport a infants, joves i famílies
+                davant els reptes que comporta la pràctica esportiva.
               </p>
             </Reveal>
             <Reveal y={20} delay={0.16}>
               <p>
-                La meva manera de treballar parteix d&apos;una mirada global
-                de la persona. M&apos;interessa entendre no només què li
-                costa, sinó també com afronta les dificultats, quines
-                fortaleses té, què necessita i què vol aconseguir.
+                Entenc la psicopedagogia i el coaching com dues disciplines
+                diferents però complementàries. El meu enfocament parteix
+                d&apos;una mirada global de la persona: m&apos;interessa
+                conèixer les dificultats que poden aparèixer en
+                l&apos;aprenentatge, comprendre com aprèn cada infant o jove
+                i identificar les estratègies més adequades, tenint en
+                compte també els factors emocionals, socials i personals
+                que hi poden influir.
               </p>
             </Reveal>
             <Reveal y={20} delay={0.22}>
               <p>
-                Treballo de manera personalitzada i propera, i em coordino,
-                quan és necessari, amb la família, l&apos;escola i altres
-                professionals.
+                Ofereixo una atenció personalitzada i propera, basada en el
+                vincle, l&apos;escolta i la creació d&apos;un clima de
+                confiança en què cada infant o jove se senti còmode per
+                expressar-se i implicar-se en el procés. Busco que
+                progressivament prengui consciència de les seves fortaleses
+                i necessitats i participi activament en la definició dels
+                seus objectius. Quan és necessari, em coordino amb la
+                família, l&apos;escola i altres professionals.
+              </p>
+            </Reveal>
+            <Reveal y={20} delay={0.28}>
+              <p>
+                Fora de l&apos;àmbit professional, l&apos;esport, la
+                família, la natura, les relacions personals i continuar
+                aprenent formen part important de la meva vida i també de
+                la manera com entenc el benestar i l&apos;equilibri.
+                M&apos;agrada viure amb curiositat, mantenir-me activa i
+                apreciar aquelles petites coses que donen sentit i qualitat
+                a la vida.
               </p>
             </Reveal>
           </div>
 
-          <Reveal y={20} delay={0.28}>
+          <Reveal y={20} delay={0.34}>
             <div className="mt-10 grid grid-cols-3 gap-4 border-t border-border pt-8 sm:gap-6">
               <Stat value="+15" label="anys d'experiència" />
               <Stat value="2" label="línies d'acompanyament" />
