@@ -192,7 +192,7 @@ export default function Hero() {
               <span className="hero-line block">{t("titleLine2")}</span>
             </span>
             <span className="block overflow-hidden">
-              <span className="hero-line block text-green-deep">{t("titleLine3")}</span>
+              <span className="hero-line block" style={{ color: "#2c4842" }}>{t("titleLine3")}</span>
             </span>
           </h1>
           <p className="hero-lede mt-7 max-w-md text-ink-dim" style={{ fontSize: "var(--fs-lede)", lineHeight: 1.55 }}>
