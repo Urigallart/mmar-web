@@ -118,16 +118,29 @@ export default function Hero() {
           0.5
         );
 
-      gsap.to(".icon-badge", {
-        yPercent: -10,
-        ease: "none",
-        stagger: 0.04,
-        scrollTrigger: {
-          trigger: root,
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
+      tl.eventCallback("onComplete", () => {
+        gsap.utils.toArray<HTMLElement>(".icon-badge").forEach((el, i) => {
+          const isLeft = i < 3;
+          const dir = isLeft ? -1 : 1;
+          gsap.fromTo(
+            el,
+            { opacity: 1, scale: 1, x: 0, yPercent: 0 },
+            {
+              x: dir * (160 + i * 30),
+              yPercent: isLeft ? -55 : 55,
+              rotate: `+=${dir * 50}`,
+              scale: 0.4,
+              opacity: 0,
+              ease: "none",
+              scrollTrigger: {
+                trigger: root,
+                start: `top top+=${40 + i * 25}`,
+                end: "bottom top",
+                scrub: true,
+              },
+            }
+          );
+        });
       });
 
       gsap.to(".hero-media img", {
