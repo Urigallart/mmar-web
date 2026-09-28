@@ -18,7 +18,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   const pathname = usePathname();
 
   return (
-    <div className={clsx("flex items-center gap-1", className)}>
+    <div className={clsx("flex items-center gap-1.5", className)}>
       {routing.locales.map((loc) => (
         <button
           key={loc}
@@ -27,13 +27,13 @@ export function LanguageSwitcher({ className }: { className?: string }) {
           aria-current={loc === locale}
           onClick={() => router.replace(pathname, { locale: loc })}
           className={clsx(
-            "grid h-7 w-7 place-items-center rounded-full border transition-all duration-300",
+            "overflow-hidden rounded-[5px] ring-1 ring-inset transition-all duration-300",
             loc === locale
-              ? "border-ink"
-              : "border-transparent opacity-50 hover:opacity-100"
+              ? "ring-ink scale-100 opacity-100"
+              : "ring-black/10 scale-[0.9] opacity-55 hover:scale-100 hover:opacity-90"
           )}
         >
-          <FlagIcon locale={loc} className="h-3.5 w-5 rounded-[2px] object-cover" />
+          <FlagIcon locale={loc} className="block h-5 w-7" />
         </button>
       ))}
     </div>

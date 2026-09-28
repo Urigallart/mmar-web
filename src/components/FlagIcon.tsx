@@ -1,13 +1,13 @@
 export function FlagIcon({ locale, className }: { locale: string; className?: string }) {
-  const common = { width: 20, height: 14, viewBox: "0 0 20 14", className };
+  const common = { viewBox: "0 0 30 20", className, preserveAspectRatio: "xMidYMid slice" };
 
   if (locale === "ca") {
     return (
       <svg {...common} aria-hidden>
-        <rect width="20" height="14" fill="#FCDD09" />
-        {[0, 2, 4, 6, 8].map((y) => (
-          <rect key={y} y={y + 1.5} width="20" height="1.5" fill="#DA121A" />
-        ))}
+        <rect width="30" height="20" fill="#FCDD09" />
+        <rect y="2.2" width="30" height="2.9" fill="#DA121A" />
+        <rect y="8.55" width="30" height="2.9" fill="#DA121A" />
+        <rect y="14.9" width="30" height="2.9" fill="#DA121A" />
       </svg>
     );
   }
@@ -15,19 +15,19 @@ export function FlagIcon({ locale, className }: { locale: string; className?: st
   if (locale === "es") {
     return (
       <svg {...common} aria-hidden>
-        <rect width="20" height="14" fill="#AA151B" />
-        <rect y="3.5" width="20" height="7" fill="#F1BF00" />
+        <rect width="30" height="20" fill="#AA151B" />
+        <rect y="5" width="30" height="10" fill="#F1BF00" />
       </svg>
     );
   }
 
   return (
     <svg {...common} aria-hidden>
-      <rect width="20" height="14" fill="#012169" />
-      <path d="M0 0L20 14M20 0L0 14" stroke="#FFF" strokeWidth="2.4" />
-      <path d="M0 0L20 14M20 0L0 14" stroke="#C8102E" strokeWidth="0.9" />
-      <path d="M10 0V14M0 7H20" stroke="#FFF" strokeWidth="4" />
-      <path d="M10 0V14M0 7H20" stroke="#C8102E" strokeWidth="1.6" />
+      <rect width="30" height="20" fill="#012169" />
+      <path d="M0 0L30 20M30 0L0 20" stroke="#FFF" strokeWidth="3.4" />
+      <path d="M0 0L30 20M30 0L0 20" stroke="#C8102E" strokeWidth="1.3" />
+      <path d="M15 0V20M0 10H30" stroke="#FFF" strokeWidth="5.5" />
+      <path d="M15 0V20M0 10H30" stroke="#C8102E" strokeWidth="2.1" />
     </svg>
   );
 }
