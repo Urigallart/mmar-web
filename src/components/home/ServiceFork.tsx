@@ -1,39 +1,36 @@
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
 
-const SERVICES = [
-  {
-    tag: "Línia 1",
-    href: "/coaching",
-    title: "Coaching & consultes puntuals",
-    description:
-      "Per a joves, adults, professionals, esportistes, mares i pares que volen guanyar claredat, seguretat i benestar.",
-    image: "/images/coaching-session.png",
-    imageAlt: "Sessió de coaching amb una persona acompanyada al despatx",
-  },
-  {
-    tag: "Línia 2",
-    href: "/psicopedagogia",
-    title: "Intervenció psicopedagògica",
-    description:
-      "Per a infants i adolescents amb dificultats d'atenció, lectoescriptura, organització, motivació o autonomia.",
-    image: "/images/psicopedagogia-session.png",
-    imageAlt: "Infant treballant l'aprenentatge de manera acompanyada",
-  },
-];
-
 export default function ServiceFork() {
+  const t = useTranslations("home.fork");
+
+  const SERVICES = [
+    {
+      tag: t("line1Tag"),
+      href: "/coaching",
+      title: t("line1Title"),
+      description: t("line1Desc"),
+      image: "/images/coaching-session.png",
+      imageAlt: t("line1ImageAlt"),
+    },
+    {
+      tag: t("line2Tag"),
+      href: "/psicopedagogia",
+      title: t("line2Title"),
+      description: t("line2Desc"),
+      image: "/images/psicopedagogia-session.png",
+      imageAlt: t("line2ImageAlt"),
+    },
+  ];
+
   return (
     <section id="acompanyament" className="py-[var(--section-pad)]">
       <Container>
-        <SectionHeading
-          eyebrow="Com t'acompanyo"
-          title="Dues línies d'acompanyament, un mateix objectiu"
-          lede="Cada procés s'adapta al moment i a les necessitats de la persona. Explora quina línia encaixa amb la teva situació."
-        />
+        <SectionHeading eyebrow={t("eyebrow")} title={t("title")} lede={t("lede")} />
 
         <div className="mt-14 grid gap-6 md:grid-cols-2">
           {SERVICES.map((service, i) => (
@@ -58,7 +55,7 @@ export default function ServiceFork() {
                   </h3>
                   <p className="mt-3 flex-1 leading-relaxed text-ink-dim">{service.description}</p>
                   <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-ink">
-                    Explorar
+                    {t("explore")}
                     <span className="btn-arrow bg-ink text-paper transition-transform duration-500 group-hover:translate-x-1">
                       <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
                         <path

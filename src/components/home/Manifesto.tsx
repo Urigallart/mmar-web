@@ -1,14 +1,13 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 import { gsap } from "@/lib/gsap";
 import { prefersReducedMotion } from "@/lib/motion";
 import { Container } from "@/components/Container";
 
-const TEXT =
-  "Cada persona té el seu propi ritme per créixer, i el meu acompanyament hi camina al costat: escoltant, sostenint i ajudant a trobar claredat, confiança i autonomia en cada pas del camí.";
-
 export default function Manifesto() {
+  const text = useTranslations("home")("manifesto");
   const pRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
@@ -38,7 +37,7 @@ export default function Manifesto() {
     return () => ctx.revert();
   }, []);
 
-  const words = TEXT.split(" ");
+  const words = text.split(" ");
 
   return (
     <section className="py-[var(--section-pad)]">

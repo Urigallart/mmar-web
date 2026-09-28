@@ -1,15 +1,15 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Container } from "./Container";
 import { Reveal } from "./Reveal";
 
 export function CtaBanner({
   title,
   lede,
-  ctaLabel = "Escriu-nos",
+  ctaLabel,
 }: {
   title: string;
   lede: string;
-  ctaLabel?: string;
+  ctaLabel: string;
 }) {
   return (
     <section className="py-[var(--section-pad-sm)]">

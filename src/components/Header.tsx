@@ -1,19 +1,22 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import clsx from "clsx";
-
-const NAV_LINKS = [
-  { href: "/coaching", label: "Coaching" },
-  { href: "/psicopedagogia", label: "Psicopedagogia" },
-  { href: "/#sobre-mi", label: "Sobre mi" },
-  { href: "/#contacte", label: "Contacte" },
-];
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export default function Header() {
+  const t = useTranslations("nav");
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const NAV_LINKS = [
+    { href: "/coaching", label: t("coaching") },
+    { href: "/psicopedagogia", label: t("psicopedagogia") },
+    { href: "/#sobre-mi", label: t("sobreMi") },
+    { href: "/#contacte", label: t("contacte") },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -34,7 +37,7 @@ export default function Header() {
       <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4 sm:pt-5">
         <div
           className={clsx(
-            "flex w-full max-w-[1240px] items-center justify-between gap-6 rounded-full border border-border bg-paper/85 px-3 py-2.5 shadow-[0_10px_30px_-16px_rgba(32,43,40,0.3)] backdrop-blur-md transition-all duration-500 sm:px-4",
+            "flex w-full max-w-[1240px] items-center justify-between gap-4 rounded-full border border-border bg-paper/85 px-3 py-2.5 shadow-[0_10px_30px_-16px_rgba(32,43,40,0.3)] backdrop-blur-md transition-all duration-500 sm:px-4",
             (scrolled || menuOpen) &&
               "border-border-strong shadow-[0_10px_40px_-14px_rgba(32,43,40,0.25)]"
           )}
@@ -62,19 +65,20 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <LanguageSwitcher className="hidden sm:flex" />
             <Link
               href="/#contacte"
               className="btn btn-primary hidden !py-2.5 !px-5 text-[0.85rem] sm:inline-flex"
             >
-              Parlem-ne
+              {t("parlemNe")}
             </Link>
             <button
               type="button"
-              aria-label={menuOpen ? "Tancar el menú" : "Obrir el menú"}
+              aria-label={menuOpen ? t("tancarMenu") : t("obrirMenu")}
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen((v) => !v)}
-              className="relative grid h-10 w-10 place-items-center rounded-full border border-border-strong lg:hidden"
+              className="relative grid h-10 w-10 flex-shrink-0 place-items-center rounded-full border border-border-strong lg:hidden"
             >
               <span
                 className={clsx(
@@ -116,10 +120,13 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+        <LanguageSwitcher
+          className="mt-8 transition-all duration-400"
+        />
         <Link
           href="/#contacte"
           onClick={() => setMenuOpen(false)}
-          className="btn btn-primary mt-10 w-fit"
+          className="btn btn-primary mt-6 w-fit"
           style={{
             transitionDelay: menuOpen ? "320ms" : "0ms",
             transform: menuOpen ? "translateY(0)" : "translateY(16px)",
@@ -128,7 +135,7 @@ export default function Header() {
             transitionDuration: "400ms",
           }}
         >
-          Parlem-ne
+          {t("parlemNe")}
         </Link>
       </div>
     </>

@@ -1,0 +1,321 @@
+{
+  "meta": {
+    "siteName": "Mª del Mar",
+    "title": "Mª del Mar — Psicopedagoga y Coach",
+    "description": "Facilitadora de tu propia evolución. Coaching y consultas puntuales para jóvenes y adultos, e intervención psicopedagógica para niños y adolescentes, en Barcelona.",
+    "ogDescription": "Facilitadora de tu propia evolución. Coaching e intervención psicopedagógica en Barcelona."
+  },
+  "nav": {
+    "coaching": "Coaching",
+    "psicopedagogia": "Psicopedagogía",
+    "sobreMi": "Sobre mí",
+    "contacte": "Contacto",
+    "parlemNe": "Hablemos",
+    "obrirMenu": "Abrir el menú",
+    "tancarMenu": "Cerrar el menú"
+  },
+  "footer": {
+    "tagline": "Psicopedagoga y coach. Consulta presencial en Barcelona, zona Sarrià–Sant Gervasi, y acompañamiento online.",
+    "acompanyament": "Acompañamiento",
+    "web": "Web",
+    "rights": "Todos los derechos reservados.",
+    "location": "Barcelona · Presencial y online"
+  },
+  "common": {
+    "backToHome": "Volver al inicio",
+    "writeUs": "Escríbenos"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Psicopedagoga · Coach · Barcelona",
+      "titleLine1": "Facilitadora de",
+      "titleLine2": "tu propia",
+      "titleLine3": "evolución",
+      "lede": "Dos líneas de acompañamiento: coaching y consultas puntuales para jóvenes y adultos, e intervención psicopedagógica para niños y adolescentes.",
+      "ctaCoaching": "Coaching y consultas",
+      "ctaPsico": "Psicopedagogía",
+      "statValue": "+15 años",
+      "statLabel": "acompañando a personas y familias",
+      "scrollCue": "Descubre más",
+      "photoAlt": "Mª del Mar trabajando en su despacho"
+    },
+    "manifesto": "Cada persona tiene su propio ritmo para crecer, y mi acompañamiento camina a su lado: escuchando, sosteniendo y ayudando a encontrar claridad, confianza y autonomía en cada paso del camino.",
+    "fork": {
+      "eyebrow": "Cómo te acompaño",
+      "title": "Dos líneas de acompañamiento, un mismo objetivo",
+      "lede": "Cada proceso se adapta al momento y a las necesidades de la persona. Descubre qué línea encaja con tu situación.",
+      "line1Tag": "Línea 1",
+      "line1Title": "Coaching y consultas puntuales",
+      "line1Desc": "Para jóvenes, adultos, profesionales, deportistas, madres y padres que quieren ganar claridad, seguridad y bienestar.",
+      "line1ImageAlt": "Sesión de coaching con una persona acompañada en el despacho",
+      "line2Tag": "Línea 2",
+      "line2Title": "Intervención psicopedagógica",
+      "line2Desc": "Para niños y adolescentes con dificultades de atención, lectoescritura, organización, motivación o autonomía.",
+      "line2ImageAlt": "Niña trabajando el aprendizaje de forma acompañada",
+      "explore": "Explorar"
+    },
+    "about": {
+      "eyebrow": "Sobre mí",
+      "quote": "«Mi objetivo es siempre el mismo: que cada persona se sienta protagonista de su propio proceso de evolución.»",
+      "role": "Psicopedagoga y coach",
+      "photoAlt": "Mª del Mar trabajando, reflexiva, en su despacho",
+      "p1": "Soy psicopedagoga y coach y, a lo largo de mi trayectoria, he acompañado a niños, jóvenes y familias en diferentes etapas de su proceso educativo y personal, trabajando aspectos relacionados con el aprendizaje, la motivación, la autonomía y el desarrollo personal. El deporte ha estado también muy presente en mi trayectoria, dando apoyo a niños, jóvenes y familias ante los retos que comporta la práctica deportiva.",
+      "p2": "Entiendo la psicopedagogía y el coaching como dos disciplinas diferentes pero complementarias. Mi enfoque parte de una mirada global de la persona: me interesa conocer las dificultades que pueden aparecer en el aprendizaje, comprender cómo aprende cada niño o joven e identificar las estrategias más adecuadas, teniendo en cuenta también los factores emocionales, sociales y personales que pueden influir.",
+      "p3": "Ofrezco una atención personalizada y cercana, basada en el vínculo, la escucha y la creación de un clima de confianza en el que cada niño o joven se sienta cómodo para expresarse e implicarse en el proceso. Busco que progresivamente tome conciencia de sus fortalezas y necesidades y participe activamente en la definición de sus objetivos. Cuando es necesario, me coordino con la familia, la escuela y otros profesionales.",
+      "p4": "Fuera del ámbito profesional, el deporte, la familia, la naturaleza, las relaciones personales y seguir aprendiendo forman parte importante de mi vida y también de la manera en que entiendo el bienestar y el equilibrio. Me gusta vivir con curiosidad, mantenerme activa y apreciar esas pequeñas cosas que dan sentido y calidad a la vida.",
+      "statYearsValue": "+15",
+      "statYearsLabel": "años de experiencia",
+      "statLinesValue": "2",
+      "statLinesLabel": "líneas de acompañamiento",
+      "statLocationValue": "BCN",
+      "statLocationLabel": "Sarrià–Sant Gervasi",
+      "spaceImageAlt": "El despacho de Mª del Mar: espacio de trabajo, materiales y sesiones de acompañamiento",
+      "spaceCaption": "Mi espacio en Barcelona — pensado para que cada sesión sea un lugar donde parar, escuchar y crecer."
+    },
+    "contact": {
+      "eyebrow": "Hablemos",
+      "title": "¿Quieres contarme qué te está pasando?",
+      "lede": "Si no tienes claro si necesitas iniciar un proceso o simplemente hacer una consulta puntual, podemos valorar juntos qué formato encaja mejor con tu situación.",
+      "ctaInstagram": "Escríbeme por Instagram",
+      "locationLabel": "Ubicación",
+      "locationValue": "Barcelona · Sarrià–Sant Gervasi",
+      "modalityLabel": "Modalidad",
+      "modalityValue": "Presencial y online",
+      "phoneLabel": "Teléfono / WhatsApp",
+      "phoneValue": "Pendiente de confirmar",
+      "emailLabel": "Correo electrónico",
+      "emailValue": "Pendiente de confirmar"
+    }
+  },
+  "coaching": {
+    "meta": {
+      "title": "Coaching y consultas puntuales",
+      "description": "Coaching personal y consultas puntuales para jóvenes, adultos, profesionales, deportistas, madres y padres que quieren ganar claridad, seguridad y bienestar."
+    },
+    "hero": {
+      "eyebrow": "Línea 1 · Coaching y consultas puntuales",
+      "title": "Coaching personal y consultas puntuales",
+      "lede": "El coaching ofrece un espacio de reflexión y acompañamiento para entender mejor cómo te sientes, cómo estás viviendo una situación, identificar qué necesitas y avanzar hacia más claridad, seguridad y bienestar."
+    },
+    "intro": {
+      "p1": "Hay momentos en los que necesitamos parar, ordenar lo que nos está pasando y mirar una situación con algo más de perspectiva. Quizás tienes una decisión importante por delante, estás viviendo una etapa de cambio, te cuesta saber qué quieres o simplemente notas que algo no acaba de funcionar como querrías.",
+      "p2": "El acompañamiento se puede realizar a través de un proceso de varias sesiones o bien mediante consultas puntuales, según el momento y las necesidades de cada persona."
+    },
+    "photoAlt": "Sesión de acompañamiento con Mª del Mar",
+    "who": {
+      "eyebrow": "A quién va dirigido",
+      "title": "¿Cuándo te puede ayudar un proceso de coaching?",
+      "p1": "Trabajo con jóvenes y adultos que quieren entender mejor una situación, tomar decisiones, afrontar nuevos retos o generar cambios en algún ámbito de su vida.",
+      "p2": "A lo largo de los años he acompañado especialmente a estudiantes y jóvenes, profesionales, deportistas, madres y padres, así como a personas que necesitan recuperar claridad, confianza o dirección en un momento determinado."
+    },
+    "situations": {
+      "eyebrow": "¿Te suena familiar?",
+      "title": "Situaciones que me encuentro a menudo",
+      "lede": "Más allá del perfil o del momento vital de cada persona, hay situaciones que a lo largo de los años he ido encontrando de forma recurrente.",
+      "items": [
+        "Estar ante una decisión importante y sentir que, cuanto más lo piensas, menos claro tienes qué hacer.",
+        "Asumir un nuevo reto o más responsabilidades y empezar a dudar de las propias capacidades.",
+        "Sentir que has llegado a un punto en el que necesitas replantear prioridades, pero no saber por dónde empezar.",
+        "Tener dificultades para poner límites o expresar lo que necesitas en determinadas relaciones.",
+        "Vivir con mucha exigencia, presión o expectativas y notar que eso empieza a afectar a la confianza o el bienestar.",
+        "Tener que decidir hacia dónde orientar el futuro académico o profesional y sentirse inseguro ante las diferentes opciones.",
+        "Estar preocupado por una situación familiar y necesitar tomar distancia para poder verla con más perspectiva.",
+        "Sentirse bloqueado, desmotivado o insatisfecho sin tener muy claro qué es exactamente lo que no funciona.",
+        "Tener muchos frentes abiertos y necesitar ordenar prioridades para recuperar sensación de control y equilibrio."
+      ],
+      "note": "No hace falta llegar con el objetivo perfectamente definido. A veces, el primer paso del proceso es precisamente entender qué está pasando, qué necesitas y qué te gustaría que fuera diferente."
+    },
+    "areas": {
+      "eyebrow": "Ámbitos de trabajo",
+      "title": "¿Cómo te puede ayudar un proceso de coaching?",
+      "lede": "Cada proceso es diferente y se adapta a la situación y a las necesidades de cada persona. Algunos de los ámbitos que podemos trabajar son:",
+      "items": [
+        "Autoconocimiento y toma de conciencia.",
+        "Gestión emocional y bienestar personal.",
+        "Confianza, autoestima y seguridad en uno mismo.",
+        "Comunicación y asertividad.",
+        "Relaciones personales, familiares o profesionales.",
+        "Toma de decisiones y definición de objetivos.",
+        "Cambios personales, académicos o profesionales.",
+        "Organización y gestión de prioridades.",
+        "Equilibrio entre los diferentes ámbitos de la vida.",
+        "Motivación y gestión de la presión.",
+        "Desarrollo de recursos personales ante situaciones difíciles."
+      ]
+    },
+    "process": {
+      "eyebrow": "El proceso",
+      "title": "Cómo te acompaño",
+      "lede": "No hay dos procesos iguales. El ritmo, la duración y los objetivos se adaptan siempre a cada persona.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Comprender dónde estás",
+          "description": "En las primeras sesiones exploramos qué está pasando, qué te ha traído hasta aquí y qué te gustaría que fuera diferente. Identificamos necesidades, fortalezas, dificultades y posibles objetivos de trabajo."
+        },
+        {
+          "number": "02",
+          "title": "Definir hacia dónde quieres ir",
+          "description": "A partir de aquí vamos concretando objetivos y posibles cambios: tomar una decisión que llevas tiempo aplazando, aprender a poner límites, afrontar un nuevo reto profesional, recuperar confianza o reorganizar prioridades."
+        },
+        {
+          "number": "03",
+          "title": "Pasar de la reflexión a la acción",
+          "description": "Durante el proceso vamos introduciendo acciones, nuevas estrategias y formas diferentes de afrontar las situaciones, para que lo que se trabaja en las sesiones se traslade progresivamente al día a día."
+        },
+        {
+          "number": "04",
+          "title": "Consolidar",
+          "description": "En la fase final revisamos el camino recorrido, los cambios logrados y los recursos que has ido adquiriendo, para que estos aprendizajes queden integrados y puedas seguir avanzando con autonomía."
+        }
+      ]
+    },
+    "punctual": {
+      "title": "Consultas puntuales",
+      "desc": "No siempre es necesario iniciar un proceso de varias sesiones. También ofrezco consultas puntuales para personas que necesitan trabajar una situación concreta, tomar una decisión, ordenar ideas o disponer de un espacio profesional de reflexión y orientación. Una o pocas sesiones pueden ser suficientes cuando hay una necesidad específica y bien delimitada."
+    },
+    "vsPsychology": {
+      "title": "Coaching y psicología",
+      "desc": "El coaching está orientado principalmente al presente y al futuro, al desarrollo de recursos y a la consecución de cambios u objetivos. No sustituye un proceso psicológico o terapéutico cuando este es necesario. Si durante el acompañamiento considero que la necesidad de la persona requiere una intervención psicológica o de otro profesional, lo hablaremos con naturalidad y valoraremos la mejor opción."
+    },
+    "modality": {
+      "label": "Modalidad",
+      "text": "Presencial y online. Consulta presencial en Barcelona, zona Sarrià-Sant Gervasi."
+    },
+    "cta": {
+      "title": "¿Quieres contarme qué te está pasando?",
+      "lede": "Si no tienes claro si necesitas iniciar un proceso de coaching o simplemente hacer una consulta puntual, podemos valorar qué formato encaja mejor."
+    }
+  },
+  "psicopedagogia": {
+    "meta": {
+      "title": "Intervención psicopedagógica",
+      "description": "Acompañamiento personalizado para niños y jóvenes con dificultades o necesidades relacionadas con el aprendizaje, la atención, la organización, la autonomía o la motivación."
+    },
+    "hero": {
+      "eyebrow": "Línea 2 · Intervención psicopedagógica",
+      "title": "Intervención psicopedagógica",
+      "lede": "Un acompañamiento personalizado dirigido a niños y jóvenes que presentan dificultades o necesidades relacionadas con el aprendizaje, la atención, la organización, la autonomía, la motivación o la adaptación a las demandas escolares."
+    },
+    "intro": {
+      "p1": "Va más allá del refuerzo académico. No se trabajan únicamente los contenidos escolares, sino también los procesos que intervienen en el aprendizaje y aquellos factores personales, emocionales y sociales que pueden estar influyendo.",
+      "p2": "El objetivo es ayudar a cada niño o joven a comprender mejor cómo aprende, identificar qué necesita y qué quiere conseguir, y desarrollar estrategias y recursos propios que le permitan avanzar con más autonomía y confianza."
+    },
+    "photoAlt": "Sesión de intervención psicopedagógica con una niña",
+    "audience": {
+      "eyebrow": "A quién puede ayudar",
+      "title": "¿Cuándo puede ser adecuada la intervención psicopedagógica?",
+      "lede": "Puede ser adecuada cuando un niño o joven:",
+      "items": [
+        "Presenta dificultades en lectura, escritura, comprensión o matemáticas.",
+        "Estudia y se esfuerza, pero los resultados no reflejan ese esfuerzo.",
+        "Le cuesta concentrarse, mantener la atención o controlar la impulsividad.",
+        "Tiene dificultades para organizarse, planificarse o gestionar el tiempo.",
+        "Necesita constantemente que un adulto le recuerde qué tiene que hacer o le ayude a empezar y acabar las tareas.",
+        "No sabe cómo estudiar o cómo preparar de forma eficaz un examen, un trabajo o los deberes.",
+        "Evita las tareas que le resultan difíciles, se bloquea o se frustra con facilidad.",
+        "Ha perdido motivación o confianza en sus capacidades.",
+        "Necesita adquirir más autonomía y responsabilidad ante los estudios.",
+        "Presenta dificultades específicas de aprendizaje, como dislexia o discalculia, o dificultades de atención, con diagnóstico de TDAH o sin él.",
+        "Vive situaciones personales, sociales o escolares que están interfiriendo en su bienestar o en el proceso de aprendizaje.",
+        "Necesita orientación ante decisiones relacionadas con los estudios o su itinerario académico."
+      ]
+    },
+    "workSection": {
+      "eyebrow": "El punto de partida",
+      "title": "¿Qué trabajamos en las sesiones?",
+      "p1": "El punto de partida es la evaluación psicopedagógica, que permite identificar las necesidades, dificultades y fortalezas del niño o joven y orientar los objetivos iniciales de trabajo.",
+      "p2": "A partir de aquí, la intervención se va ajustando a la evolución de cada persona y a lo que va apareciendo en su día a día: una dificultad de aprendizaje, la organización de la agenda, los deberes, un conflicto en la escuela o las relaciones con los compañeros.",
+      "blocks": [
+        {
+          "title": "Aprendizaje y estrategias académicas",
+          "description": "Se trabajan las necesidades específicas relacionadas con la lectura, la comprensión, la expresión escrita, la ortografía, el cálculo y otros aprendizajes, incorporando técnicas para afrontar de forma más eficaz los deberes, el estudio y la preparación de exámenes."
+        },
+        {
+          "title": "Organización, planificación y autonomía",
+          "description": "A partir de herramientas reales —agenda, libretas, material, deberes, trabajos o exámenes— se trabaja la organización, la planificación, la gestión del tiempo y la adquisición progresiva de autonomía y responsabilidad."
+        },
+        {
+          "title": "Atención y funciones ejecutivas",
+          "description": "Se trabajan habilidades como la atención, la memoria de trabajo, la planificación, la flexibilidad o la inhibición, para facilitar iniciar y mantener una tarea, seguir instrucciones, anticiparse y revisar lo que se ha hecho."
+        },
+        {
+          "title": "Objetivos propios y motivación",
+          "description": "Progresivamente, busco que el niño o joven pueda identificar también qué quiere mejorar y en qué considera que necesita ayuda. Cuando los objetivos tienen sentido para la persona, aumentan la implicación y la motivación."
+        },
+        {
+          "title": "Autoconocimiento y confianza",
+          "description": "Se acompaña al niño o joven para que pueda identificar sus fortalezas y dificultades, entender mejor cómo aprende y afrontar las dificultades con más confianza en sus propias capacidades."
+        },
+        {
+          "title": "Autorregulación y aspectos emocionales",
+          "description": "Se pueden trabajar aspectos como la tolerancia a la frustración, la inseguridad, el miedo a equivocarse o la impulsividad, cuando tienen incidencia en el proceso de aprendizaje y en el día a día."
+        },
+        {
+          "title": "Ámbito social y relacional",
+          "description": "Las relaciones con los compañeros, la familia y el entorno también se pueden abordar cuando tienen incidencia en el bienestar: comunicación, empatía, límites y resolución de conflictos."
+        },
+        {
+          "title": "Intereses y ocio",
+          "description": "Los intereses, las aficiones, el deporte y el tiempo de ocio aportan información valiosa sobre las motivaciones y capacidades del niño, y permiten partir de aquello que ya funciona."
+        }
+      ]
+    },
+    "methodology": {
+      "eyebrow": "Metodología",
+      "title": "¿Cómo trabajo?",
+      "p1": "Las sesiones son personalizadas y se adaptan a la edad, las necesidades, los objetivos y el momento de cada niño o joven. Podemos trabajar a partir del mismo material escolar y combinarlo con actividades de lectura, escritura, razonamiento, planificación, juegos, retos, material de manipulación o recursos audiovisuales.",
+      "p2": "Busco que el niño o joven no sea un receptor pasivo de la ayuda, sino protagonista de su proceso. Por eso, le acompaño para que pueda definir también sus objetivos, comprender qué le pasa y descubrir qué estrategias le funcionan."
+    },
+    "process": {
+      "eyebrow": "El proceso",
+      "title": "¿Cómo estructuramos el proceso?",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Primera entrevista con la familia",
+          "description": "Se recoge la demanda inicial, la historia y la situación actual del niño o joven, así como las principales preocupaciones, necesidades y expectativas de la familia, y la información previa disponible."
+        },
+        {
+          "number": "02",
+          "title": "Evaluación psicopedagógica",
+          "description": "Permite conocer las necesidades, dificultades y fortalezas del niño o joven, combinando observación, actividades y pruebas, la información de la familia y, cuando sea conveniente, la de la escuela."
+        },
+        {
+          "number": "03",
+          "title": "Definición del plan de trabajo",
+          "description": "A partir de la información recogida se definen los objetivos prioritarios y las estrategias más adecuadas, incorporando también los que el propio niño o joven identifica como significativos."
+        },
+        {
+          "number": "04",
+          "title": "Sesiones de intervención psicopedagógica",
+          "description": "Se trabajan los objetivos establecidos a través de actividades y situaciones adaptadas a cada persona, conectando el trabajo de la sesión con las necesidades reales de su día a día."
+        },
+        {
+          "number": "05",
+          "title": "Seguimiento con la familia",
+          "description": "Se hacen devoluciones periódicas para compartir la evolución, revisar objetivos y ofrecer orientaciones que ayuden a dar continuidad al proceso desde casa."
+        },
+        {
+          "number": "06",
+          "title": "Coordinación con la escuela y otros profesionales",
+          "description": "Cuando es necesario, se mantiene coordinación con tutores, maestros u otros profesionales para compartir información relevante y favorecer una línea de trabajo coherente."
+        },
+        {
+          "number": "07",
+          "title": "Revisión del proceso",
+          "description": "Los objetivos y las estrategias se revisan periódicamente y se adaptan a los progresos y a las nuevas necesidades que van apareciendo."
+        }
+      ]
+    },
+    "modality": {
+      "label": "Modalidad",
+      "p1": "Las sesiones de intervención psicopedagógica con niños y jóvenes se realizan de forma presencial.",
+      "p2": "Las entrevistas y los seguimientos con las familias, así como las coordinaciones con la escuela u otros profesionales, pueden ser presenciales u online según las necesidades de cada caso."
+    },
+    "cta": {
+      "title": "¿Hablamos de la situación de tu hijo o hija?",
+      "lede": "Si quieres contarme brevemente vuestra situación, podemos valorar juntos qué tipo de acompañamiento puede ser más adecuado."
+    }
+  }
+}

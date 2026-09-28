@@ -2,7 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { gsap } from "@/lib/gsap";
 import { prefersReducedMotion } from "@/lib/motion";
 import { Container } from "@/components/Container";
@@ -57,6 +58,7 @@ const STICKERS: IconBadgeSpec[] = [
 ];
 
 export default function Hero() {
+  const t = useTranslations("home.hero");
   const rootRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -162,33 +164,31 @@ export default function Hero() {
 
       <Container className="relative grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
         <div>
-          <p className="hero-kicker eyebrow mb-6">Psicopedagoga · Coach · Barcelona</p>
+          <p className="hero-kicker eyebrow mb-6">{t("kicker")}</p>
           <h1
             className="font-semibold tracking-tight text-ink"
             style={{ fontSize: "var(--fs-display)", lineHeight: 1.02 }}
           >
             <span className="block overflow-hidden">
-              <span className="hero-line block">Facilitadora de</span>
+              <span className="hero-line block">{t("titleLine1")}</span>
             </span>
             <span className="block overflow-hidden">
-              <span className="hero-line block">la teva pròpia</span>
+              <span className="hero-line block">{t("titleLine2")}</span>
             </span>
             <span className="block overflow-hidden">
-              <span className="hero-line block text-green-deep">evolució</span>
+              <span className="hero-line block text-green-deep">{t("titleLine3")}</span>
             </span>
           </h1>
           <p className="hero-lede mt-7 max-w-md text-ink-dim" style={{ fontSize: "var(--fs-lede)", lineHeight: 1.55 }}>
-            Dues línies d&apos;acompanyament: coaching i consultes puntuals per a
-            joves i adults, i intervenció psicopedagògica per a infants i
-            adolescents.
+            {t("lede")}
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-3.5">
             <Link href="/coaching" className="hero-cta btn btn-primary">
-              Coaching i consultes
+              {t("ctaCoaching")}
               <ArrowIcon />
             </Link>
             <Link href="/psicopedagogia" className="hero-cta btn btn-ghost">
-              Psicopedagogia
+              {t("ctaPsico")}
               <ArrowIcon />
             </Link>
           </div>
@@ -198,7 +198,7 @@ export default function Hero() {
           <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-md lg:ml-auto">
             <Image
               src="/images/hero-photo-existing.jpg"
-              alt="Mª del Mar treballant al seu despatx"
+              alt={t("photoAlt")}
               fill
               priority
               sizes="(min-width: 1024px) 420px, 90vw"
@@ -206,15 +206,15 @@ export default function Hero() {
             />
           </div>
           <div className="absolute -bottom-6 -left-6 hidden rounded-2xl border border-border bg-white/90 px-5 py-4 shadow-[0_20px_50px_-20px_rgba(32,43,40,0.35)] backdrop-blur sm:block">
-            <p className="text-sm font-semibold text-ink">+15 anys</p>
-            <p className="text-xs text-ink-dim">acompanyant persones i famílies</p>
+            <p className="text-sm font-semibold text-ink">{t("statValue")}</p>
+            <p className="text-xs text-ink-dim">{t("statLabel")}</p>
           </div>
         </div>
       </Container>
 
       <div className="hero-scroll-cue mt-16 flex justify-center opacity-0">
         <div className="flex flex-col items-center gap-2 text-ink-dim">
-          <span className="text-[0.7rem] font-medium uppercase tracking-[0.2em]">Descobreix més</span>
+          <span className="text-[0.7rem] font-medium uppercase tracking-[0.2em]">{t("scrollCue")}</span>
           <span className="h-9 w-px animate-pulse bg-border-strong" />
         </div>
       </div>

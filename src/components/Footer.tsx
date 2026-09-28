@@ -1,7 +1,10 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Container } from "./Container";
 
 export default function Footer() {
+  const t = useTranslations();
+
   return (
     <footer className="border-t border-border bg-paper-deep">
       <Container className="flex flex-col gap-10 py-14 sm:flex-row sm:items-start sm:justify-between">
@@ -12,10 +15,7 @@ export default function Footer() {
             </span>
             Mª del Mar
           </Link>
-          <p className="mt-4 text-sm leading-relaxed text-ink-dim">
-            Psicopedagoga i coach. Consulta presencial a Barcelona, zona
-            Sarrià–Sant Gervasi, i acompanyament online.
-          </p>
+          <p className="mt-4 text-sm leading-relaxed text-ink-dim">{t("footer.tagline")}</p>
           <div className="mt-5 flex items-center gap-3">
             <a
               href="https://www.instagram.com/mmar_coach"
@@ -54,28 +54,30 @@ export default function Footer() {
 
         <nav className="grid grid-cols-2 gap-x-12 gap-y-3 text-sm sm:flex sm:gap-16">
           <div className="flex flex-col gap-3">
-            <span className="eyebrow mb-1">Acompanyament</span>
+            <span className="eyebrow mb-1">{t("footer.acompanyament")}</span>
             <Link href="/coaching" className="text-ink-dim transition-colors hover:text-ink">
-              Coaching
+              {t("nav.coaching")}
             </Link>
             <Link href="/psicopedagogia" className="text-ink-dim transition-colors hover:text-ink">
-              Psicopedagogia
+              {t("nav.psicopedagogia")}
             </Link>
           </div>
           <div className="flex flex-col gap-3">
-            <span className="eyebrow mb-1">Web</span>
+            <span className="eyebrow mb-1">{t("footer.web")}</span>
             <Link href="/#sobre-mi" className="text-ink-dim transition-colors hover:text-ink">
-              Sobre mi
+              {t("nav.sobreMi")}
             </Link>
             <Link href="/#contacte" className="text-ink-dim transition-colors hover:text-ink">
-              Contacte
+              {t("nav.contacte")}
             </Link>
           </div>
         </nav>
       </Container>
       <Container className="flex flex-col gap-2 border-t border-border py-6 text-xs text-ink-dim/80 sm:flex-row sm:items-center sm:justify-between">
-        <p>© {new Date().getFullYear()} Mª del Mar. Tots els drets reservats.</p>
-        <p>Barcelona · Presencial i online</p>
+        <p>
+          © {new Date().getFullYear()} Mª del Mar. {t("footer.rights")}
+        </p>
+        <p>{t("footer.location")}</p>
       </Container>
     </footer>
   );

@@ -1,0 +1,321 @@
+{
+  "meta": {
+    "siteName": "Mª del Mar",
+    "title": "Mª del Mar — Educational Psychologist & Coach",
+    "description": "Facilitator of your own evolution. Coaching and one-off sessions for young people and adults, and educational-psychology support for children and teenagers, in Barcelona.",
+    "ogDescription": "Facilitator of your own evolution. Coaching and educational-psychology support in Barcelona."
+  },
+  "nav": {
+    "coaching": "Coaching",
+    "psicopedagogia": "Educational psychology",
+    "sobreMi": "About me",
+    "contacte": "Contact",
+    "parlemNe": "Let's talk",
+    "obrirMenu": "Open menu",
+    "tancarMenu": "Close menu"
+  },
+  "footer": {
+    "tagline": "Educational psychologist and coach. In-person sessions in Barcelona, Sarrià–Sant Gervasi area, and online support.",
+    "acompanyament": "Support",
+    "web": "Site",
+    "rights": "All rights reserved.",
+    "location": "Barcelona · In person and online"
+  },
+  "common": {
+    "backToHome": "Back to home",
+    "writeUs": "Write to me"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Educational psychologist · Coach · Barcelona",
+      "titleLine1": "Facilitating",
+      "titleLine2": "your own",
+      "titleLine3": "evolution",
+      "lede": "Two lines of support: coaching and one-off sessions for young people and adults, and educational-psychology support for children and teenagers.",
+      "ctaCoaching": "Coaching & sessions",
+      "ctaPsico": "Educational psychology",
+      "statValue": "15+ years",
+      "statLabel": "supporting people and families",
+      "scrollCue": "Discover more",
+      "photoAlt": "Mª del Mar working at her desk"
+    },
+    "manifesto": "Every person has their own pace to grow, and my support walks alongside them: listening, holding, and helping them find clarity, confidence, and autonomy at every step of the way.",
+    "fork": {
+      "eyebrow": "How I support you",
+      "title": "Two lines of support, one shared goal",
+      "lede": "Every process adapts to the person's moment and needs. Explore which line fits your situation.",
+      "line1Tag": "Line 1",
+      "line1Title": "Coaching & one-off sessions",
+      "line1Desc": "For young people, adults, professionals, athletes, and parents who want to gain clarity, security, and wellbeing.",
+      "line1ImageAlt": "A coaching session with a person being supported in the office",
+      "line2Tag": "Line 2",
+      "line2Title": "Educational-psychology support",
+      "line2Desc": "For children and teenagers with difficulties in attention, reading and writing, organisation, motivation, or autonomy.",
+      "line2ImageAlt": "A child working on learning with support",
+      "explore": "Explore"
+    },
+    "about": {
+      "eyebrow": "About me",
+      "quote": "“My goal is always the same: for each person to feel like the protagonist of their own process of evolution.”",
+      "role": "Educational psychologist & coach",
+      "photoAlt": "Mª del Mar working, reflective, at her desk",
+      "p1": "I'm an educational psychologist and coach, and throughout my career I've supported children, young people, and families through different stages of their educational and personal journeys, working on learning, motivation, autonomy, and personal development. Sport has also been a strong presence throughout my career, supporting children, young people, and families through the challenges that come with competing.",
+      "p2": "I see educational psychology and coaching as two different but complementary disciplines. My approach starts from a global view of the person: I'm interested in understanding the difficulties that can appear in learning, in grasping how each child or young person learns, and in identifying the most suitable strategies — while also taking into account the emotional, social, and personal factors that can play a role.",
+      "p3": "I offer close, personalised attention, built on connection, listening, and creating a climate of trust in which each child or young person feels comfortable expressing themselves and engaging with the process. I look for them to progressively become aware of their strengths and needs, and to take an active part in defining their own goals. When needed, I coordinate with the family, the school, and other professionals.",
+      "p4": "Outside my professional life, sport, family, nature, personal relationships, and continuing to learn are an important part of who I am — and of how I understand wellbeing and balance. I like living with curiosity, staying active, and appreciating the small things that give life meaning and quality.",
+      "statYearsValue": "15+",
+      "statYearsLabel": "years of experience",
+      "statLinesValue": "2",
+      "statLinesLabel": "lines of support",
+      "statLocationValue": "BCN",
+      "statLocationLabel": "Sarrià–Sant Gervasi",
+      "spaceImageAlt": "Mª del Mar's office: workspace, materials, and support sessions",
+      "spaceCaption": "My space in Barcelona — designed so every session is a place to pause, listen, and grow."
+    },
+    "contact": {
+      "eyebrow": "Let's talk",
+      "title": "Want to tell me what's going on?",
+      "lede": "If you're not sure whether you need to start a process or simply want a one-off session, we can figure out together which format fits your situation best.",
+      "ctaInstagram": "Message me on Instagram",
+      "locationLabel": "Location",
+      "locationValue": "Barcelona · Sarrià–Sant Gervasi",
+      "modalityLabel": "Format",
+      "modalityValue": "In person and online",
+      "phoneLabel": "Phone / WhatsApp",
+      "phoneValue": "To be confirmed",
+      "emailLabel": "Email",
+      "emailValue": "To be confirmed"
+    }
+  },
+  "coaching": {
+    "meta": {
+      "title": "Coaching & one-off sessions",
+      "description": "Personal coaching and one-off sessions for young people, adults, professionals, athletes, and parents who want to gain clarity, security, and wellbeing."
+    },
+    "hero": {
+      "eyebrow": "Line 1 · Coaching & one-off sessions",
+      "title": "Personal coaching & one-off sessions",
+      "lede": "Coaching offers a space for reflection and support to better understand how you feel, how you're experiencing a situation, identify what you need, and move towards greater clarity, security, and wellbeing."
+    },
+    "intro": {
+      "p1": "There are moments when we need to pause, make sense of what's happening, and look at a situation with a bit more perspective. Maybe you're facing an important decision, going through a stage of change, struggling to know what you want, or simply sensing that something isn't quite working the way you'd like.",
+      "p2": "Support can take the form of a process spanning several sessions, or one-off sessions, depending on the moment and the needs of each person."
+    },
+    "photoAlt": "A support session with Mª del Mar",
+    "who": {
+      "eyebrow": "Who it's for",
+      "title": "When can a coaching process help you?",
+      "p1": "I work with young people and adults who want to better understand a situation, make decisions, face new challenges, or bring about change in some area of their life.",
+      "p2": "Over the years I've supported especially students and young people, professionals, athletes, and parents, as well as people who need to regain clarity, confidence, or direction at a particular moment."
+    },
+    "situations": {
+      "eyebrow": "Sound familiar?",
+      "title": "Situations I encounter often",
+      "lede": "Beyond each person's profile or stage of life, there are situations that, over the years, I've come across again and again.",
+      "items": [
+        "Facing an important decision and feeling that the more you think about it, the less clear you are on what to do.",
+        "Taking on a new challenge or more responsibility and starting to doubt your own abilities.",
+        "Feeling you've reached a point where you need to rethink your priorities, but not knowing where to start.",
+        "Struggling to set boundaries or express what you need in certain relationships.",
+        "Living with a lot of demands, pressure, or expectations, and noticing it's starting to affect your confidence or wellbeing.",
+        "Having to decide where to steer your academic or professional future, and feeling unsure amid the different options.",
+        "Being worried about a family situation and needing some distance to see it with more perspective.",
+        "Feeling stuck, unmotivated, or dissatisfied without being quite sure what exactly isn't working.",
+        "Having too many open fronts and needing to sort out priorities to regain a sense of control and balance."
+      ],
+      "note": "You don't need to arrive with a perfectly defined goal. Sometimes the first step of the process is precisely understanding what's happening, what you need, and what you'd like to be different."
+    },
+    "areas": {
+      "eyebrow": "Areas we can work on",
+      "title": "How can a coaching process help you?",
+      "lede": "Every process is different and adapts to each person's situation and needs. Some of the areas we can work on include:",
+      "items": [
+        "Self-awareness and building consciousness.",
+        "Emotional management and personal wellbeing.",
+        "Confidence, self-esteem, and self-assurance.",
+        "Communication and assertiveness.",
+        "Personal, family, or professional relationships.",
+        "Decision-making and setting goals.",
+        "Personal, academic, or professional change.",
+        "Organisation and priority management.",
+        "Balance across the different areas of life.",
+        "Motivation and managing pressure.",
+        "Building personal resources to face difficult situations."
+      ]
+    },
+    "process": {
+      "eyebrow": "The process",
+      "title": "How I support you",
+      "lede": "No two processes are the same. The pace, length, and goals always adapt to each person.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Understanding where you are",
+          "description": "In the first sessions we explore what's happening, what's brought you here, and what you'd like to be different. We identify needs, strengths, difficulties, and possible goals to work towards."
+        },
+        {
+          "number": "02",
+          "title": "Defining where you want to go",
+          "description": "From here we start shaping goals and possible changes: making a decision you've been putting off, learning to set boundaries, taking on a new professional challenge, regaining confidence, or reorganising priorities."
+        },
+        {
+          "number": "03",
+          "title": "Moving from reflection to action",
+          "description": "Throughout the process we introduce actions, new strategies, and different ways of facing situations, so that what's worked on in the sessions progressively carries over into everyday life."
+        },
+        {
+          "number": "04",
+          "title": "Consolidating",
+          "description": "In the final phase we review the path travelled, the changes achieved, and the resources you've gained, so these learnings become integrated and you can keep moving forward with autonomy."
+        }
+      ]
+    },
+    "punctual": {
+      "title": "One-off sessions",
+      "desc": "Starting a process spanning several sessions isn't always necessary. I also offer one-off sessions for people who need to work through a specific situation, make a decision, organise their thoughts, or have a professional space for reflection and guidance. One session, or just a few, can be enough when there's a specific, well-defined need."
+    },
+    "vsPsychology": {
+      "title": "Coaching and psychology",
+      "desc": "Coaching is mainly oriented towards the present and future, towards building resources and achieving change or goals. It doesn't replace a psychological or therapeutic process when one is needed. If during our work together I feel that what a person needs calls for psychological intervention or another professional, we'll talk about it openly and consider the best option."
+    },
+    "modality": {
+      "label": "Format",
+      "text": "In person and online. In-person sessions in Barcelona, Sarrià-Sant Gervasi area."
+    },
+    "cta": {
+      "title": "Want to tell me what's going on?",
+      "lede": "If you're not sure whether you need to start a coaching process or simply want a one-off session, we can figure out which format fits best."
+    }
+  },
+  "psicopedagogia": {
+    "meta": {
+      "title": "Educational-psychology support",
+      "description": "Personalised support for children and young people with difficulties or needs related to learning, attention, organisation, autonomy, or motivation."
+    },
+    "hero": {
+      "eyebrow": "Line 2 · Educational-psychology support",
+      "title": "Educational-psychology support",
+      "lede": "Personalised support for children and young people facing difficulties or needs related to learning, attention, organisation, autonomy, motivation, or adapting to school demands."
+    },
+    "intro": {
+      "p1": "It goes beyond academic reinforcement. We don't work only on school content, but also on the processes involved in learning and on the personal, emotional, and social factors that may be playing a role.",
+      "p2": "The goal is to help each child or young person better understand how they learn, identify what they need and what they want to achieve, and develop their own strategies and resources so they can move forward with more autonomy and confidence."
+    },
+    "photoAlt": "An educational-psychology session with a child",
+    "audience": {
+      "eyebrow": "Who it can help",
+      "title": "When can educational-psychology support be suitable?",
+      "lede": "It can be suitable when a child or young person:",
+      "items": [
+        "Has difficulties with reading, writing, comprehension, or maths.",
+        "Studies and makes an effort, but the results don't reflect that effort.",
+        "Struggles to concentrate, sustain attention, or control impulsivity.",
+        "Has difficulty organising, planning, or managing their time.",
+        "Constantly needs an adult to remind them what to do, or to help them start and finish tasks.",
+        "Doesn't know how to study or effectively prepare for an exam, a project, or homework.",
+        "Avoids tasks they find difficult, or easily gets stuck or frustrated.",
+        "Has lost motivation or confidence in their own abilities.",
+        "Needs to build more autonomy and responsibility around their studies.",
+        "Has specific learning difficulties, such as dyslexia or dyscalculia, or attention difficulties, whether diagnosed with ADHD or not.",
+        "Is going through personal, social, or school situations that are interfering with their wellbeing or their learning process.",
+        "Needs guidance around decisions related to their studies or academic path."
+      ]
+    },
+    "workSection": {
+      "eyebrow": "The starting point",
+      "title": "What do we work on in sessions?",
+      "p1": "The starting point is an educational-psychology assessment, which helps identify the child or young person's needs, difficulties, and strengths, and shapes the initial goals of the work.",
+      "p2": "From there, the support adjusts to each person's progress and to what comes up in their everyday life: a learning difficulty, organising their planner, homework, a conflict at school, or relationships with classmates.",
+      "blocks": [
+        {
+          "title": "Learning and academic strategies",
+          "description": "We work on specific needs related to reading, comprehension, written expression, spelling, maths, and other learning areas, incorporating techniques to more effectively tackle homework, studying, and exam preparation."
+        },
+        {
+          "title": "Organisation, planning, and autonomy",
+          "description": "Using real tools — planner, notebooks, materials, homework, projects, or exams — we work on organisation, planning, time management, and the progressive development of autonomy and responsibility."
+        },
+        {
+          "title": "Attention and executive functions",
+          "description": "We work on skills such as attention, working memory, planning, flexibility, or inhibition, to help with starting and sustaining a task, following instructions, anticipating, and reviewing what's been done."
+        },
+        {
+          "title": "Personal goals and motivation",
+          "description": "Progressively, I encourage the child or young person to also identify what they want to improve and where they feel they need help. When goals are meaningful to the person, engagement and motivation increase."
+        },
+        {
+          "title": "Self-awareness and confidence",
+          "description": "The child or young person is supported in identifying their strengths and difficulties, understanding better how they learn, and facing difficulties with more confidence in their own abilities."
+        },
+        {
+          "title": "Self-regulation and emotional aspects",
+          "description": "We can work on aspects such as frustration tolerance, insecurity, fear of making mistakes, or impulsivity, when these affect the learning process and everyday life."
+        },
+        {
+          "title": "Social and relational areas",
+          "description": "Relationships with classmates, family, and the wider environment can also be addressed when they affect wellbeing: communication, empathy, boundaries, and conflict resolution."
+        },
+        {
+          "title": "Interests and free time",
+          "description": "Interests, hobbies, sport, and free time provide valuable information about a child's motivations and abilities, and let us build on what already works."
+        }
+      ]
+    },
+    "methodology": {
+      "eyebrow": "Methodology",
+      "title": "How I work",
+      "p1": "Sessions are personalised and adapt to the age, needs, goals, and stage of each child or young person. We can work from the same school materials, combined with activities in reading, writing, reasoning, planning, games, challenges, hands-on materials, or audiovisual resources.",
+      "p2": "I aim for the child or young person to be an active participant in their own process, not a passive recipient of help. That's why I support them in also defining their own goals, understanding what's going on for them, and discovering which strategies work for them."
+    },
+    "process": {
+      "eyebrow": "The process",
+      "title": "How we structure the process",
+      "steps": [
+        {
+          "number": "01",
+          "title": "First meeting with the family",
+          "description": "We gather the initial request, the history and current situation of the child or young person, as well as the family's main concerns, needs, and expectations, together with any available prior information."
+        },
+        {
+          "number": "02",
+          "title": "Educational-psychology assessment",
+          "description": "This helps identify the child or young person's needs, difficulties, and strengths, combining observation, activities and tests, information from the family and, when useful, from the school."
+        },
+        {
+          "number": "03",
+          "title": "Defining the work plan",
+          "description": "Based on the information gathered, we define priority goals and the most suitable strategies, also incorporating what the child or young person themselves identifies as meaningful."
+        },
+        {
+          "number": "04",
+          "title": "Educational-psychology sessions",
+          "description": "We work on the agreed goals through activities and situations adapted to each person, connecting the session work with the real needs of their everyday life."
+        },
+        {
+          "number": "05",
+          "title": "Follow-up with the family",
+          "description": "We have regular check-ins to share progress, review goals, and offer guidance to help sustain the process at home."
+        },
+        {
+          "number": "06",
+          "title": "Coordination with school and other professionals",
+          "description": "When needed, we coordinate with teachers or other professionals to share relevant information and support a coherent approach."
+        },
+        {
+          "number": "07",
+          "title": "Reviewing the process",
+          "description": "Goals and strategies are reviewed periodically and adapted to progress and any new needs that come up."
+        }
+      ]
+    },
+    "modality": {
+      "label": "Format",
+      "p1": "Educational-psychology sessions with children and young people take place in person.",
+      "p2": "Meetings and follow-ups with families, as well as coordination with the school or other professionals, can be in person or online depending on the needs of each case."
+    },
+    "cta": {
+      "title": "Shall we talk about your child's situation?",
+      "lede": "If you'd like to briefly tell me about your situation, we can figure out together what kind of support might be the best fit."
+    }
+  }
+}

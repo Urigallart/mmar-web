@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Container } from "./Container";
 import { Reveal } from "./Reveal";
 
@@ -6,12 +6,12 @@ export function PageHero({
   eyebrow,
   title,
   lede,
-  backLabel = "Tornar a l'inici",
+  backLabel,
 }: {
   eyebrow: string;
   title: string;
   lede: string;
-  backLabel?: string;
+  backLabel: string;
 }) {
   return (
     <section className="pt-32 pb-16 sm:pt-40 sm:pb-20">

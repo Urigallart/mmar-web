@@ -1,7 +1,10 @@
+import { useTranslations } from "next-intl";
 import { Container } from "@/components/Container";
 import { Reveal } from "@/components/Reveal";
 
 export default function ContactSection() {
+  const t = useTranslations("home.contact");
+
   return (
     <section id="contacte" className="py-[var(--section-pad)]">
       <Container>
@@ -14,18 +17,16 @@ export default function ContactSection() {
           <div className="relative grid gap-14 lg:grid-cols-[1.2fr_1fr] lg:items-center">
             <Reveal y={28}>
               <p className="eyebrow mb-5" style={{ color: "var(--color-green-pale)" }}>
-                Parlem-ne
+                {t("eyebrow")}
               </p>
               <h2
                 className="text-balance font-semibold tracking-tight text-paper"
                 style={{ fontSize: "var(--fs-h2)", lineHeight: 1.15 }}
               >
-                Vols explicar-me què t&apos;està passant?
+                {t("title")}
               </h2>
               <p className="mt-5 max-w-lg text-white/65" style={{ fontSize: "var(--fs-lede)" }}>
-                Si no tens clar si necessites iniciar un procés o simplement
-                fer una consulta puntual, podem valorar junts quin format
-                encaixa millor amb la teva situació.
+                {t("lede")}
               </p>
               <a
                 href="https://www.instagram.com/mmar_coach"
@@ -33,16 +34,16 @@ export default function ContactSection() {
                 rel="noopener noreferrer"
                 className="btn btn-primary mt-8 !bg-paper !text-ink hover:!bg-green-pale"
               >
-                Escriu per Instagram
+                {t("ctaInstagram")}
               </a>
             </Reveal>
 
             <Reveal y={28} delay={0.1}>
               <div className="flex flex-col gap-5 border-t border-white/15 pt-8 lg:border-t-0 lg:border-l lg:pl-10 lg:pt-0">
-                <ContactRow label="Ubicació" value="Barcelona · Sarrià–Sant Gervasi" />
-                <ContactRow label="Modalitat" value="Presencial i online" />
-                <ContactRow label="Telèfon / WhatsApp" value="Pendent de confirmar" muted />
-                <ContactRow label="Correu electrònic" value="Pendent de confirmar" muted />
+                <ContactRow label={t("locationLabel")} value={t("locationValue")} />
+                <ContactRow label={t("modalityLabel")} value={t("modalityValue")} />
+                <ContactRow label={t("phoneLabel")} value={t("phoneValue")} muted />
+                <ContactRow label={t("emailLabel")} value={t("emailValue")} muted />
               </div>
             </Reveal>
           </div>

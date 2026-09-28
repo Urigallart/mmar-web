@@ -1,0 +1,321 @@
+{
+  "meta": {
+    "siteName": "Mª del Mar",
+    "title": "Mª del Mar — Psicopedagoga i Coach",
+    "description": "Facilitadora de la teva pròpia evolució. Coaching i consultes puntuals per a joves i adults, i intervenció psicopedagògica per a infants i adolescents, a Barcelona.",
+    "ogDescription": "Facilitadora de la teva pròpia evolució. Coaching i intervenció psicopedagògica a Barcelona."
+  },
+  "nav": {
+    "coaching": "Coaching",
+    "psicopedagogia": "Psicopedagogia",
+    "sobreMi": "Sobre mi",
+    "contacte": "Contacte",
+    "parlemNe": "Parlem-ne",
+    "obrirMenu": "Obrir el menú",
+    "tancarMenu": "Tancar el menú"
+  },
+  "footer": {
+    "tagline": "Psicopedagoga i coach. Consulta presencial a Barcelona, zona Sarrià–Sant Gervasi, i acompanyament online.",
+    "acompanyament": "Acompanyament",
+    "web": "Web",
+    "rights": "Tots els drets reservats.",
+    "location": "Barcelona · Presencial i online"
+  },
+  "common": {
+    "backToHome": "Tornar a l'inici",
+    "writeUs": "Escriu-nos"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Psicopedagoga · Coach · Barcelona",
+      "titleLine1": "Facilitadora de",
+      "titleLine2": "la teva pròpia",
+      "titleLine3": "evolució",
+      "lede": "Dues línies d'acompanyament: coaching i consultes puntuals per a joves i adults, i intervenció psicopedagògica per a infants i adolescents.",
+      "ctaCoaching": "Coaching i consultes",
+      "ctaPsico": "Psicopedagogia",
+      "statValue": "+15 anys",
+      "statLabel": "acompanyant persones i famílies",
+      "scrollCue": "Descobreix més",
+      "photoAlt": "Mª del Mar treballant al seu despatx"
+    },
+    "manifesto": "Cada persona té el seu propi ritme per créixer, i el meu acompanyament hi camina al costat: escoltant, sostenint i ajudant a trobar claredat, confiança i autonomia en cada pas del camí.",
+    "fork": {
+      "eyebrow": "Com t'acompanyo",
+      "title": "Dues línies d'acompanyament, un mateix objectiu",
+      "lede": "Cada procés s'adapta al moment i a les necessitats de la persona. Explora quina línia encaixa amb la teva situació.",
+      "line1Tag": "Línia 1",
+      "line1Title": "Coaching & consultes puntuals",
+      "line1Desc": "Per a joves, adults, professionals, esportistes, mares i pares que volen guanyar claredat, seguretat i benestar.",
+      "line1ImageAlt": "Sessió de coaching amb una persona acompanyada al despatx",
+      "line2Tag": "Línia 2",
+      "line2Title": "Intervenció psicopedagògica",
+      "line2Desc": "Per a infants i adolescents amb dificultats d'atenció, lectoescriptura, organització, motivació o autonomia.",
+      "line2ImageAlt": "Infant treballant l'aprenentatge de manera acompanyada",
+      "explore": "Explorar"
+    },
+    "about": {
+      "eyebrow": "Sobre mi",
+      "quote": "“El meu objectiu és sempre el mateix: que cadascú se senti protagonista del seu propi procés d'evolució.”",
+      "role": "Psicopedagoga i coach",
+      "photoAlt": "Mª del Mar treballant, reflexiva, al seu despatx",
+      "p1": "Soc psicopedagoga i coach i, al llarg de la meva trajectòria, he acompanyat infants, joves i famílies en diferents etapes del seu procés educatiu i personal, treballant aspectes relacionats amb l'aprenentatge, la motivació, l'autonomia i el desenvolupament personal. L'esport ha estat també un àmbit molt present en la meva trajectòria, donant suport a infants, joves i famílies davant els reptes que comporta la pràctica esportiva.",
+      "p2": "Entenc la psicopedagogia i el coaching com dues disciplines diferents però complementàries. El meu enfocament parteix d'una mirada global de la persona: m'interessa conèixer les dificultats que poden aparèixer en l'aprenentatge, comprendre com aprèn cada infant o jove i identificar les estratègies més adequades, tenint en compte també els factors emocionals, socials i personals que hi poden influir.",
+      "p3": "Ofereixo una atenció personalitzada i propera, basada en el vincle, l'escolta i la creació d'un clima de confiança en què cada infant o jove se senti còmode per expressar-se i implicar-se en el procés. Busco que progressivament prengui consciència de les seves fortaleses i necessitats i participi activament en la definició dels seus objectius. Quan és necessari, em coordino amb la família, l'escola i altres professionals.",
+      "p4": "Fora de l'àmbit professional, l'esport, la família, la natura, les relacions personals i continuar aprenent formen part important de la meva vida i també de la manera com entenc el benestar i l'equilibri. M'agrada viure amb curiositat, mantenir-me activa i apreciar aquelles petites coses que donen sentit i qualitat a la vida.",
+      "statYearsValue": "+15",
+      "statYearsLabel": "anys d'experiència",
+      "statLinesValue": "2",
+      "statLinesLabel": "línies d'acompanyament",
+      "statLocationValue": "BCN",
+      "statLocationLabel": "Sarrià–Sant Gervasi",
+      "spaceImageAlt": "El despatx de la Mª del Mar: espai de treball, materials i sessions d'acompanyament",
+      "spaceCaption": "El meu espai a Barcelona — pensat perquè cada sessió sigui un lloc per parar, escoltar i créixer."
+    },
+    "contact": {
+      "eyebrow": "Parlem-ne",
+      "title": "Vols explicar-me què t'està passant?",
+      "lede": "Si no tens clar si necessites iniciar un procés o simplement fer una consulta puntual, podem valorar junts quin format encaixa millor amb la teva situació.",
+      "ctaInstagram": "Escriu per Instagram",
+      "locationLabel": "Ubicació",
+      "locationValue": "Barcelona · Sarrià–Sant Gervasi",
+      "modalityLabel": "Modalitat",
+      "modalityValue": "Presencial i online",
+      "phoneLabel": "Telèfon / WhatsApp",
+      "phoneValue": "Pendent de confirmar",
+      "emailLabel": "Correu electrònic",
+      "emailValue": "Pendent de confirmar"
+    }
+  },
+  "coaching": {
+    "meta": {
+      "title": "Coaching i consultes puntuals",
+      "description": "Coaching personal i consultes puntuals per a joves, adults, professionals, esportistes, mares i pares que volen guanyar claredat, seguretat i benestar."
+    },
+    "hero": {
+      "eyebrow": "Línia 1 · Coaching i consultes puntuals",
+      "title": "Coaching personal i consultes puntuals",
+      "lede": "El coaching ofereix un espai de reflexió i acompanyament per entendre millor com et sents, com estàs vivint una situació, identificar què necessites i avançar cap a més claredat, seguretat i benestar."
+    },
+    "intro": {
+      "p1": "Hi ha moments en què necessitem parar, ordenar el que ens està passant i mirar una situació amb una mica més de perspectiva. Potser tens una decisió important al davant, estàs vivint una etapa de canvi, et costa saber què vols o simplement notes que alguna cosa no acaba de funcionar com voldries.",
+      "p2": "L'acompanyament es pot fer a través d'un procés de diverses sessions o bé mitjançant consultes puntuals, segons el moment i les necessitats de cada persona."
+    },
+    "photoAlt": "Sessió d'acompanyament amb la Mª del Mar",
+    "who": {
+      "eyebrow": "A qui va adreçat",
+      "title": "Quan et pot ajudar un procés de coaching?",
+      "p1": "Treballo amb joves i adults que volen entendre millor una situació, prendre decisions, afrontar nous reptes o generar canvis en algun àmbit de la seva vida.",
+      "p2": "Al llarg dels anys he acompanyat especialment estudiants i joves, professionals, esportistes, mares i pares, així com persones que necessiten recuperar claredat, confiança o direcció en un moment determinat."
+    },
+    "situations": {
+      "eyebrow": "Et sona familiar?",
+      "title": "Situacions que em trobo sovint",
+      "lede": "Més enllà del perfil o del moment vital de cada persona, hi ha situacions que al llarg dels anys he anat trobant de manera recurrent.",
+      "items": [
+        "Estar davant d'una decisió important i sentir que, com més hi penses, menys clar tens què fer.",
+        "Assumir un nou repte o més responsabilitats i començar a dubtar de les pròpies capacitats.",
+        "Sentir que has arribat a un punt en què necessites replantejar prioritats, però no saber per on començar.",
+        "Tenir dificultats per posar límits o expressar el que necessites en determinades relacions.",
+        "Viure amb molta exigència, pressió o expectatives i notar que això comença a afectar la confiança o el benestar.",
+        "Haver de decidir cap on orientar el futur acadèmic o professional i sentir-se insegur davant de les diferents opcions.",
+        "Estar preocupat per una situació familiar i necessitar prendre distància per poder veure-la amb més perspectiva.",
+        "Sentir-se bloquejat, desmotivat o insatisfet sense tenir gaire clar què és exactament el que no funciona.",
+        "Tenir molts fronts oberts i necessitar ordenar prioritats per recuperar sensació de control i equilibri."
+      ],
+      "note": "No cal arribar amb l'objectiu perfectament definit. A vegades, el primer pas del procés és precisament entendre què està passant, què necessites i què voldries que fos diferent."
+    },
+    "areas": {
+      "eyebrow": "Àmbits de treball",
+      "title": "Com et pot ajudar un procés de coaching?",
+      "lede": "Cada procés és diferent i s'adapta a la situació i a les necessitats de cada persona. Alguns dels àmbits que podem treballar són:",
+      "items": [
+        "Autoconeixement i presa de consciència.",
+        "Gestió emocional i benestar personal.",
+        "Confiança, autoestima i seguretat en un mateix.",
+        "Comunicació i assertivitat.",
+        "Relacions personals, familiars o professionals.",
+        "Presa de decisions i definició d'objectius.",
+        "Canvis personals, acadèmics o professionals.",
+        "Organització i gestió de prioritats.",
+        "Equilibri entre els diferents àmbits de la vida.",
+        "Motivació i gestió de la pressió.",
+        "Desenvolupament de recursos personals davant de situacions difícils."
+      ]
+    },
+    "process": {
+      "eyebrow": "El procés",
+      "title": "Com t'acompanyem",
+      "lede": "No hi ha dos processos iguals. El ritme, la durada i els objectius s'adapten sempre a cada persona.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Comprendre on ets",
+          "description": "En les primeres sessions explorem què està passant, què t'ha portat fins aquí i què voldries que fos diferent. Identifiquem necessitats, fortaleses, dificultats i possibles objectius de treball."
+        },
+        {
+          "number": "02",
+          "title": "Definir cap on vols anar",
+          "description": "A partir d'aquí anem concretant objectius i possibles canvis: prendre una decisió que portes temps ajornant, aprendre a posar límits, afrontar un nou repte professional, recuperar confiança o reorganitzar prioritats."
+        },
+        {
+          "number": "03",
+          "title": "Passar de la reflexió a l'acció",
+          "description": "Durant el procés anem introduint accions, noves estratègies i formes diferents d'afrontar les situacions, perquè el que es treballa a les sessions es traslladi progressivament al dia a dia."
+        },
+        {
+          "number": "04",
+          "title": "Consolidar",
+          "description": "En la fase final revisem el camí fet, els canvis assolits i els recursos que has anat adquirint, perquè aquests aprenentatges quedin integrats i puguis continuar avançant amb autonomia."
+        }
+      ]
+    },
+    "punctual": {
+      "title": "Consultes puntuals",
+      "desc": "No sempre és necessari iniciar un procés de diverses sessions. També ofereixo consultes puntuals per a persones que necessiten treballar una situació concreta, prendre una decisió, ordenar idees o disposar d'un espai professional de reflexió i orientació. Una o poques sessions poden ser suficients quan hi ha una necessitat específica i ben delimitada."
+    },
+    "vsPsychology": {
+      "title": "Coaching i psicologia",
+      "desc": "El coaching està orientat principalment al present i al futur, al desenvolupament de recursos i la consecució de canvis o objectius. No substitueix un procés psicològic o terapèutic quan aquest és necessari. Si durant l'acompanyament considero que la necessitat de la persona requereix una intervenció psicològica o d'un altre professional, ho parlarem amb naturalitat i valorarem la millor opció."
+    },
+    "modality": {
+      "label": "Modalitat",
+      "text": "Presencial i online. Consulta presencial a Barcelona, zona Sarrià-Sant Gervasi."
+    },
+    "cta": {
+      "title": "Vols explicar-me què t'està passant?",
+      "lede": "Si no tens clar si necessites iniciar un procés de coaching o simplement fer una consulta puntual, podem valorar quin format encaixa millor."
+    }
+  },
+  "psicopedagogia": {
+    "meta": {
+      "title": "Intervenció psicopedagògica",
+      "description": "Acompanyament personalitzat per a infants i joves amb dificultats o necessitats relacionades amb l'aprenentatge, l'atenció, l'organització, l'autonomia o la motivació."
+    },
+    "hero": {
+      "eyebrow": "Línia 2 · Intervenció psicopedagògica",
+      "title": "Intervenció psicopedagògica",
+      "lede": "Un acompanyament personalitzat adreçat a infants i joves que presenten dificultats o necessitats relacionades amb l'aprenentatge, l'atenció, l'organització, l'autonomia, la motivació o l'adaptació a les demandes escolars."
+    },
+    "intro": {
+      "p1": "Va més enllà del reforç acadèmic. No es treballen únicament els continguts escolars, sinó també els processos que intervenen en l'aprenentatge i aquells factors personals, emocionals i socials que poden estar-hi influint.",
+      "p2": "L'objectiu és ajudar cada infant o jove a comprendre millor com aprèn, identificar què necessita i què vol aconseguir, i desenvolupar estratègies i recursos propis que li permetin avançar amb més autonomia i confiança."
+    },
+    "photoAlt": "Sessió d'intervenció psicopedagògica amb una infant",
+    "audience": {
+      "eyebrow": "A qui pot ajudar",
+      "title": "Quan pot ser adequada la intervenció psicopedagògica?",
+      "lede": "Pot ser adequada quan un infant o jove:",
+      "items": [
+        "Presenta dificultats en lectura, escriptura, comprensió o matemàtiques.",
+        "Estudia i s'esforça, però els resultats no reflecteixen aquest esforç.",
+        "Li costa concentrar-se, mantenir l'atenció o controlar la impulsivitat.",
+        "Té dificultats per organitzar-se, planificar-se o gestionar el temps.",
+        "Necessita constantment un adult que li recordi què ha de fer o l'ajudi a començar i acabar les tasques.",
+        "No sap com estudiar o com preparar de manera eficaç un examen, un treball o els deures.",
+        "Evita les tasques que li resulten difícils, es bloqueja o es frustra amb facilitat.",
+        "Ha perdut motivació o confiança en les seves capacitats.",
+        "Necessita adquirir més autonomia i responsabilitat davant els estudis.",
+        "Presenta dificultats específiques d'aprenentatge, com dislèxia o discalcúlia, o dificultats d'atenció, amb diagnòstic de TDAH o sense.",
+        "Viu situacions personals, socials o escolars que estan interferint en el seu benestar o en el procés d'aprenentatge.",
+        "Necessita orientació davant decisions relacionades amb els estudis o el seu itinerari acadèmic."
+      ]
+    },
+    "workSection": {
+      "eyebrow": "El punt de partida",
+      "title": "Què treballem a les sessions?",
+      "p1": "El punt de partida és l'avaluació psicopedagògica, que permet identificar les necessitats, dificultats i fortaleses de l'infant o jove i orientar els objectius inicials de treball.",
+      "p2": "A partir d'aquí, la intervenció es va ajustant a l'evolució de cada persona i al que va apareixent en el seu dia a dia: una dificultat d'aprenentatge, l'organització de l'agenda, els deures, un conflicte a l'escola o les relacions amb els companys.",
+      "blocks": [
+        {
+          "title": "Aprenentatge i estratègies acadèmiques",
+          "description": "Es treballen les necessitats específiques relacionades amb la lectura, la comprensió, l'expressió escrita, l'ortografia, el càlcul i altres aprenentatges, incorporant tècniques per afrontar de manera més eficaç els deures, l'estudi i la preparació d'exàmens."
+        },
+        {
+          "title": "Organització, planificació i autonomia",
+          "description": "A partir d'eines reals —agenda, llibretes, material, deures, treballs o exàmens— es treballa l'organització, la planificació, la gestió del temps i l'adquisició progressiva d'autonomia i responsabilitat."
+        },
+        {
+          "title": "Atenció i funcions executives",
+          "description": "Es treballen habilitats com l'atenció, la memòria de treball, la planificació, la flexibilitat o la inhibició, per facilitar iniciar i mantenir una tasca, seguir instruccions, anticipar-se i revisar el que s'ha fet."
+        },
+        {
+          "title": "Objectius propis i motivació",
+          "description": "Progressivament, busco que l'infant o jove pugui identificar també què vol millorar i en què considera que necessita ajuda. Quan els objectius tenen sentit per a la persona, augmenten la implicació i la motivació."
+        },
+        {
+          "title": "Autoconeixement i confiança",
+          "description": "S'acompanya l'infant o jove perquè pugui identificar les seves fortaleses i dificultats, entendre millor com aprèn i afrontar les dificultats amb més confiança en les pròpies capacitats."
+        },
+        {
+          "title": "Autoregulació i aspectes emocionals",
+          "description": "Es poden treballar aspectes com la tolerància a la frustració, la inseguretat, la por a equivocar-se o la impulsivitat, quan tenen incidència en el procés d'aprenentatge i en el dia a dia."
+        },
+        {
+          "title": "Àmbit social i relacional",
+          "description": "Les relacions amb els companys, la família i l'entorn també es poden abordar quan tenen incidència en el benestar: comunicació, empatia, límits i resolució de conflictes."
+        },
+        {
+          "title": "Interessos i lleure",
+          "description": "Els interessos, les aficions, l'esport i el temps de lleure aporten informació valuosa sobre les motivacions i capacitats de l'infant, i permeten partir d'allò que ja funciona."
+        }
+      ]
+    },
+    "methodology": {
+      "eyebrow": "Metodologia",
+      "title": "Com treballo?",
+      "p1": "Les sessions són personalitzades i s'adapten a l'edat, les necessitats, els objectius i el moment de cada infant o jove. Podem treballar a partir del mateix material escolar i combinar-lo amb activitats de lectura, escriptura, raonament, planificació, jocs, reptes, material de manipulació o recursos audiovisuals.",
+      "p2": "Busco que l'infant o jove no sigui un receptor passiu de l'ajuda, sinó protagonista del seu procés. Per això, l'acompanyo perquè pugui definir també els seus objectius, comprendre què li passa i descobrir quines estratègies li funcionen."
+    },
+    "process": {
+      "eyebrow": "El procés",
+      "title": "Com estructurem el procés?",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Primera entrevista amb la família",
+          "description": "Es recull la demanda inicial, la història i la situació actual de l'infant o jove, així com les principals preocupacions, necessitats i expectatives de la família, i la informació prèvia disponible."
+        },
+        {
+          "number": "02",
+          "title": "Avaluació psicopedagògica",
+          "description": "Permet conèixer les necessitats, dificultats i fortaleses de l'infant o jove, combinant observació, activitats i proves, la informació de la família i, quan sigui convenient, la de l'escola."
+        },
+        {
+          "number": "03",
+          "title": "Definició del pla de treball",
+          "description": "A partir de la informació recollida es defineixen els objectius prioritaris i les estratègies més adequades, incorporant també els que el mateix infant o jove identifica com a significatius."
+        },
+        {
+          "number": "04",
+          "title": "Sessions d'intervenció psicopedagògica",
+          "description": "Es treballen els objectius establerts a través d'activitats i situacions adaptades a cada persona, connectant el treball de la sessió amb les necessitats reals del seu dia a dia."
+        },
+        {
+          "number": "05",
+          "title": "Seguiment amb la família",
+          "description": "Es fan retorns periòdics per compartir l'evolució, revisar objectius i oferir orientacions que ajudin a donar continuïtat al procés des de casa."
+        },
+        {
+          "number": "06",
+          "title": "Coordinació amb l'escola i altres professionals",
+          "description": "Quan és necessari, es manté coordinació amb tutors, mestres o altres professionals per compartir informació rellevant i afavorir una línia de treball coherent."
+        },
+        {
+          "number": "07",
+          "title": "Revisió del procés",
+          "description": "Els objectius i les estratègies es revisen periòdicament i s'adapten als progressos i a les noves necessitats que van apareixent."
+        }
+      ]
+    },
+    "modality": {
+      "label": "Modalitat",
+      "p1": "Les sessions d'intervenció psicopedagògica amb infants i joves es realitzen de manera presencial.",
+      "p2": "Les entrevistes i els seguiments amb les famílies, així com les coordinacions amb l'escola o altres professionals, poden ser presencials o online segons les necessitats de cada cas."
+    },
+    "cta": {
+      "title": "Parlem de la situació del vostre fill o filla?",
+      "lede": "Si voleu explicar-me breument la vostra situació, podem valorar junts quin tipus d'acompanyament pot ser més adequat."
+    }
+  }
+}
