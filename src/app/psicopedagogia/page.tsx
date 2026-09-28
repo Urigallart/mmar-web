@@ -8,7 +8,6 @@ import { ProcessTimeline } from "@/components/ProcessTimeline";
 import { CtaBanner } from "@/components/CtaBanner";
 import { Reveal } from "@/components/Reveal";
 import { PhotoBand } from "@/components/PhotoBand";
-import { BioSection } from "@/components/BioSection";
 
 export const metadata: Metadata = {
   title: "Intervenció psicopedagògica",
@@ -238,17 +237,7 @@ export default function PsicopedagogiaPage() {
         </Container>
       </section>
 
-      <BioSection
-        image="/images/hero-photo-existing.jpg"
-        imageAlt="Mª del Mar, psicopedagoga i coach, al seu despatx"
-        paragraphs={[
-          "Soc psicopedagoga i coach i, al llarg de la meva trajectòria, he acompanyat infants, joves i famílies en processos relacionats amb l'aprenentatge, l'autonomia, la motivació i el desenvolupament personal.",
-          "La meva manera de treballar parteix d'una mirada global de la persona. M'interessa entendre no només què li costa, sinó també com aprèn, com afronta les dificultats, quines fortaleses té, què necessita i què vol aconseguir.",
-          "Treballo de manera personalitzada i propera, i em coordino, quan és necessari, amb la família, l'escola i altres professionals.",
-        ]}
-      />
-
-      <section className="bg-white py-[var(--section-pad-sm)]">
+      <section className="border-t border-border bg-white py-[var(--section-pad-sm)]">
         <Container className="max-w-3xl">
           <Reveal y={20}>
             <p className="eyebrow mb-4">Modalitat</p>

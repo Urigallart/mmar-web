@@ -7,7 +7,6 @@ import { ProcessTimeline } from "@/components/ProcessTimeline";
 import { CtaBanner } from "@/components/CtaBanner";
 import { Reveal } from "@/components/Reveal";
 import { PhotoBand } from "@/components/PhotoBand";
-import { BioSection } from "@/components/BioSection";
 
 export const metadata: Metadata = {
   title: "Coaching i consultes puntuals",
@@ -215,17 +214,7 @@ export default function CoachingPage() {
         </Container>
       </section>
 
-      <BioSection
-        image="/images/coaching-session.png"
-        imageAlt="Mª del Mar acompanyant una sessió de coaching"
-        paragraphs={[
-          "Com a coach personal, ofereixo un espai proper i personalitzat per poder parar, escoltar-se i mirar amb més perspectiva allò que s'està vivint.",
-          "Acompanyo cada persona a comprendre millor la seva situació, identificar què necessita, descobrir els seus propis recursos i definir els passos que vol fer.",
-          "Entenc el coaching com un procés que combina reflexió, autoconeixement i acció. No es tracta de dir a la persona què ha de fer, sinó d'ajudar-la a trobar les seves pròpies respostes.",
-        ]}
-      />
-
-      <section className="bg-white py-[var(--section-pad-sm)]">
+      <section className="border-t border-border bg-white py-[var(--section-pad-sm)]">
         <Container className="max-w-3xl">
           <Reveal y={20}>
             <p className="eyebrow mb-4">Modalitat</p>
