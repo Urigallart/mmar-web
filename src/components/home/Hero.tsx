@@ -14,42 +14,42 @@ const RIGHT_X = "-4%";
 
 const STICKERS: IconBadgeSpec[] = [
   {
-    src: "/images/icons-flat/mente-creativa.png",
+    src: "/images/icons-green/mente-creativa.png",
     alt: "Ment creativa",
     size: 130,
     rotate: -7,
     style: { left: LEFT_X, top: "-30px" },
   },
   {
-    src: "/images/icons-flat/mental.png",
+    src: "/images/icons-green/mental.png",
     alt: "Benestar mental",
     size: 110,
     rotate: 6,
     style: { left: LEFT_X, top: "165px" },
   },
   {
-    src: "/images/icons-flat/psicologia-2.png",
+    src: "/images/icons-green/psicologia-2.png",
     alt: "Sessió d'acompanyament",
     size: 125,
     rotate: -6,
     style: { left: LEFT_X, top: "320px" },
   },
   {
-    src: "/images/icons-flat/justicia-social.png",
+    src: "/images/icons-green/justicia-social.png",
     alt: "Suport i acompanyament",
     size: 125,
     rotate: 7,
     style: { right: RIGHT_X, top: "50px" },
   },
   {
-    src: "/images/icons-flat/liderazgo.png",
+    src: "/images/icons-green/liderazgo.png",
     alt: "Creixement personal",
     size: 115,
     rotate: -6,
     style: { right: RIGHT_X, top: "225px" },
   },
   {
-    src: "/images/icons-flat/familia.png",
+    src: "/images/icons-green/familia.png",
     alt: "Família",
     size: 135,
     rotate: 6,
