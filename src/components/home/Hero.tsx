@@ -159,7 +159,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={rootRef} className="relative pt-32 pb-20 sm:pt-40 sm:pb-28">
+    <section
+      ref={rootRef}
+      className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-24 lg:pb-8 [@media(max-height:800px)]:lg:pt-20 [@media(max-height:800px)]:lg:pb-6"
+    >
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
         <div
           className="absolute -top-40 right-[-10%] h-[520px] w-[520px] rounded-full opacity-60 blur-3xl"
@@ -208,7 +211,7 @@ export default function Hero() {
         </div>
 
         <div className="relative">
-          <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-md lg:ml-auto">
+          <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-md lg:ml-auto lg:max-w-sm lg:max-h-[46vh]">
             <Image
               src="/images/hero-photo-existing.jpg"
               alt={t("photoAlt")}
@@ -225,7 +228,7 @@ export default function Hero() {
         </div>
       </Container>
 
-      <div className="hero-scroll-cue mt-16 flex justify-center opacity-0">
+      <div className="hero-scroll-cue mt-10 flex justify-center opacity-0 lg:mt-5 [@media(max-height:800px)]:lg:mt-3">
         <div className="flex flex-col items-center gap-2 text-ink-dim">
           <span className="text-[0.7rem] font-medium uppercase tracking-[0.2em]">{t("scrollCue")}</span>
           <span className="h-9 w-px animate-pulse bg-border-strong" />
