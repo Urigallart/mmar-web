@@ -57,6 +57,60 @@ const STICKERS: IconBadgeSpec[] = [
   },
 ];
 
+type MobileStickerSpec = {
+  src: string;
+  alt: string;
+  size: number;
+  rotate: number;
+  opacity: number;
+  style: React.CSSProperties;
+};
+
+const MOBILE_STICKERS: MobileStickerSpec[] = [
+  {
+    src: "/images/icons-green/mente-creativa.png",
+    alt: "",
+    size: 46,
+    rotate: -10,
+    opacity: 0.4,
+    style: { right: "6%", top: "0px" },
+  },
+  {
+    src: "/images/icons-green/liderazgo.png",
+    alt: "",
+    size: 42,
+    rotate: -6,
+    opacity: 0.32,
+    style: { right: "26%", top: "58px" },
+  },
+  {
+    src: "/images/icons-green/familia.png",
+    alt: "",
+    size: 40,
+    rotate: 8,
+    opacity: 0.3,
+    style: { right: "0%", top: "78px" },
+  },
+];
+
+function MobileSticker({ spec }: { spec: MobileStickerSpec }) {
+  return (
+    <div
+      aria-hidden
+      className="pointer-events-none absolute"
+      style={{
+        width: spec.size,
+        height: spec.size,
+        rotate: `${spec.rotate}deg`,
+        opacity: spec.opacity,
+        ...spec.style,
+      }}
+    >
+      <Image src={spec.src} alt="" fill sizes={`${spec.size}px`} className="object-contain" />
+    </div>
+  );
+}
+
 export default function Hero() {
   const t = useTranslations("home.hero");
   const rootRef = useRef<HTMLDivElement>(null);
@@ -174,6 +228,14 @@ export default function Hero() {
         <Container className="relative h-full">
           {STICKERS.map((spec) => (
             <IconBadge key={spec.src} spec={spec} />
+          ))}
+        </Container>
+      </div>
+
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-32 overflow-hidden lg:hidden">
+        <Container className="relative h-full">
+          {MOBILE_STICKERS.map((spec) => (
+            <MobileSticker key={spec.src} spec={spec} />
           ))}
         </Container>
       </div>
