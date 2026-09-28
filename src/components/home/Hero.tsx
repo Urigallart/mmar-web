@@ -9,7 +9,7 @@ import { prefersReducedMotion } from "@/lib/motion";
 import { Container } from "@/components/Container";
 import { IconBadge, type IconBadgeSpec } from "@/components/IconBadge";
 
-const LEFT_X = "-10%";
+const LEFT_X = "-4%";
 const RIGHT_X = "-4%";
 
 const STICKERS: IconBadgeSpec[] = [
@@ -161,7 +161,7 @@ export default function Hero() {
   return (
     <section
       ref={rootRef}
-      className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-24 lg:pb-8 [@media(max-height:800px)]:lg:pt-20 [@media(max-height:800px)]:lg:pb-6"
+      className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-28 lg:pb-8 [@media(max-height:800px)]:lg:pt-24 [@media(max-height:800px)]:lg:pb-6"
     >
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
         <div
@@ -211,7 +211,7 @@ export default function Hero() {
         </div>
 
         <div className="relative">
-          <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-md lg:ml-auto lg:max-w-sm lg:max-h-[46vh]">
+          <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-md lg:ml-auto lg:max-h-[56vh]">
             <Image
               src="/images/hero-photo-existing.jpg"
               alt={t("photoAlt")}
