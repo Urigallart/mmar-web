@@ -27,7 +27,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
           aria-current={loc === locale}
           onClick={() => router.replace(pathname, { locale: loc })}
           className={clsx(
-            "overflow-hidden rounded-[5px] ring-1 ring-inset transition-all duration-300",
+            "overflow-hidden rounded-[5px] ring-1 ring-inset transition-all duration-300 focus-visible:[outline-offset:-2px]",
             loc === locale
               ? "ring-ink scale-100 opacity-100"
               : "ring-black/10 scale-[0.9] opacity-55 hover:scale-100 hover:opacity-90"

@@ -17,7 +17,7 @@ export function CtaBanner({
     <section className="py-[var(--section-pad-sm)]">
       <Container>
         <Reveal y={24}>
-          <div className="relative flex flex-col items-start gap-6 overflow-hidden rounded-[calc(var(--radius-card)+8px)] bg-ink px-8 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-12 sm:py-12">
+          <div className="dark-surface relative flex flex-col items-start gap-6 overflow-hidden rounded-[calc(var(--radius-card)+8px)] bg-ink px-8 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-12 sm:py-12">
             <div
               aria-hidden
               className="pointer-events-none absolute -right-24 -top-24 h-[380px] w-[380px] rounded-full opacity-30 blur-3xl"

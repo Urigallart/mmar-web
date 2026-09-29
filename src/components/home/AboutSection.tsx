@@ -36,12 +36,12 @@ export default function AboutSection() {
             <p className="eyebrow mb-4">{t("eyebrow")}</p>
           </Reveal>
           <Reveal y={24} delay={0.05}>
-            <p
+            <h2
               className="font-medium tracking-tight text-balance text-ink"
               style={{ fontSize: "var(--fs-h3)", lineHeight: 1.4 }}
             >
               {t("quote")}
-            </p>
+            </h2>
           </Reveal>
 
           <div className="mt-7 flex flex-col gap-6 text-ink-dim" style={{ fontSize: "var(--fs-lede)", lineHeight: 1.6 }}>

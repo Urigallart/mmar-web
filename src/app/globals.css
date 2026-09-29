@@ -73,6 +73,16 @@ a {
   color: inherit;
 }
 
+:focus-visible {
+  outline: 2px solid var(--focus-color, var(--color-green-deep));
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.dark-surface {
+  --focus-color: var(--color-green-pale);
+}
+
 .container-page {
   width: 100%;
   max-width: var(--container-max);
@@ -156,6 +166,10 @@ a {
     transform 0.6s var(--ease-out),
     box-shadow 0.6s var(--ease-out),
     border-color 0.6s var(--ease-out);
+}
+
+.card-hover:focus-visible {
+  outline-offset: -3px;
 }
 
 .text-balance {

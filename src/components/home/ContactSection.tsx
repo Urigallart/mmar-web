@@ -9,7 +9,7 @@ export default function ContactSection() {
   return (
     <section id="contacte" className="py-[var(--section-pad)]">
       <Container>
-        <div className="relative overflow-hidden rounded-[calc(var(--radius-card)+8px)] bg-ink px-8 py-16 sm:px-16 sm:py-20">
+        <div className="dark-surface relative overflow-hidden rounded-[calc(var(--radius-card)+8px)] bg-ink px-8 py-16 sm:px-16 sm:py-20">
           <div
             aria-hidden
             className="pointer-events-none absolute -right-24 -top-24 h-[380px] w-[380px] rounded-full opacity-30 blur-3xl"

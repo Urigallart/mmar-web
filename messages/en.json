@@ -32,7 +32,8 @@
       "otherPlaceholder": "Please specify...",
       "yes": "Yes",
       "no": "No"
-    }
+    },
+    "close": "Close"
   },
   "home": {
     "hero": {

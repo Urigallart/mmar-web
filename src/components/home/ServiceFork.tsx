@@ -37,7 +37,7 @@ export default function ServiceFork() {
             <Reveal key={service.href} delay={i * 0.1} y={40}>
               <Link
                 href={service.href}
-                className="card-hover group relative flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] border border-border bg-white"
+                className="card-hover group relative flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] border border-border bg-white hover:-translate-y-1 hover:border-border-strong hover:shadow-[0_30px_60px_-30px_rgba(32,43,40,0.35)]"
               >
                 <div className="relative aspect-[16/11] w-full overflow-hidden bg-green-pale">
                   <Image

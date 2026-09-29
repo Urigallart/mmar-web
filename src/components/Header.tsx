@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import clsx from "clsx";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { lenisRef } from "@/lib/lenis";
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -28,9 +29,26 @@ export default function Header() {
 
   useEffect(() => {
     document.documentElement.style.overflow = menuOpen ? "hidden" : "";
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    if (menuOpen) {
+      lenisRef.current?.stop();
+    } else {
+      lenisRef.current?.start();
+    }
     return () => {
       document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+      lenisRef.current?.start();
     };
+  }, [menuOpen]);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
   }, [menuOpen]);
 
   return (
@@ -45,6 +63,7 @@ export default function Header() {
         >
           <Link
             href="/"
+            aria-label="Mª del Mar"
             className="flex items-center gap-2 rounded-full px-2 py-1 text-[0.95rem] font-semibold tracking-tight text-ink"
             onClick={() => setMenuOpen(false)}
           >
@@ -101,6 +120,9 @@ export default function Header() {
       </header>
 
       <div
+        role="dialog"
+        aria-modal="true"
+        aria-hidden={!menuOpen}
         className={clsx(
           "fixed inset-0 z-40 flex flex-col justify-center bg-paper px-8 transition-opacity duration-400 lg:hidden",
           menuOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"

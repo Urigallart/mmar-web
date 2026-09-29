@@ -41,7 +41,7 @@ export function ContactForm({ variant }: { variant: "coaching" | "psicopedagogia
 
   if (status === "success") {
     return (
-      <div className="py-6 text-center">
+      <div role="status" className="py-6 text-center">
         <p className="font-medium text-ink" style={{ fontSize: "var(--fs-h3)" }}>
           {tCommon("success")}
         </p>
@@ -98,7 +98,11 @@ export function ContactForm({ variant }: { variant: "coaching" | "psicopedagogia
           <Field label={t("emailLabel")} name="email" type="email" required />
         </div>
 
-        {status === "error" && <p className="text-sm text-red-600">{tCommon("error")}</p>}
+        {status === "error" && (
+          <p role="alert" className="text-sm text-red-600">
+            {tCommon("error")}
+          </p>
+        )}
 
         <button type="submit" disabled={status === "sending"} className="btn btn-primary w-fit disabled:opacity-60">
           {status === "sending" ? tCommon("sending") : tCommon("submit")}

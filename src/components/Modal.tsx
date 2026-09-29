@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useSyncExternalStore } from "react";
+import { useEffect, useRef, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
+import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import { lenisRef } from "@/lib/lenis";
 
@@ -24,7 +25,9 @@ export function Modal({
   onClose: () => void;
   children: React.ReactNode;
 }) {
+  const t = useTranslations("common");
   const isClient = useSyncExternalStore(subscribeNoop, getClientSnapshot, getServerSnapshot);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!open) return;
@@ -35,6 +38,7 @@ export function Modal({
     document.documentElement.style.overflow = "hidden";
     document.body.style.overflow = "hidden";
     lenisRef.current?.stop();
+    closeButtonRef.current?.focus();
     return () => {
       document.removeEventListener("keydown", onKey);
       document.documentElement.style.overflow = "";
@@ -61,6 +65,8 @@ export function Modal({
         )}
       />
       <div
+        role="dialog"
+        aria-modal="true"
         className={clsx(
           "relative flex w-full max-w-2xl flex-col overflow-hidden rounded-[var(--radius-card)] bg-paper shadow-[0_30px_80px_-20px_rgba(32,43,40,0.45)] transition-all duration-300",
           open ? "translate-y-0 scale-100 opacity-100" : "translate-y-4 scale-[0.98] opacity-0"
@@ -68,9 +74,10 @@ export function Modal({
         style={{ maxHeight: "min(85vh, 900px)" }}
       >
         <button
+          ref={closeButtonRef}
           type="button"
           onClick={onClose}
-          aria-label="Close"
+          aria-label={t("close")}
           className="absolute right-5 top-5 z-10 grid h-9 w-9 flex-shrink-0 place-items-center rounded-full border border-border-strong bg-paper text-ink transition-colors hover:border-ink"
         >
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
