@@ -1,8 +1,19 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useSyncExternalStore } from "react";
+import { createPortal } from "react-dom";
 import clsx from "clsx";
 import { lenisRef } from "@/lib/lenis";
+
+function subscribeNoop() {
+  return () => {};
+}
+function getClientSnapshot() {
+  return true;
+}
+function getServerSnapshot() {
+  return false;
+}
 
 export function Modal({
   open,
@@ -13,6 +24,8 @@ export function Modal({
   onClose: () => void;
   children: React.ReactNode;
 }) {
+  const isClient = useSyncExternalStore(subscribeNoop, getClientSnapshot, getServerSnapshot);
+
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -30,7 +43,9 @@ export function Modal({
     };
   }, [open, onClose]);
 
-  return (
+  if (!isClient) return null;
+
+  return createPortal(
     <div
       aria-hidden={!open}
       className={clsx(
@@ -69,6 +84,7 @@ export function Modal({
           {children}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
