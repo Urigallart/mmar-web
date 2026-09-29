@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/Container";
 import { Reveal } from "@/components/Reveal";
+import { HomeContactButtons } from "./HomeContactButtons";
 
 export default function ContactSection() {
   const t = useTranslations("home.contact");
@@ -28,14 +29,7 @@ export default function ContactSection() {
               <p className="mt-5 max-w-lg text-white/65" style={{ fontSize: "var(--fs-lede)" }}>
                 {t("lede")}
               </p>
-              <a
-                href="https://www.instagram.com/mmar_coach"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary mt-8 !bg-paper !text-ink hover:!bg-green-pale"
-              >
-                {t("ctaInstagram")}
-              </a>
+              <HomeContactButtons instagramLabel={t("ctaInstagram")} />
             </Reveal>
 
             <Reveal y={28} delay={0.1}>
