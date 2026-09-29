@@ -11,8 +11,8 @@ export default function Footer() {
       <Container className="flex flex-col gap-10 py-14 sm:flex-row sm:items-start sm:justify-between">
         <div className="max-w-xs">
           <Link href="/" className="flex items-center gap-2 text-[0.95rem] font-semibold text-ink">
-            <span className="relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-full">
-              <Image src="/images/logo-mark.png" alt="" fill sizes="36px" className="object-cover" />
+            <span className="relative h-7 w-[108px] flex-shrink-0">
+              <Image src="/images/logo-mark-black.png" alt="" fill sizes="108px" className="object-contain" />
             </span>
             Mª del Mar
           </Link>

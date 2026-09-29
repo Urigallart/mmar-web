@@ -48,8 +48,8 @@ export default function Header() {
             className="flex items-center gap-2 rounded-full px-2 py-1 text-[0.95rem] font-semibold tracking-tight text-ink"
             onClick={() => setMenuOpen(false)}
           >
-            <span className="relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-full">
-              <Image src="/images/logo-mark.png" alt="" fill sizes="36px" className="object-cover" />
+            <span className="relative h-7 w-[108px] flex-shrink-0">
+              <Image src="/images/logo-mark-black.png" alt="" fill sizes="108px" className="object-contain" />
             </span>
             <span className="hidden sm:inline">Mª del Mar</span>
           </Link>
