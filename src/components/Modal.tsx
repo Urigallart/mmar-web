@@ -19,9 +19,11 @@ export function Modal({
     };
     document.addEventListener("keydown", onKey);
     document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
     return () => {
       document.removeEventListener("keydown", onKey);
       document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
     };
   }, [open, onClose]);
 
@@ -29,7 +31,7 @@ export function Modal({
     <div
       aria-hidden={!open}
       className={clsx(
-        "fixed inset-0 z-[60] flex items-start justify-center overflow-y-auto px-4 py-10 sm:py-16",
+        "fixed inset-0 z-[60] flex items-center justify-center px-4 py-6 sm:py-10",
         open ? "pointer-events-auto" : "pointer-events-none"
       )}
     >
@@ -42,21 +44,22 @@ export function Modal({
       />
       <div
         className={clsx(
-          "relative w-full max-w-2xl rounded-[var(--radius-card)] bg-paper px-6 py-10 shadow-[0_30px_80px_-20px_rgba(32,43,40,0.45)] transition-all duration-300 sm:px-12 sm:py-12",
+          "relative flex w-full max-w-2xl flex-col overflow-hidden rounded-[var(--radius-card)] bg-paper shadow-[0_30px_80px_-20px_rgba(32,43,40,0.45)] transition-all duration-300",
           open ? "translate-y-0 scale-100 opacity-100" : "translate-y-4 scale-[0.98] opacity-0"
         )}
+        style={{ maxHeight: "min(85vh, 900px)" }}
       >
         <button
           type="button"
           onClick={onClose}
           aria-label="Close"
-          className="absolute right-5 top-5 grid h-9 w-9 place-items-center rounded-full border border-border-strong text-ink transition-colors hover:border-ink"
+          className="absolute right-5 top-5 z-10 grid h-9 w-9 flex-shrink-0 place-items-center rounded-full border border-border-strong bg-paper text-ink transition-colors hover:border-ink"
         >
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
             <path d="M3 3L13 13M13 3L3 13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
           </svg>
         </button>
-        {children}
+        <div className="overflow-y-auto overscroll-contain px-6 py-10 sm:px-12 sm:py-12">{children}</div>
       </div>
     </div>
   );
