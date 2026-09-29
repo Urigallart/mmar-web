@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "./Container";
@@ -10,8 +11,8 @@ export default function Footer() {
       <Container className="flex flex-col gap-10 py-14 sm:flex-row sm:items-start sm:justify-between">
         <div className="max-w-xs">
           <Link href="/" className="flex items-center gap-2 text-[0.95rem] font-semibold text-ink">
-            <span className="grid h-8 w-8 place-items-center rounded-full bg-ink text-[0.8rem] font-bold text-paper">
-              M
+            <span className="relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-full">
+              <Image src="/images/logo-mark.png" alt="" fill sizes="36px" className="object-cover" />
             </span>
             Mª del Mar
           </Link>
