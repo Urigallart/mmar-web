@@ -99,7 +99,7 @@ export default function Hero() {
 
     if (prefersReducedMotion()) {
       gsap.set(
-        ".hero-kicker, .hero-line, .hero-lede, .hero-cta, .hero-media, .hero-scroll-cue, .icon-badge",
+        ".hero-kicker, .hero-line, .hero-lede, .hero-cta, .hero-media, .icon-badge",
         { opacity: 1, y: 0, scale: 1 }
       );
       return;
@@ -136,12 +136,6 @@ export default function Hero() {
           { opacity: 0, scale: 1.06 },
           { opacity: 1, scale: 1, duration: 1.3, ease: "power2.out" },
           0.35
-        )
-        .fromTo(
-          ".hero-scroll-cue",
-          { opacity: 0 },
-          { opacity: 1, duration: 0.6 },
-          1.2
         )
         .fromTo(
           ".icon-badge",
@@ -267,13 +261,6 @@ export default function Hero() {
           </div>
         </div>
       </Container>
-
-      <div className="hero-scroll-cue mt-10 flex justify-center opacity-0 lg:mt-5 [@media(max-height:800px)]:lg:mt-3">
-        <div className="flex flex-col items-center gap-2 text-ink-dim">
-          <span className="text-[0.7rem] font-medium uppercase tracking-[0.2em]">{t("scrollCue")}</span>
-          <span className="h-9 w-px animate-pulse bg-border-strong" />
-        </div>
-      </div>
     </section>
   );
 }
