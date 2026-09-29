@@ -220,7 +220,7 @@ export default function Hero() {
 
       <Container className="relative grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
         <div>
-          <p className="hero-kicker eyebrow mb-6">{t("kicker")}</p>
+          <p className="hero-kicker eyebrow mb-6 mt-2 lg:mt-4 [@media(max-height:800px)]:lg:mt-1">{t("kicker")}</p>
           <h1
             className="font-semibold tracking-tight text-ink"
             style={{ fontSize: "var(--fs-display)", lineHeight: 1.02 }}
