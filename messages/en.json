@@ -103,16 +103,6 @@
       "lede": "ICF-certified coaching and specialised training in educational psychology, always evolving.",
       "items": [
         {
-          "title": "Postgraduate in Existential Coaching",
-          "org": "Escola de Coaching Existencial · ICF Certified",
-          "years": "2015–2016"
-        },
-        {
-          "title": "Postgraduate in Integrative Coaching (Life Coaching)",
-          "org": "Institut Integratiu Barcelona · ICF Certified",
-          "years": "2014–2015"
-        },
-        {
           "title": "Degree in Educational Psychology",
           "org": "Universitat Ramon Llull · Blanquerna Faculty",
           "years": "1992–1997"
@@ -121,6 +111,16 @@
           "title": "Postgraduate in School Diversity Support",
           "org": "Universitat Autònoma de Barcelona (UAB)",
           "years": "1997–1998"
+        },
+        {
+          "title": "Postgraduate in Integrative Coaching (Life Coaching)",
+          "org": "Institut Integratiu Barcelona · ICF Certified",
+          "years": "2014–2015"
+        },
+        {
+          "title": "Postgraduate in Existential Coaching",
+          "org": "Escola de Coaching Existencial · ICF Certified",
+          "years": "2015–2016"
         },
         {
           "title": "Certificate in Sports & High-Performance Psychology",

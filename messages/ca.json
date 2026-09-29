@@ -103,16 +103,6 @@
       "lede": "Coaching certificat per ICF i formació especialitzada en psicopedagogia, sempre en actualització.",
       "items": [
         {
-          "title": "Postgrau en Coaching Existencial",
-          "org": "Escola de Coaching Existencial · Certificat ICF",
-          "years": "2015–2016"
-        },
-        {
-          "title": "Postgrau en Coaching Integratiu (Life Coaching)",
-          "org": "Institut Integratiu Barcelona · Certificat ICF",
-          "years": "2014–2015"
-        },
-        {
           "title": "Llicenciatura en Psicopedagogia",
           "org": "Universitat Ramon Llull · Facultat Blanquerna",
           "years": "1992–1997"
@@ -121,6 +111,16 @@
           "title": "Postgrau en atenció a la diversitat escolar",
           "org": "Universitat Autònoma de Barcelona (UAB)",
           "years": "1997–1998"
+        },
+        {
+          "title": "Postgrau en Coaching Integratiu (Life Coaching)",
+          "org": "Institut Integratiu Barcelona · Certificat ICF",
+          "years": "2014–2015"
+        },
+        {
+          "title": "Postgrau en Coaching Existencial",
+          "org": "Escola de Coaching Existencial · Certificat ICF",
+          "years": "2015–2016"
         },
         {
           "title": "Certificat en Psicologia de l'esport i alt rendiment",
