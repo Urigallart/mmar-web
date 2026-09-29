@@ -10,7 +10,6 @@ import { Container } from "@/components/Container";
 import { IconBadge, type IconBadgeSpec } from "@/components/IconBadge";
 
 const LEFT_X = "-4%";
-const RIGHT_X = "-4%";
 
 const STICKERS: IconBadgeSpec[] = [
   {
@@ -33,27 +32,6 @@ const STICKERS: IconBadgeSpec[] = [
     size: 125,
     rotate: -6,
     style: { left: LEFT_X, top: "380px" },
-  },
-  {
-    src: "/images/icons-green/justicia-social.png",
-    alt: "Suport i acompanyament",
-    size: 125,
-    rotate: 7,
-    style: { right: RIGHT_X, top: "50px" },
-  },
-  {
-    src: "/images/icons-green/liderazgo.png",
-    alt: "Creixement personal",
-    size: 115,
-    rotate: -6,
-    style: { right: RIGHT_X, top: "225px" },
-  },
-  {
-    src: "/images/icons-green/familia.png",
-    alt: "Família",
-    size: 135,
-    rotate: 6,
-    style: { right: RIGHT_X, top: "380px" },
   },
 ];
 
