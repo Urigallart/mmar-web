@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Container } from "./Container";
-import { Reveal } from "./Reveal";
 
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
@@ -43,87 +41,71 @@ export function ContactForm({ variant }: { variant: "coaching" | "psicopedagogia
 
   if (status === "success") {
     return (
-      <section className="py-[var(--section-pad-sm)]">
-        <Container className="max-w-3xl">
-          <Reveal y={20}>
-            <div className="rounded-[var(--radius-card)] border border-border bg-white px-8 py-12 text-center">
-              <p className="font-medium text-ink" style={{ fontSize: "var(--fs-h3)" }}>
-                {tCommon("success")}
-              </p>
-            </div>
-          </Reveal>
-        </Container>
-      </section>
+      <div className="py-6 text-center">
+        <p className="font-medium text-ink" style={{ fontSize: "var(--fs-h3)" }}>
+          {tCommon("success")}
+        </p>
+      </div>
     );
   }
 
   return (
-    <section className="py-[var(--section-pad-sm)]">
-      <Container className="max-w-3xl">
-        <Reveal y={20}>
-          <p className="eyebrow mb-4">{t("eyebrow")}</p>
-          <p className="mb-10 text-ink-dim" style={{ fontSize: "var(--fs-lede)", lineHeight: 1.6 }}>
-            {t("title")}
-          </p>
+    <div>
+      <p className="eyebrow mb-4">{t("eyebrow")}</p>
+      <p className="mb-8 text-ink-dim" style={{ fontSize: "var(--fs-lede)", lineHeight: 1.6 }}>
+        {t("title")}
+      </p>
 
-          <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-            {variant === "psicopedagogia" ? (
-              <>
-                <Field label={t("guardianLabel")} name="guardian_name" required />
-                <Field label={t("childLabel")} name="child_name_age" required />
-                <Field label={t("schoolYearLabel")} name="school_year" />
-              </>
-            ) : (
-              <Field label={t("nameLabel")} name="full_name" required />
-            )}
+      <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+        {variant === "psicopedagogia" ? (
+          <>
+            <Field label={t("guardianLabel")} name="guardian_name" required />
+            <Field label={t("childLabel")} name="child_name_age" required />
+            <Field label={t("schoolYearLabel")} name="school_year" />
+          </>
+        ) : (
+          <Field label={t("nameLabel")} name="full_name" required />
+        )}
 
-            <CheckboxGroup
-              label={variant === "coaching" ? t("focusLabel") : t("areasLabel")}
-              name={variant === "coaching" ? "focus" : "areas"}
-              options={focusOrAreasOptions}
-              otherOption={otherOption}
-              otherPlaceholder={tCommon("otherPlaceholder")}
+        <CheckboxGroup
+          label={variant === "coaching" ? t("focusLabel") : t("areasLabel")}
+          name={variant === "coaching" ? "focus" : "areas"}
+          options={focusOrAreasOptions}
+          otherOption={otherOption}
+          otherPlaceholder={tCommon("otherPlaceholder")}
+        />
+
+        {variant === "coaching" ? (
+          <>
+            <TextArea label={t("motivationLabel")} name="motivation" />
+            <TextArea label={t("goalLabel")} name="goal" />
+            <Field label={t("contextLabel")} name="context" />
+          </>
+        ) : (
+          <>
+            <TextArea label={t("concernLabel")} name="concern" />
+            <RadioGroup
+              label={t("priorSupportLabel")}
+              name="prior_support"
+              yesLabel={tCommon("yes")}
+              noLabel={tCommon("no")}
             />
+          </>
+        )}
 
-            {variant === "coaching" ? (
-              <>
-                <TextArea label={t("motivationLabel")} name="motivation" />
-                <TextArea label={t("goalLabel")} name="goal" />
-                <Field label={t("contextLabel")} name="context" />
-              </>
-            ) : (
-              <>
-                <TextArea label={t("concernLabel")} name="concern" />
-                <RadioGroup
-                  label={t("priorSupportLabel")}
-                  name="prior_support"
-                  yesLabel={tCommon("yes")}
-                  noLabel={tCommon("no")}
-                />
-              </>
-            )}
+        <div className="grid gap-6 sm:grid-cols-2">
+          <Field label={t("phoneLabel")} name="phone" type="tel" />
+          <Field label={t("emailLabel")} name="email" type="email" required />
+        </div>
 
-            <div className="grid gap-6 sm:grid-cols-2">
-              <Field label={t("phoneLabel")} name="phone" type="tel" />
-              <Field label={t("emailLabel")} name="email" type="email" required />
-            </div>
+        {status === "error" && <p className="text-sm text-red-600">{tCommon("error")}</p>}
 
-            {status === "error" && (
-              <p className="text-sm text-red-600">{tCommon("error")}</p>
-            )}
-
-            <button
-              type="submit"
-              disabled={status === "sending"}
-              className="btn btn-primary w-fit disabled:opacity-60"
-            >
-              {status === "sending" ? tCommon("sending") : tCommon("submit")}
-              <ArrowIcon />
-            </button>
-          </form>
-        </Reveal>
-      </Container>
-    </section>
+        <button type="submit" disabled={status === "sending"} className="btn btn-primary w-fit disabled:opacity-60">
+          {status === "sending" ? tCommon("sending") : tCommon("submit")}
+          <ArrowIcon />
+        </button>
+      </form>
+    </div>
   );
 }
 

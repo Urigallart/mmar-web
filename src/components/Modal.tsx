@@ -1,0 +1,63 @@
+"use client";
+
+import { useEffect } from "react";
+import clsx from "clsx";
+
+export function Modal({
+  open,
+  onClose,
+  children,
+}: {
+  open: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}) {
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", onKey);
+    document.documentElement.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.documentElement.style.overflow = "";
+    };
+  }, [open, onClose]);
+
+  return (
+    <div
+      aria-hidden={!open}
+      className={clsx(
+        "fixed inset-0 z-[60] flex items-start justify-center overflow-y-auto px-4 py-10 sm:py-16",
+        open ? "pointer-events-auto" : "pointer-events-none"
+      )}
+    >
+      <div
+        onClick={onClose}
+        className={clsx(
+          "fixed inset-0 bg-ink/50 backdrop-blur-sm transition-opacity duration-300",
+          open ? "opacity-100" : "opacity-0"
+        )}
+      />
+      <div
+        className={clsx(
+          "relative w-full max-w-2xl rounded-[var(--radius-card)] bg-paper px-6 py-10 shadow-[0_30px_80px_-20px_rgba(32,43,40,0.45)] transition-all duration-300 sm:px-12 sm:py-12",
+          open ? "translate-y-0 scale-100 opacity-100" : "translate-y-4 scale-[0.98] opacity-0"
+        )}
+      >
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close"
+          className="absolute right-5 top-5 grid h-9 w-9 place-items-center rounded-full border border-border-strong text-ink transition-colors hover:border-ink"
+        >
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+            <path d="M3 3L13 13M13 3L3 13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          </svg>
+        </button>
+        {children}
+      </div>
+    </div>
+  );
+}

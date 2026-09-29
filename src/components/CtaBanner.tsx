@@ -6,10 +6,12 @@ export function CtaBanner({
   title,
   lede,
   ctaLabel,
+  onClick,
 }: {
   title: string;
   lede: string;
   ctaLabel: string;
+  onClick?: () => void;
 }) {
   return (
     <section className="py-[var(--section-pad-sm)]">
@@ -22,20 +24,37 @@ export function CtaBanner({
               </h2>
               <p className="mt-2.5 text-ink-dim">{lede}</p>
             </div>
-            <Link href="/#contacte" className="btn btn-primary flex-shrink-0">
-              {ctaLabel}
-              <span className="btn-arrow bg-paper text-ink">
-                <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
-                  <path
-                    d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Link>
+            {onClick ? (
+              <button type="button" onClick={onClick} className="btn btn-primary flex-shrink-0">
+                {ctaLabel}
+                <span className="btn-arrow bg-paper text-ink">
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </button>
+            ) : (
+              <Link href="/#contacte" className="btn btn-primary flex-shrink-0">
+                {ctaLabel}
+                <span className="btn-arrow bg-paper text-ink">
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            )}
           </div>
         </Reveal>
       </Container>

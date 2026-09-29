@@ -5,7 +5,7 @@ import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { CheckList } from "@/components/CheckList";
 import { ProcessTimeline, type ProcessStep } from "@/components/ProcessTimeline";
-import { ContactForm } from "@/components/ContactForm";
+import { ContactCta } from "@/components/ContactCta";
 import { Reveal } from "@/components/Reveal";
 import { PhotoBand } from "@/components/PhotoBand";
 
@@ -134,7 +134,7 @@ export default async function CoachingPage() {
         </Container>
       </section>
 
-      <ContactForm variant="coaching" />
+      <ContactCta variant="coaching" />
     </>
   );
 }
