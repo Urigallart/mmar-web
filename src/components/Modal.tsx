@@ -62,7 +62,12 @@ export function Modal({
             <path d="M3 3L13 13M13 3L3 13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
           </svg>
         </button>
-        <div className="min-h-0 overflow-y-auto overscroll-contain px-6 py-10 sm:px-12 sm:py-12">{children}</div>
+        <div
+          data-lenis-prevent
+          className="min-h-0 overflow-y-auto overscroll-contain px-6 py-10 sm:px-12 sm:py-12"
+        >
+          {children}
+        </div>
       </div>
     </div>
   );
