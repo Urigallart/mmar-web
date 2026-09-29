@@ -26,6 +26,7 @@ export default function AboutSection() {
             <div>
               <p className="font-semibold text-ink">Mª del Mar</p>
               <p className="text-sm text-ink-dim">{t("role")}</p>
+              <p className="text-xs text-ink-dim/80">{t("currentCollab")}</p>
             </div>
           </div>
         </Reveal>

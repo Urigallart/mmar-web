@@ -70,7 +70,8 @@
       "statLocationValue": "BCN",
       "statLocationLabel": "Sarrià–Sant Gervasi",
       "spaceImageAlt": "El despacho de Mª del Mar: espacio de trabajo, materiales y sesiones de acompañamiento",
-      "spaceCaption": "Mi espacio en Barcelona — pensado para que cada sesión sea un lugar donde parar, escuchar y crecer."
+      "spaceCaption": "Mi espacio en Barcelona — pensado para que cada sesión sea un lugar donde parar, escuchar y crecer.",
+      "currentCollab": "Actualmente forma parte del equipo de Taktikum."
     },
     "contact": {
       "eyebrow": "Hablemos",
@@ -85,6 +86,66 @@
       "phoneValue": "Pendiente de confirmar",
       "emailLabel": "Correo electrónico",
       "emailValue": "Pendiente de confirmar"
+    },
+    "credentials": {
+      "eyebrow": "Formación",
+      "title": "Años de formación detrás de cada sesión",
+      "lede": "Coaching certificado por ICF y formación especializada en psicopedagogía, siempre en actualización.",
+      "items": [
+        {
+          "title": "Postgrado en Coaching Existencial",
+          "org": "Escuela de Coaching Existencial · Certificado ICF",
+          "years": "2015–2016"
+        },
+        {
+          "title": "Postgrado en Coaching Integrativo (Life Coaching)",
+          "org": "Institut Integratiu Barcelona · Certificado ICF",
+          "years": "2014–2015"
+        },
+        {
+          "title": "Licenciatura en Psicopedagogía",
+          "org": "Universitat Ramon Llull · Facultad Blanquerna",
+          "years": "1992–1997"
+        },
+        {
+          "title": "Postgrado en atención a la diversidad escolar",
+          "org": "Universitat Autònoma de Barcelona (UAB)",
+          "years": "1997–1998"
+        },
+        {
+          "title": "Certificado en Psicología del deporte y alto rendimiento",
+          "org": "Barça Innovation Hub",
+          "years": "2024"
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Testimonios",
+      "title": "Lo que cuentan las personas que he acompañado",
+      "lede": "Algunos fragmentos de cómo viven el proceso — con su privacidad siempre protegida.",
+      "items": [
+        {
+          "quote": "Llegué sin saber muy bien qué necesitaba y, sesión a sesión, me ha ayudado a poner orden y a ganar confianza en mis propias decisiones.",
+          "name": "L.",
+          "role": "Proceso de coaching individual"
+        },
+        {
+          "quote": "Su acompañamiento con mi hijo ha sido clave para entender cómo aprende y para mejorar su relación con la escuela.",
+          "name": "Madre de un alumno acompañado",
+          "role": "Intervención psicopedagógica"
+        },
+        {
+          "quote": "Cercana, directa y muy profesional. Me sentí escuchada desde la primera sesión.",
+          "name": "R.",
+          "role": "Consulta puntual"
+        }
+      ]
+    },
+    "offer": {
+      "eyebrow": "Primer paso",
+      "title": "Primera sesión, gratuita y sin compromiso",
+      "lede": "20 minutos para conocernos, contarme tu situación y ver juntos si puedo ayudarte.",
+      "ctaLabel": "Reserva tu sesión"
     }
   },
   "coaching": {

@@ -70,7 +70,8 @@
       "statLocationValue": "BCN",
       "statLocationLabel": "Sarrià–Sant Gervasi",
       "spaceImageAlt": "El despatx de la Mª del Mar: espai de treball, materials i sessions d'acompanyament",
-      "spaceCaption": "El meu espai a Barcelona — pensat perquè cada sessió sigui un lloc per parar, escoltar i créixer."
+      "spaceCaption": "El meu espai a Barcelona — pensat perquè cada sessió sigui un lloc per parar, escoltar i créixer.",
+      "currentCollab": "Actualment forma part de l'equip de Taktikum."
     },
     "contact": {
       "eyebrow": "Parlem-ne",
@@ -85,6 +86,66 @@
       "phoneValue": "Pendent de confirmar",
       "emailLabel": "Correu electrònic",
       "emailValue": "Pendent de confirmar"
+    },
+    "credentials": {
+      "eyebrow": "Formació",
+      "title": "Anys de formació darrere de cada sessió",
+      "lede": "Coaching certificat per ICF i formació especialitzada en psicopedagogia, sempre en actualització.",
+      "items": [
+        {
+          "title": "Postgrau en Coaching Existencial",
+          "org": "Escola de Coaching Existencial · Certificat ICF",
+          "years": "2015–2016"
+        },
+        {
+          "title": "Postgrau en Coaching Integratiu (Life Coaching)",
+          "org": "Institut Integratiu Barcelona · Certificat ICF",
+          "years": "2014–2015"
+        },
+        {
+          "title": "Llicenciatura en Psicopedagogia",
+          "org": "Universitat Ramon Llull · Facultat Blanquerna",
+          "years": "1992–1997"
+        },
+        {
+          "title": "Postgrau en atenció a la diversitat escolar",
+          "org": "Universitat Autònoma de Barcelona (UAB)",
+          "years": "1997–1998"
+        },
+        {
+          "title": "Certificat en Psicologia de l'esport i alt rendiment",
+          "org": "Barça Innovation Hub",
+          "years": "2024"
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Testimonis",
+      "title": "El que expliquen les persones que he acompanyat",
+      "lede": "Alguns fragments de com viuen el procés — amb la seva privacitat sempre protegida.",
+      "items": [
+        {
+          "quote": "Vaig arribar sense saber ben bé què necessitava i, sessió a sessió, m'ha ajudat a posar ordre i a agafar confiança en les meves pròpies decisions.",
+          "name": "L.",
+          "role": "Procés de coaching individual"
+        },
+        {
+          "quote": "El seu acompanyament amb el meu fill ha estat clau per entendre com aprèn i per millorar la seva relació amb l'escola.",
+          "name": "Mare d'un alumne acompanyat",
+          "role": "Intervenció psicopedagògica"
+        },
+        {
+          "quote": "Propera, directa i molt professional. Em vaig sentir escoltada des de la primera sessió.",
+          "name": "R.",
+          "role": "Consulta puntual"
+        }
+      ]
+    },
+    "offer": {
+      "eyebrow": "Primer pas",
+      "title": "Primera sessió, gratuïta i sense compromís",
+      "lede": "20 minuts per conèixer-nos, explicar-me la teva situació i veure junts si puc ajudar-te.",
+      "ctaLabel": "Reserva la teva sessió"
     }
   },
   "coaching": {

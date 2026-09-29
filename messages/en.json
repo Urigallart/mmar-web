@@ -70,7 +70,8 @@
       "statLocationValue": "BCN",
       "statLocationLabel": "Sarrià–Sant Gervasi",
       "spaceImageAlt": "Mª del Mar's office: workspace, materials, and support sessions",
-      "spaceCaption": "My space in Barcelona — designed so every session is a place to pause, listen, and grow."
+      "spaceCaption": "My space in Barcelona — designed so every session is a place to pause, listen, and grow.",
+      "currentCollab": "Currently part of the Taktikum team."
     },
     "contact": {
       "eyebrow": "Let's talk",
@@ -85,6 +86,66 @@
       "phoneValue": "To be confirmed",
       "emailLabel": "Email",
       "emailValue": "To be confirmed"
+    },
+    "credentials": {
+      "eyebrow": "Training",
+      "title": "Years of training behind every session",
+      "lede": "ICF-certified coaching and specialised training in educational psychology, always evolving.",
+      "items": [
+        {
+          "title": "Postgraduate in Existential Coaching",
+          "org": "Escola de Coaching Existencial · ICF Certified",
+          "years": "2015–2016"
+        },
+        {
+          "title": "Postgraduate in Integrative Coaching (Life Coaching)",
+          "org": "Institut Integratiu Barcelona · ICF Certified",
+          "years": "2014–2015"
+        },
+        {
+          "title": "Degree in Educational Psychology",
+          "org": "Universitat Ramon Llull · Blanquerna Faculty",
+          "years": "1992–1997"
+        },
+        {
+          "title": "Postgraduate in School Diversity Support",
+          "org": "Universitat Autònoma de Barcelona (UAB)",
+          "years": "1997–1998"
+        },
+        {
+          "title": "Certificate in Sports & High-Performance Psychology",
+          "org": "Barça Innovation Hub",
+          "years": "2024"
+        }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": "Testimonials",
+      "title": "What the people I've worked with say",
+      "lede": "A few glimpses of how they experienced the process — their privacy always protected.",
+      "items": [
+        {
+          "quote": "I arrived without really knowing what I needed, and session by session she helped me bring order and gain confidence in my own decisions.",
+          "name": "L.",
+          "role": "Individual coaching process"
+        },
+        {
+          "quote": "Her support with my son was key to understanding how he learns and to improving his relationship with school.",
+          "name": "Mother of a student she supported",
+          "role": "Educational psychology support"
+        },
+        {
+          "quote": "Warm, direct and very professional. I felt heard from the very first session.",
+          "name": "R.",
+          "role": "One-off consultation"
+        }
+      ]
+    },
+    "offer": {
+      "eyebrow": "First step",
+      "title": "First session, free and with no commitment",
+      "lede": "20 minutes to get to know each other, tell me about your situation, and see together if I can help.",
+      "ctaLabel": "Book your session"
     }
   },
   "coaching": {
