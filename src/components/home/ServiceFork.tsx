@@ -28,9 +28,9 @@ export default function ServiceFork() {
   ];
 
   return (
-    <section id="acompanyament" className="py-[var(--section-pad)]">
+    <section id="acompanyament" className="py-[var(--section-pad)]" style={{ background: "var(--color-green)" }}>
       <Container>
-        <SectionHeading eyebrow={t("eyebrow")} title={t("title")} lede={t("lede")} />
+        <SectionHeading eyebrow={t("eyebrow")} title={t("title")} lede={t("lede")} light />
 
         <div className="mt-14 grid gap-6 md:grid-cols-2">
           {SERVICES.map((service, i) => (

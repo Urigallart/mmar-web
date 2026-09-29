@@ -7,12 +7,14 @@ export function SectionHeading({
   lede,
   align = "left",
   className,
+  light = false,
 }: {
   eyebrow?: string;
   title: React.ReactNode;
   lede?: React.ReactNode;
   align?: "left" | "center";
   className?: string;
+  light?: boolean;
 }) {
   return (
     <div
@@ -24,12 +26,12 @@ export function SectionHeading({
     >
       {eyebrow && (
         <Reveal y={12}>
-          <p className="eyebrow mb-4">{eyebrow}</p>
+          <p className={clsx("eyebrow mb-4", light && "!text-white/80")}>{eyebrow}</p>
         </Reveal>
       )}
       <Reveal y={20} delay={0.05}>
         <h2
-          className="text-balance font-semibold tracking-tight text-ink"
+          className={clsx("text-balance font-semibold tracking-tight", light ? "text-paper" : "text-ink")}
           style={{ fontSize: "var(--fs-h2)", lineHeight: 1.1 }}
         >
           {title}
@@ -38,7 +40,7 @@ export function SectionHeading({
       {lede && (
         <Reveal y={20} delay={0.12}>
           <p
-            className="mt-5 text-ink-dim"
+            className={clsx("mt-5", light ? "text-white/70" : "text-ink-dim")}
             style={{ fontSize: "var(--fs-lede)", lineHeight: 1.55 }}
           >
             {lede}
