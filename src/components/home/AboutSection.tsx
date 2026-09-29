@@ -91,7 +91,7 @@ export default function AboutSection() {
 function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div>
-      <p className="font-semibold text-ink" style={{ fontSize: "1.4rem" }}>
+      <p className="font-semibold text-ink" style={{ fontSize: "clamp(1.05rem, 4.5vw, 1.4rem)" }}>
         {value}
       </p>
       <p className="mt-1 text-xs leading-snug text-ink-dim">{label}</p>
