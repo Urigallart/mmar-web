@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import clsx from "clsx";
+import { lenisRef } from "@/lib/lenis";
 
 export function Modal({
   open,
@@ -20,10 +21,12 @@ export function Modal({
     document.addEventListener("keydown", onKey);
     document.documentElement.style.overflow = "hidden";
     document.body.style.overflow = "hidden";
+    lenisRef.current?.stop();
     return () => {
       document.removeEventListener("keydown", onKey);
       document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
+      lenisRef.current?.start();
     };
   }, [open, onClose]);
 
@@ -59,7 +62,7 @@ export function Modal({
             <path d="M3 3L13 13M13 3L3 13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
           </svg>
         </button>
-        <div className="overflow-y-auto overscroll-contain px-6 py-10 sm:px-12 sm:py-12">{children}</div>
+        <div className="min-h-0 overflow-y-auto overscroll-contain px-6 py-10 sm:px-12 sm:py-12">{children}</div>
       </div>
     </div>
   );
