@@ -23,7 +23,16 @@
   },
   "common": {
     "backToHome": "Tornar a l'inici",
-    "writeUs": "Escriu-nos"
+    "writeUs": "Escriu-nos",
+    "form": {
+      "submit": "Enviar",
+      "sending": "Enviant...",
+      "success": "Gràcies! He rebut el teu missatge i et respondré aviat.",
+      "error": "Hi ha hagut un error en enviar el formulari. Torna-ho a provar o escriu-me per Instagram.",
+      "otherPlaceholder": "Especifica...",
+      "yes": "Sí",
+      "no": "No"
+    }
   },
   "home": {
     "hero": {
@@ -247,6 +256,25 @@
     "cta": {
       "title": "Vols explicar-me què t'està passant?",
       "lede": "Si no tens clar si necessites iniciar un procés de coaching o simplement fer una consulta puntual, podem valorar quin format encaixa millor."
+    },
+    "form": {
+      "eyebrow": "Formulari de contacte",
+      "title": "Explica'm breument què t'agradaria treballar i em posaré en contacte amb tu.",
+      "nameLabel": "Nom i cognoms",
+      "focusLabel": "En quin àmbit t'agradaria centrar principalment el procés?",
+      "focusOptions": [
+        "Personal",
+        "Professional",
+        "Relacions",
+        "Presa de decisions",
+        "Confiança i desenvolupament personal",
+        "Altres"
+      ],
+      "motivationLabel": "Què t'ha portat a plantejar-te iniciar un procés de coaching?",
+      "goalLabel": "Què t'agradaria canviar, millorar o aconseguir?",
+      "contextLabel": "Hi ha algun aspecte de la teva situació actual que consideris important que conegui?",
+      "phoneLabel": "Telèfon",
+      "emailLabel": "Correu electrònic"
     }
   },
   "psicopedagogia": {
@@ -378,6 +406,27 @@
     "cta": {
       "title": "Parlem de la situació del vostre fill o filla?",
       "lede": "Si voleu explicar-me breument la vostra situació, podem valorar junts quin tipus d'acompanyament pot ser més adequat."
+    },
+    "form": {
+      "eyebrow": "Formulari de contacte",
+      "title": "Explica'm breument què necessiteu i em posaré en contacte amb vosaltres.",
+      "guardianLabel": "Nom i cognoms del pare, mare o tutor/a",
+      "childLabel": "Nom i edat de l'infant o adolescent",
+      "schoolYearLabel": "Curs escolar",
+      "areasLabel": "En quins àmbits considereu que necessita principalment ajuda?",
+      "areasOptions": [
+        "Aprenentatge",
+        "Atenció i concentració",
+        "Organització i planificació",
+        "Motivació i autonomia",
+        "Àmbit emocional",
+        "Relacions socials",
+        "Altres"
+      ],
+      "concernLabel": "Què us preocupa o què us ha portat a buscar ajuda en aquest moment?",
+      "priorSupportLabel": "Ha rebut anteriorment suport psicopedagògic o d'algun altre professional?",
+      "phoneLabel": "Telèfon",
+      "emailLabel": "Correu electrònic"
     }
   }
 }

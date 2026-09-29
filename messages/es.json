@@ -23,7 +23,16 @@
   },
   "common": {
     "backToHome": "Volver al inicio",
-    "writeUs": "Escríbenos"
+    "writeUs": "Escríbenos",
+    "form": {
+      "submit": "Enviar",
+      "sending": "Enviando...",
+      "success": "¡Gracias! He recibido tu mensaje y te responderé pronto.",
+      "error": "Ha habido un error al enviar el formulario. Vuelve a intentarlo o escríbeme por Instagram.",
+      "otherPlaceholder": "Especifica...",
+      "yes": "Sí",
+      "no": "No"
+    }
   },
   "home": {
     "hero": {
@@ -247,6 +256,25 @@
     "cta": {
       "title": "¿Quieres contarme qué te está pasando?",
       "lede": "Si no tienes claro si necesitas iniciar un proceso de coaching o simplemente hacer una consulta puntual, podemos valorar qué formato encaja mejor."
+    },
+    "form": {
+      "eyebrow": "Formulario de contacto",
+      "title": "Cuéntame brevemente qué te gustaría trabajar y me pondré en contacto contigo.",
+      "nameLabel": "Nombre y apellidos",
+      "focusLabel": "¿En qué ámbito te gustaría centrar principalmente el proceso?",
+      "focusOptions": [
+        "Personal",
+        "Profesional",
+        "Relaciones",
+        "Toma de decisiones",
+        "Confianza y desarrollo personal",
+        "Otros"
+      ],
+      "motivationLabel": "¿Qué te ha llevado a plantearte iniciar un proceso de coaching?",
+      "goalLabel": "¿Qué te gustaría cambiar, mejorar o conseguir?",
+      "contextLabel": "¿Hay algún aspecto de tu situación actual que consideres importante que conozca?",
+      "phoneLabel": "Teléfono",
+      "emailLabel": "Correo electrónico"
     }
   },
   "psicopedagogia": {
@@ -378,6 +406,27 @@
     "cta": {
       "title": "¿Hablamos de la situación de tu hijo o hija?",
       "lede": "Si quieres contarme brevemente vuestra situación, podemos valorar juntos qué tipo de acompañamiento puede ser más adecuado."
+    },
+    "form": {
+      "eyebrow": "Formulario de contacto",
+      "title": "Cuéntame brevemente qué necesitáis y me pondré en contacto con vosotros.",
+      "guardianLabel": "Nombre y apellidos del padre, madre o tutor/a",
+      "childLabel": "Nombre y edad del niño/a o adolescente",
+      "schoolYearLabel": "Curso escolar",
+      "areasLabel": "¿En qué ámbitos consideráis que necesita principalmente ayuda?",
+      "areasOptions": [
+        "Aprendizaje",
+        "Atención y concentración",
+        "Organización y planificación",
+        "Motivación y autonomía",
+        "Ámbito emocional",
+        "Relaciones sociales",
+        "Otros"
+      ],
+      "concernLabel": "¿Qué os preocupa o qué os ha llevado a buscar ayuda en este momento?",
+      "priorSupportLabel": "¿Ha recibido anteriormente apoyo psicopedagógico o de algún otro profesional?",
+      "phoneLabel": "Teléfono",
+      "emailLabel": "Correo electrónico"
     }
   }
 }

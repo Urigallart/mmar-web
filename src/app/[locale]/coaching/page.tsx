@@ -5,7 +5,7 @@ import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { CheckList } from "@/components/CheckList";
 import { ProcessTimeline, type ProcessStep } from "@/components/ProcessTimeline";
-import { CtaBanner } from "@/components/CtaBanner";
+import { ContactForm } from "@/components/ContactForm";
 import { Reveal } from "@/components/Reveal";
 import { PhotoBand } from "@/components/PhotoBand";
 
@@ -134,7 +134,7 @@ export default async function CoachingPage() {
         </Container>
       </section>
 
-      <CtaBanner title={t("cta.title")} lede={t("cta.lede")} ctaLabel={tCommon("writeUs")} />
+      <ContactForm variant="coaching" />
     </>
   );
 }
