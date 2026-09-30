@@ -216,11 +216,11 @@ export default function Hero() {
         <div>
           <p className="hero-kicker eyebrow mb-6 mt-2 lg:mt-4 [@media(max-height:800px)]:lg:mt-1">{t("kicker")}</p>
           <h1
-            className="hero-line font-semibold tracking-tight text-balance text-ink"
-            style={{ fontSize: "var(--fs-display)", lineHeight: 1.08 }}
+            className="hero-line font-semibold tracking-tight text-balance"
+            style={{ fontSize: "var(--fs-display)", lineHeight: 1.08, color: "#2c4842" }}
           >
             {t("titleMain")}
-            <span style={{ color: "#2c4842" }}>{t("titleAccent")}</span>
+            {t("titleAccent")}
           </h1>
           <p className="hero-lede mt-7 font-medium text-ink" style={{ fontSize: "var(--fs-lede)" }}>
             {t("linesLabel")}
