@@ -245,7 +245,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative lg:-mt-16">
           <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-lg lg:ml-auto lg:max-h-[68vh]">
             <Image
               src="/images/hero-photo-v2.jpg"
