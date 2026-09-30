@@ -264,7 +264,7 @@ export default function Hero() {
 
       {aboutOpen && (
         <div
-          className={`fixed inset-0 z-50 flex items-center justify-center p-8 backdrop-blur-md transition-opacity duration-300 lg:hidden ${aboutVisible ? "bg-ink/35 opacity-100" : "bg-ink/0 opacity-0"}`}
+          className={`fixed inset-0 z-50 flex items-center justify-center p-8 backdrop-blur-md transition-opacity duration-300 lg:hidden ${aboutVisible ? "bg-ink/70 opacity-100" : "bg-ink/0 opacity-0"}`}
           onClick={closeAbout}
         >
           <div
@@ -282,9 +282,9 @@ export default function Hero() {
             <div className="relative h-28 w-28 overflow-hidden rounded-full ring-4 ring-white shadow-[0_20px_50px_-15px_rgba(20,28,26,0.55)]">
               <Image src="/images/hero-photo-v2.jpg" alt="" fill sizes="112px" className="object-cover" />
             </div>
-            <p className="mt-5 font-semibold text-ink">Mª del Mar</p>
-            <p className="text-sm text-ink-dim">{tAbout("role")}</p>
-            <p className="mt-4 text-center text-sm italic leading-relaxed text-ink-dim">{tAbout("quote")}</p>
+            <p className="mt-5 font-semibold text-white">Mª del Mar</p>
+            <p className="text-sm text-white/80">{tAbout("role")}</p>
+            <p className="mt-4 text-center text-sm italic leading-relaxed text-white/90">{tAbout("quote")}</p>
             <Link
               href="/#sobre-mi"
               onClick={closeAbout}
