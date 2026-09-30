@@ -227,10 +227,10 @@ export default function Hero() {
           </p>
           <ul className="hero-lede mt-3 flex max-w-lg flex-col gap-2 text-ink-dim" style={{ fontSize: "var(--fs-lede)", lineHeight: 1.5 }}>
             <li>
-              <span className="font-semibold text-ink">{t("linePsicoBold")}</span> — {t("linePsicoRest")}
+              <span className="text-ink">{t("linePsicoBold")}</span> — {t("linePsicoRest")}
             </li>
             <li>
-              <span className="font-semibold text-ink">{t("lineCoachBold")}</span> — {t("lineCoachRest")}
+              <span className="text-ink">{t("lineCoachBold")}</span> — {t("lineCoachRest")}
             </li>
           </ul>
           <div className="mt-9 flex flex-wrap items-center gap-3.5">
