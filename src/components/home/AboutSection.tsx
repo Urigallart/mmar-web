@@ -20,8 +20,8 @@ export default function AboutSection() {
             />
           </div>
           <div className="mt-5 flex items-center gap-3">
-            <span className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-full bg-ink text-sm font-bold text-paper">
-              M
+            <span className="relative h-11 w-11 flex-shrink-0 overflow-hidden rounded-full">
+              <Image src="/images/logo-mark.png" alt="" fill sizes="44px" className="object-cover" />
             </span>
             <div>
               <p className="font-semibold text-ink">Mª del Mar</p>

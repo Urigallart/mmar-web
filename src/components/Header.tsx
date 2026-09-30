@@ -70,9 +70,6 @@ export default function Header() {
             <span className="relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-full">
               <Image src="/images/logo-mark.png" alt="" fill sizes="36px" className="object-cover" />
             </span>
-            <span className="relative hidden h-6 w-[92px] sm:inline-block">
-              <Image src="/images/logo-mark-black.png" alt="Mª del Mar" fill sizes="92px" className="object-contain" />
-            </span>
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex">

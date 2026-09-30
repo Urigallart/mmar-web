@@ -48,7 +48,7 @@ const MOBILE_STICKERS: MobileStickerSpec[] = [
   {
     src: "/images/icons-green/mente-creativa.png",
     alt: "",
-    size: 46,
+    size: 44,
     rotate: -10,
     opacity: 0.4,
     style: { right: "6%", top: "0px" },
@@ -56,18 +56,18 @@ const MOBILE_STICKERS: MobileStickerSpec[] = [
   {
     src: "/images/icons-green/liderazgo.png",
     alt: "",
-    size: 42,
+    size: 40,
     rotate: -6,
     opacity: 0.32,
-    style: { right: "26%", top: "58px" },
+    style: { right: "28%", top: "22px" },
   },
   {
     src: "/images/icons-green/familia.png",
     alt: "",
-    size: 40,
+    size: 38,
     rotate: 8,
     opacity: 0.3,
-    style: { right: "0%", top: "78px" },
+    style: { right: "0%", top: "38px" },
   },
 ];
 
@@ -115,8 +115,8 @@ export default function Hero() {
       )
         .fromTo(
           ".hero-line",
-          { opacity: 0, y: "100%" },
-          { opacity: 1, y: "0%", duration: 1, stagger: 0.1 },
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.9 },
           0.25
         )
         .fromTo(
@@ -187,7 +187,7 @@ export default function Hero() {
   return (
     <section
       ref={rootRef}
-      className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-28 lg:pb-8 [@media(max-height:800px)]:lg:pt-24 [@media(max-height:800px)]:lg:pb-6"
+      className="relative pt-36 pb-20 sm:pt-40 sm:pb-28 lg:pt-28 lg:pb-8 [@media(max-height:800px)]:lg:pt-24 [@media(max-height:800px)]:lg:pb-6"
     >
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
         <div
@@ -204,7 +204,7 @@ export default function Hero() {
         </Container>
       </div>
 
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-32 overflow-hidden lg:hidden">
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-20 h-28 overflow-hidden lg:hidden">
         <Container className="relative h-full">
           {MOBILE_STICKERS.map((spec) => (
             <MobileSticker key={spec.src} spec={spec} />
@@ -216,22 +216,23 @@ export default function Hero() {
         <div>
           <p className="hero-kicker eyebrow mb-6 mt-2 lg:mt-4 [@media(max-height:800px)]:lg:mt-1">{t("kicker")}</p>
           <h1
-            className="font-semibold tracking-tight text-ink"
-            style={{ fontSize: "var(--fs-display)", lineHeight: 1.02 }}
+            className="hero-line font-semibold tracking-tight text-balance text-ink"
+            style={{ fontSize: "var(--fs-display)", lineHeight: 1.08 }}
           >
-            <span className="block overflow-hidden">
-              <span className="hero-line block">{t("titleLine1")}</span>
-            </span>
-            <span className="block overflow-hidden">
-              <span className="hero-line block">{t("titleLine2")}</span>
-            </span>
-            <span className="block overflow-hidden">
-              <span className="hero-line block" style={{ color: "#2c4842" }}>{t("titleLine3")}</span>
-            </span>
+            {t("titleMain")}
+            <span style={{ color: "#2c4842" }}>{t("titleAccent")}</span>
           </h1>
-          <p className="hero-lede mt-7 max-w-md text-ink-dim" style={{ fontSize: "var(--fs-lede)", lineHeight: 1.55 }}>
-            {t("lede")}
+          <p className="hero-lede mt-7 font-medium text-ink" style={{ fontSize: "var(--fs-lede)" }}>
+            {t("linesLabel")}
           </p>
+          <ul className="hero-lede mt-3 flex max-w-lg flex-col gap-2 text-ink-dim" style={{ fontSize: "var(--fs-lede)", lineHeight: 1.5 }}>
+            <li>
+              <span className="font-semibold text-ink">{t("linePsicoBold")}</span> — {t("linePsicoRest")}
+            </li>
+            <li>
+              <span className="font-semibold text-ink">{t("lineCoachBold")}</span> — {t("lineCoachRest")}
+            </li>
+          </ul>
           <div className="mt-9 flex flex-wrap items-center gap-3.5">
             <Link href="/coaching" className="hero-cta btn btn-primary">
               {t("ctaCoaching")}
@@ -247,7 +248,7 @@ export default function Hero() {
         <div className="relative">
           <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-md lg:ml-auto lg:max-h-[56vh]">
             <Image
-              src="/images/hero-photo-existing.jpg"
+              src="/images/hero-photo-v2.jpg"
               alt={t("photoAlt")}
               fill
               priority

@@ -10,12 +10,9 @@ export default function Footer() {
     <footer className="border-t border-border bg-paper-deep">
       <Container className="flex flex-col gap-10 py-14 sm:flex-row sm:items-start sm:justify-between">
         <div className="max-w-xs">
-          <Link href="/" className="flex items-center gap-2 text-[0.95rem] font-semibold text-ink">
+          <Link href="/" aria-label="Mª del Mar" className="flex items-center gap-2 text-[0.95rem] font-semibold text-ink">
             <span className="relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-full">
               <Image src="/images/logo-mark.png" alt="" fill sizes="36px" className="object-cover" />
-            </span>
-            <span className="relative inline-block h-6 w-[92px]">
-              <Image src="/images/logo-mark-black.png" alt="Mª del Mar" fill sizes="92px" className="object-contain" />
             </span>
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-ink-dim">{t("footer.tagline")}</p>

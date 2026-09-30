@@ -15,7 +15,7 @@
     "tancarMenu": "Cerrar el menú"
   },
   "footer": {
-    "tagline": "Psicopedagoga y coach. Consulta presencial en Barcelona, zona Sarrià–Sant Gervasi, y acompañamiento online.",
+    "tagline": "Psicopedagoga y coach. Consulta presencial y online en Barcelona, zona Sarrià–Sant Gervasi.",
     "acompanyament": "Acompañamiento",
     "web": "Web",
     "rights": "Todos los derechos reservados.",
@@ -38,22 +38,25 @@
   "home": {
     "hero": {
       "kicker": "Psicopedagoga · Coach · Barcelona",
-      "titleLine1": "Facilitadora de",
-      "titleLine2": "tu propia",
-      "titleLine3": "evolución",
-      "lede": "Dos líneas de acompañamiento: coaching y consultas puntuales para jóvenes y adultos, e intervención psicopedagógica para niños y adolescentes.",
-      "ctaCoaching": "Coaching y consultas",
+      "ctaCoaching": "Coaching",
       "ctaPsico": "Psicopedagogía",
       "statValue": "+25 años",
       "statLabel": "acompañando a personas y familias",
       "scrollCue": "Descubre más",
-      "photoAlt": "Mª del Mar trabajando en su despacho"
+      "photoAlt": "Mª del Mar trabajando en su despacho",
+      "titleMain": "Facilitadora del cambio, el aprendizaje y el ",
+      "titleAccent": "crecimiento personal",
+      "linesLabel": "Dos líneas de acompañamiento:",
+      "linePsicoBold": "Intervención psicopedagógica",
+      "linePsicoRest": "niños, adolescentes, familias.",
+      "lineCoachBold": "Coaching y consultas puntuales",
+      "lineCoachRest": "jóvenes y adultos."
     },
-    "manifesto": "Cada persona tiene su propio ritmo para crecer, y mi acompañamiento camina a su lado: escuchando, sosteniendo y ayudando a encontrar claridad, confianza y autonomía en cada paso del camino.",
+    "manifesto": "Cada persona tiene su propio ritmo para crecer, y mi acompañamiento camina a su lado: escuchando, sosteniendo y ayudando a encontrar claridad, confianza y autonomía en cada paso.",
     "fork": {
       "eyebrow": "Cómo te acompaño",
-      "title": "Dos líneas de acompañamiento, un mismo objetivo",
-      "lede": "Cada proceso se adapta al momento y a las necesidades de la persona. Descubre qué línea encaja con tu situación.",
+      "title": "Dos líneas de acompañamiento, una misma mirada",
+      "lede": "Cada proceso se adapta al momento y a las necesidades de cada persona. Te orientaré para encontrar el acompañamiento más adecuado a tu demanda y al momento que estás viviendo.",
       "line1Tag": "Línea 1",
       "line1Title": "Coaching y consultas puntuales",
       "line1Desc": "Para jóvenes, adultos, profesionales, deportistas, madres y padres que quieren ganar claridad, seguridad y bienestar.",
@@ -96,39 +99,6 @@
       "phoneValue": "Pendiente de confirmar",
       "emailLabel": "Correo electrónico",
       "emailValue": "Pendiente de confirmar"
-    },
-    "credentials": {
-      "eyebrow": "Formación",
-      "title": "Años de formación detrás de cada sesión",
-      "lede": "Coaching certificado por ICF y formación especializada en psicopedagogía, siempre en actualización.",
-      "items": [
-        {
-          "title": "Licenciatura en Psicopedagogía",
-          "org": "Universitat Ramon Llull · Facultad Blanquerna",
-          "years": "1992–1997"
-        },
-        {
-          "title": "Postgrado en atención a la diversidad escolar",
-          "org": "Universitat Autònoma de Barcelona (UAB)",
-          "years": "1997–1998"
-        },
-        {
-          "title": "Postgrado en Coaching Integrativo (Life Coaching)",
-          "org": "Institut Integratiu Barcelona · Certificado ICF",
-          "years": "2014–2015"
-        },
-        {
-          "title": "Postgrado en Coaching Existencial",
-          "org": "Escuela de Coaching Existencial · Certificado ICF",
-          "years": "2015–2016"
-        },
-        {
-          "title": "Certificado en Psicología del deporte y alto rendimiento",
-          "org": "Barça Innovation Hub",
-          "years": "2024"
-        }
-      ],
-      "photoAlt": "Mi espacio de trabajo en Barcelona, con notas y libros de cada sesión."
     },
     "testimonials": {
       "eyebrow": "Testimonios",

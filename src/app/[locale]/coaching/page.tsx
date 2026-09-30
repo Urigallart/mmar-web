@@ -69,7 +69,7 @@ export default async function CoachingPage() {
             title={t("situations.title")}
             lede={t("situations.lede")}
           />
-          <div className="mt-10">
+          <div className="mt-10 rounded-[var(--radius-card)] bg-green-pale p-6 sm:p-10">
             <CheckList items={situations} columns={2} />
           </div>
           <Reveal y={16} delay={0.1}>
@@ -83,7 +83,7 @@ export default async function CoachingPage() {
       <section className="border-y border-border bg-white py-[var(--section-pad)]">
         <Container>
           <SectionHeading eyebrow={t("areas.eyebrow")} title={t("areas.title")} lede={t("areas.lede")} />
-          <div className="mt-10">
+          <div className="mt-10 rounded-[var(--radius-card)] bg-green-pale p-6 sm:p-10">
             <CheckList items={areas} columns={2} />
           </div>
         </Container>

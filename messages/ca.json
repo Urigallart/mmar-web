@@ -15,7 +15,7 @@
     "tancarMenu": "Tancar el menú"
   },
   "footer": {
-    "tagline": "Psicopedagoga i coach. Consulta presencial a Barcelona, zona Sarrià–Sant Gervasi, i acompanyament online.",
+    "tagline": "Psicopedagoga i coach. Consulta presencial i online a Barcelona, zona Sarrià–Sant Gervasi.",
     "acompanyament": "Acompanyament",
     "web": "Web",
     "rights": "Tots els drets reservats.",
@@ -38,22 +38,25 @@
   "home": {
     "hero": {
       "kicker": "Psicopedagoga · Coach · Barcelona",
-      "titleLine1": "Facilitadora de",
-      "titleLine2": "la teva pròpia",
-      "titleLine3": "evolució",
-      "lede": "Dues línies d'acompanyament: coaching i consultes puntuals per a joves i adults, i intervenció psicopedagògica per a infants i adolescents.",
-      "ctaCoaching": "Coaching i consultes",
+      "ctaCoaching": "Coaching",
       "ctaPsico": "Psicopedagogia",
       "statValue": "+25 anys",
       "statLabel": "acompanyant persones i famílies",
       "scrollCue": "Descobreix més",
-      "photoAlt": "Mª del Mar treballant al seu despatx"
+      "photoAlt": "Mª del Mar treballant al seu despatx",
+      "titleMain": "Facilitadora del canvi, aprenentatge i ",
+      "titleAccent": "creixement personal",
+      "linesLabel": "Dues línies d'acompanyament:",
+      "linePsicoBold": "Intervenció psicopedagògica",
+      "linePsicoRest": "infants, adolescents, famílies.",
+      "lineCoachBold": "Coaching i consultes puntuals",
+      "lineCoachRest": "joves i adults."
     },
-    "manifesto": "Cada persona té el seu propi ritme per créixer, i el meu acompanyament hi camina al costat: escoltant, sostenint i ajudant a trobar claredat, confiança i autonomia en cada pas del camí.",
+    "manifesto": "Cada persona té el seu propi ritme per créixer, i el meu acompanyament hi camina al costat: escoltant, sostenint i ajudant a trobar claredat, confiança i autonomia en cada pas.",
     "fork": {
       "eyebrow": "Com t'acompanyo",
-      "title": "Dues línies d'acompanyament, un mateix objectiu",
-      "lede": "Cada procés s'adapta al moment i a les necessitats de la persona. Explora quina línia encaixa amb la teva situació.",
+      "title": "Dues línies d'acompanyament, una mateixa mirada",
+      "lede": "Cada procés s'adapta al moment i a les necessitats de cada persona. T'orientaré per trobar l'acompanyament més adequat a la teva demanda i al moment que estàs vivint.",
       "line1Tag": "Línia 1",
       "line1Title": "Coaching & consultes puntuals",
       "line1Desc": "Per a joves, adults, professionals, esportistes, mares i pares que volen guanyar claredat, seguretat i benestar.",
@@ -96,39 +99,6 @@
       "phoneValue": "Pendent de confirmar",
       "emailLabel": "Correu electrònic",
       "emailValue": "Pendent de confirmar"
-    },
-    "credentials": {
-      "eyebrow": "Formació",
-      "title": "Anys de formació darrere de cada sessió",
-      "lede": "Coaching certificat per ICF i formació especialitzada en psicopedagogia, sempre en actualització.",
-      "items": [
-        {
-          "title": "Llicenciatura en Psicopedagogia",
-          "org": "Universitat Ramon Llull · Facultat Blanquerna",
-          "years": "1992–1997"
-        },
-        {
-          "title": "Postgrau en atenció a la diversitat escolar",
-          "org": "Universitat Autònoma de Barcelona (UAB)",
-          "years": "1997–1998"
-        },
-        {
-          "title": "Postgrau en Coaching Integratiu (Life Coaching)",
-          "org": "Institut Integratiu Barcelona · Certificat ICF",
-          "years": "2014–2015"
-        },
-        {
-          "title": "Postgrau en Coaching Existencial",
-          "org": "Escola de Coaching Existencial · Certificat ICF",
-          "years": "2015–2016"
-        },
-        {
-          "title": "Certificat en Psicologia de l'esport i alt rendiment",
-          "org": "Barça Innovation Hub",
-          "years": "2024"
-        }
-      ],
-      "photoAlt": "El meu espai de treball a Barcelona, amb notes i llibres de cada sessió."
     },
     "testimonials": {
       "eyebrow": "Testimonis",

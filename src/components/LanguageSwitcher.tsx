@@ -9,7 +9,6 @@ import clsx from "clsx";
 const LABELS: Record<string, string> = {
   ca: "Català",
   es: "Español",
-  en: "English",
 };
 
 export function LanguageSwitcher({ className }: { className?: string }) {
