@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -68,7 +68,9 @@ function MobileSticker({ spec }: { spec: MobileStickerSpec }) {
 
 export default function Hero() {
   const t = useTranslations("home.hero");
+  const tAbout = useTranslations("home.about");
   const rootRef = useRef<HTMLDivElement>(null);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   useEffect(() => {
     const root = rootRef.current;
@@ -185,28 +187,29 @@ export default function Hero() {
         <div>
           <div className="mb-6 mt-2 flex items-center justify-between gap-4 lg:mb-6 lg:mt-4 lg:block [@media(max-height:800px)]:lg:mt-1">
             <p className="hero-kicker eyebrow">{t("kicker")}</p>
-            <div className="flex items-center gap-4 lg:hidden">
-              <div className="hero-kicker flex flex-col items-center gap-2.5">
-                {MOBILE_STICKERS.map((spec) => (
-                  <MobileSticker key={spec.src} spec={spec} />
-                ))}
-              </div>
-              <Link
-                href="/#sobre-mi"
-                aria-label={t("photoAlt")}
-                className="hero-kicker relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-4 ring-white shadow-[0_10px_30px_-10px_rgba(32,43,40,0.45)] transition-transform active:scale-95"
-              >
-                <Image src="/images/hero-photo-v2.jpg" alt="" fill sizes="64px" className="object-cover" />
-              </Link>
+            <button
+              type="button"
+              onClick={() => setAboutOpen(true)}
+              aria-label={tAbout("eyebrow")}
+              className="hero-kicker relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-4 ring-white shadow-[0_10px_30px_-10px_rgba(32,43,40,0.45)] transition-transform active:scale-95 lg:hidden"
+            >
+              <Image src="/images/hero-photo-v2.jpg" alt="" fill sizes="64px" className="object-cover" />
+            </button>
+          </div>
+          <div className="flex items-start gap-3">
+            <h1
+              className="hero-line flex-1 font-semibold tracking-tight text-balance"
+              style={{ fontSize: "var(--fs-display)", lineHeight: 1.08, color: "#1a2e29" }}
+            >
+              {t("titleMain")}
+              {t("titleAccent")}
+            </h1>
+            <div className="hero-kicker mt-1 flex shrink-0 flex-col items-center gap-3 lg:hidden">
+              {MOBILE_STICKERS.map((spec) => (
+                <MobileSticker key={spec.src} spec={spec} />
+              ))}
             </div>
           </div>
-          <h1
-            className="hero-line font-semibold tracking-tight text-balance"
-            style={{ fontSize: "var(--fs-display)", lineHeight: 1.08, color: "#1a2e29" }}
-          >
-            {t("titleMain")}
-            {t("titleAccent")}
-          </h1>
           <p className="hero-lede mt-7 font-medium text-ink" style={{ fontSize: "var(--fs-lede)" }}>
             {t("linesLabel")}
           </p>
@@ -247,6 +250,41 @@ export default function Hero() {
           </div>
         </div>
       </Container>
+
+      {aboutOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 p-6 backdrop-blur-sm lg:hidden"
+          onClick={() => setAboutOpen(false)}
+        >
+          <div
+            className="relative w-full min-w-0 max-w-sm rounded-[var(--radius-card)] bg-white p-6 shadow-[0_30px_80px_-20px_rgba(20,28,26,0.5)]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setAboutOpen(false)}
+              aria-label="Tancar"
+              className="absolute right-4 top-4 grid h-8 w-8 place-items-center rounded-full bg-paper-deep text-ink-dim"
+            >
+              ✕
+            </button>
+            <div className="relative mx-auto h-24 w-24 overflow-hidden rounded-full ring-4 ring-white shadow-md">
+              <Image src="/images/hero-photo-v2.jpg" alt="" fill sizes="96px" className="object-cover" />
+            </div>
+            <p className="mt-4 text-center font-semibold text-ink">Mª del Mar</p>
+            <p className="text-center text-sm text-ink-dim">{tAbout("role")}</p>
+            <p className="mt-4 text-center text-sm italic leading-relaxed text-ink-dim">{tAbout("quote")}</p>
+            <Link
+              href="/#sobre-mi"
+              onClick={() => setAboutOpen(false)}
+              className="btn btn-primary mt-6 w-full justify-center"
+            >
+              {tAbout("eyebrow")}
+              <ArrowIcon />
+            </Link>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
