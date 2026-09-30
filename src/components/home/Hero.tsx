@@ -217,7 +217,7 @@ export default function Hero() {
           <p className="hero-kicker eyebrow mb-6 mt-2 lg:mt-4 [@media(max-height:800px)]:lg:mt-1">{t("kicker")}</p>
           <h1
             className="hero-line font-semibold tracking-tight text-balance"
-            style={{ fontSize: "var(--fs-display)", lineHeight: 1.08, color: "#2c4842" }}
+            style={{ fontSize: "var(--fs-display)", lineHeight: 1.08, color: "#1a2e29" }}
           >
             {t("titleMain")}
             {t("titleAccent")}
