@@ -17,21 +17,21 @@ const STICKERS: IconBadgeSpec[] = [
     alt: "Ment creativa",
     size: 130,
     rotate: -7,
-    style: { left: LEFT_X, top: "50px" },
+    style: { left: LEFT_X, top: "220px" },
   },
   {
     src: "/images/icons-green/mental.png",
     alt: "Benestar mental",
     size: 110,
     rotate: 6,
-    style: { left: LEFT_X, top: "225px" },
+    style: { left: LEFT_X, top: "395px" },
   },
   {
     src: "/images/icons-green/psicologia-2.png",
     alt: "Sessió d'acompanyament",
     size: 125,
     rotate: -6,
-    style: { left: LEFT_X, top: "380px" },
+    style: { left: LEFT_X, top: "550px" },
   },
 ];
 
@@ -246,13 +246,13 @@ export default function Hero() {
         </div>
 
         <div className="relative">
-          <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-md lg:ml-auto lg:max-h-[56vh]">
+          <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-lg lg:ml-auto lg:max-h-[68vh]">
             <Image
               src="/images/hero-photo-v2.jpg"
               alt={t("photoAlt")}
               fill
               priority
-              sizes="(min-width: 1024px) 420px, 90vw"
+              sizes="(min-width: 1024px) 520px, 90vw"
               className="object-cover"
             />
           </div>
