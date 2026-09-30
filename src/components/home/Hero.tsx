@@ -204,7 +204,7 @@ export default function Hero() {
         </Container>
       </div>
 
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-20 h-28 overflow-hidden lg:hidden">
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-40 h-28 overflow-hidden lg:hidden">
         <Container className="relative h-full">
           {MOBILE_STICKERS.map((spec) => (
             <MobileSticker key={spec.src} spec={spec} />
