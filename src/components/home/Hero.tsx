@@ -41,47 +41,24 @@ type MobileStickerSpec = {
   size: number;
   rotate: number;
   opacity: number;
-  style: React.CSSProperties;
 };
 
 const MOBILE_STICKERS: MobileStickerSpec[] = [
-  {
-    src: "/images/icons-green/mente-creativa.png",
-    alt: "",
-    size: 44,
-    rotate: -10,
-    opacity: 0.4,
-    style: { right: "6%", top: "0px" },
-  },
-  {
-    src: "/images/icons-green/liderazgo.png",
-    alt: "",
-    size: 40,
-    rotate: -6,
-    opacity: 0.32,
-    style: { right: "28%", top: "22px" },
-  },
-  {
-    src: "/images/icons-green/familia.png",
-    alt: "",
-    size: 38,
-    rotate: 8,
-    opacity: 0.3,
-    style: { right: "0%", top: "38px" },
-  },
+  { src: "/images/icons-green/mente-creativa.png", alt: "", size: 34, rotate: -8, opacity: 0.5 },
+  { src: "/images/icons-green/liderazgo.png", alt: "", size: 30, rotate: 6, opacity: 0.4 },
+  { src: "/images/icons-green/familia.png", alt: "", size: 32, rotate: -5, opacity: 0.35 },
 ];
 
 function MobileSticker({ spec }: { spec: MobileStickerSpec }) {
   return (
     <div
       aria-hidden
-      className="pointer-events-none absolute"
+      className="pointer-events-none relative"
       style={{
         width: spec.size,
         height: spec.size,
         rotate: `${spec.rotate}deg`,
         opacity: spec.opacity,
-        ...spec.style,
       }}
     >
       <Image src={spec.src} alt="" fill sizes={`${spec.size}px`} className="object-contain" />
@@ -204,17 +181,25 @@ export default function Hero() {
         </Container>
       </div>
 
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-40 h-28 overflow-hidden lg:hidden">
-        <Container className="relative h-full">
-          {MOBILE_STICKERS.map((spec) => (
-            <MobileSticker key={spec.src} spec={spec} />
-          ))}
-        </Container>
-      </div>
-
       <Container className="relative grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
         <div>
-          <p className="hero-kicker eyebrow mb-6 mt-2 lg:mt-4 [@media(max-height:800px)]:lg:mt-1">{t("kicker")}</p>
+          <div className="mb-6 mt-2 flex items-center justify-between gap-4 lg:mb-6 lg:mt-4 lg:block [@media(max-height:800px)]:lg:mt-1">
+            <p className="hero-kicker eyebrow">{t("kicker")}</p>
+            <div className="flex items-center gap-4 lg:hidden">
+              <div className="hero-kicker flex flex-col items-center gap-2.5">
+                {MOBILE_STICKERS.map((spec) => (
+                  <MobileSticker key={spec.src} spec={spec} />
+                ))}
+              </div>
+              <Link
+                href="/#sobre-mi"
+                aria-label={t("photoAlt")}
+                className="hero-kicker relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-4 ring-white shadow-[0_10px_30px_-10px_rgba(32,43,40,0.45)] transition-transform active:scale-95"
+              >
+                <Image src="/images/hero-photo-v2.jpg" alt="" fill sizes="64px" className="object-cover" />
+              </Link>
+            </div>
+          </div>
           <h1
             className="hero-line font-semibold tracking-tight text-balance"
             style={{ fontSize: "var(--fs-display)", lineHeight: 1.08, color: "#1a2e29" }}
