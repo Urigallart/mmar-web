@@ -44,9 +44,9 @@ type MobileStickerSpec = {
 };
 
 const MOBILE_STICKERS: MobileStickerSpec[] = [
-  { src: "/images/icons-green/mente-creativa.png", alt: "", size: 34, rotate: -8, opacity: 0.5 },
-  { src: "/images/icons-green/liderazgo.png", alt: "", size: 30, rotate: 6, opacity: 0.4 },
-  { src: "/images/icons-green/familia.png", alt: "", size: 32, rotate: -5, opacity: 0.35 },
+  { src: "/images/icons-green/mente-creativa.png", alt: "", size: 42, rotate: -8, opacity: 0.5 },
+  { src: "/images/icons-green/liderazgo.png", alt: "", size: 38, rotate: 6, opacity: 0.4 },
+  { src: "/images/icons-green/familia.png", alt: "", size: 40, rotate: -5, opacity: 0.35 },
 ];
 
 function MobileSticker({ spec }: { spec: MobileStickerSpec }) {
@@ -71,6 +71,17 @@ export default function Hero() {
   const tAbout = useTranslations("home.about");
   const rootRef = useRef<HTMLDivElement>(null);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [aboutVisible, setAboutVisible] = useState(false);
+
+  const openAbout = () => {
+    setAboutOpen(true);
+    requestAnimationFrame(() => requestAnimationFrame(() => setAboutVisible(true)));
+  };
+
+  const closeAbout = () => {
+    setAboutVisible(false);
+    window.setTimeout(() => setAboutOpen(false), 280);
+  };
 
   useEffect(() => {
     const root = rootRef.current;
@@ -189,14 +200,14 @@ export default function Hero() {
             <p className="hero-kicker eyebrow">{t("kicker")}</p>
             <button
               type="button"
-              onClick={() => setAboutOpen(true)}
+              onClick={openAbout}
               aria-label={tAbout("eyebrow")}
               className="hero-kicker relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-4 ring-white shadow-[0_10px_30px_-10px_rgba(32,43,40,0.45)] transition-transform active:scale-95 lg:hidden"
             >
               <Image src="/images/hero-photo-v2.jpg" alt="" fill sizes="64px" className="object-cover" />
             </button>
           </div>
-          <div className="flex items-start gap-3">
+          <div className="flex items-center gap-3">
             <h1
               className="hero-line flex-1 font-semibold tracking-tight text-balance"
               style={{ fontSize: "var(--fs-display)", lineHeight: 1.08, color: "#1a2e29" }}
@@ -204,7 +215,7 @@ export default function Hero() {
               {t("titleMain")}
               {t("titleAccent")}
             </h1>
-            <div className="hero-kicker mt-1 flex shrink-0 flex-col items-center gap-3 lg:hidden">
+            <div className="hero-kicker flex shrink-0 flex-col items-center gap-4 lg:hidden">
               {MOBILE_STICKERS.map((spec) => (
                 <MobileSticker key={spec.src} spec={spec} />
               ))}
@@ -253,30 +264,30 @@ export default function Hero() {
 
       {aboutOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 p-6 backdrop-blur-sm lg:hidden"
-          onClick={() => setAboutOpen(false)}
+          className={`fixed inset-0 z-50 flex items-center justify-center p-8 backdrop-blur-md transition-opacity duration-300 lg:hidden ${aboutVisible ? "bg-ink/35 opacity-100" : "bg-ink/0 opacity-0"}`}
+          onClick={closeAbout}
         >
           <div
-            className="relative w-full min-w-0 max-w-sm rounded-[var(--radius-card)] bg-white p-6 shadow-[0_30px_80px_-20px_rgba(20,28,26,0.5)]"
+            className={`relative flex w-full max-w-xs flex-col items-center transition-all duration-300 ease-out ${aboutVisible ? "translate-y-0 scale-100 opacity-100" : "translate-y-3 scale-95 opacity-0"}`}
             onClick={(e) => e.stopPropagation()}
           >
             <button
               type="button"
-              onClick={() => setAboutOpen(false)}
+              onClick={closeAbout}
               aria-label="Tancar"
-              className="absolute right-4 top-4 grid h-8 w-8 place-items-center rounded-full bg-paper-deep text-ink-dim"
+              className="absolute -top-2 right-0 grid h-9 w-9 place-items-center rounded-full bg-white text-ink-dim shadow-md"
             >
               ✕
             </button>
-            <div className="relative mx-auto h-24 w-24 overflow-hidden rounded-full ring-4 ring-white shadow-md">
-              <Image src="/images/hero-photo-v2.jpg" alt="" fill sizes="96px" className="object-cover" />
+            <div className="relative h-28 w-28 overflow-hidden rounded-full ring-4 ring-white shadow-[0_20px_50px_-15px_rgba(20,28,26,0.55)]">
+              <Image src="/images/hero-photo-v2.jpg" alt="" fill sizes="112px" className="object-cover" />
             </div>
-            <p className="mt-4 text-center font-semibold text-ink">Mª del Mar</p>
-            <p className="text-center text-sm text-ink-dim">{tAbout("role")}</p>
+            <p className="mt-5 font-semibold text-ink">Mª del Mar</p>
+            <p className="text-sm text-ink-dim">{tAbout("role")}</p>
             <p className="mt-4 text-center text-sm italic leading-relaxed text-ink-dim">{tAbout("quote")}</p>
             <Link
               href="/#sobre-mi"
-              onClick={() => setAboutOpen(false)}
+              onClick={closeAbout}
               className="btn btn-primary mt-6 w-full justify-center"
             >
               {tAbout("eyebrow")}
