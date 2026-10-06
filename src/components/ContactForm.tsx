@@ -53,6 +53,31 @@ export function ContactForm({ variant }: { variant: "coaching" | "psicopedagogia
           ];
 
     const who = get(variant === "coaching" ? "full_name" : "guardian_name");
+    const raw: Record<string, string | string[]> = {};
+    for (const key of new Set(Array.from(data.keys()))) {
+      const values = data.getAll(key).map(String);
+      raw[key] = values.length > 1 ? values : values[0];
+    }
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ variant, data: raw, website: String(data.get("website") ?? "") }),
+      });
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+        return;
+      }
+      if (res.status >= 400 && res.status < 500) {
+        setStatus("error");
+        return;
+      }
+    } catch {
+      // network or server problem: fall back to the backup service below
+    }
+
     const payload: Record<string, string> = {
       access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "",
     };
@@ -99,6 +124,14 @@ export function ContactForm({ variant }: { variant: "coaching" | "psicopedagogia
       </p>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+        <input
+          type="text"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          className="absolute left-[-9999px] h-0 w-0 opacity-0"
+        />
         {variant === "psicopedagogia" ? (
           <>
             <Field label={t("guardianLabel")} name="guardian_name" required />
