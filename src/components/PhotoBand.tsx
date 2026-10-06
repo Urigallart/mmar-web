@@ -27,6 +27,7 @@ export function PhotoBand({
               src={src}
               alt={alt}
               fill
+              quality={92}
               sizes="(min-width: 1240px) 1240px, 100vw"
               className="object-cover"
               style={position ? { objectPosition: position } : undefined}

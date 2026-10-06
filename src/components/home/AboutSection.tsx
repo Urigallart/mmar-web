@@ -76,7 +76,7 @@ export default function AboutSection() {
           <div role="img" aria-label={t("spaceImageAlt")} className="grid grid-cols-2 gap-3 sm:gap-5">
             {SPACE_PHOTOS.map((src) => (
               <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-[var(--radius-card)] bg-paper-deep">
-                <Image src={src} alt="" fill sizes="(min-width: 1240px) 610px, 50vw" className="object-cover" />
+                <Image src={src} alt="" fill quality={92} sizes="(min-width: 1240px) 610px, 50vw" className="object-cover" />
               </div>
             ))}
           </div>

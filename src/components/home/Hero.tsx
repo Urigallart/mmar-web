@@ -252,6 +252,7 @@ export default function Hero() {
               alt={t("photoAlt")}
               fill
               priority
+              quality={92}
               sizes="(min-width: 1024px) 520px, 90vw"
               className="object-cover"
             />
