@@ -16,21 +16,21 @@ export function HomeContactButtons({ whatsappLabel }: { whatsappLabel: string })
           href="https://wa.me/34629392949"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-primary !bg-paper !text-ink"
+          className="btn btn-primary !bg-paper !text-ink hover:!bg-green-pale"
         >
           {whatsappLabel}
         </a>
         <button
           type="button"
           onClick={() => setOpen("coaching")}
-          className="btn border border-white/30 text-paper transition-colors"
+          className="btn border border-white/30 text-paper transition-colors hover:border-white/60 hover:bg-white/10"
         >
           {tNav("coaching")}
         </button>
         <button
           type="button"
           onClick={() => setOpen("psicopedagogia")}
-          className="btn border border-white/30 text-paper transition-colors"
+          className="btn border border-white/30 text-paper transition-colors hover:border-white/60 hover:bg-white/10"
         >
           {tNav("psicopedagogia")}
         </button>

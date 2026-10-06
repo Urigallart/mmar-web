@@ -37,7 +37,7 @@ export default function ServiceFork() {
             <Reveal key={service.href} delay={i * 0.1} y={40}>
               <Link
                 href={service.href}
-                className="card-hover group relative flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] border border-border bg-white"
+                className="card-hover group relative flex h-full flex-col overflow-hidden rounded-[var(--radius-card)] border border-border bg-white hover:-translate-y-1 hover:border-border-strong hover:shadow-[0_30px_60px_-30px_rgba(32,43,40,0.35)]"
               >
                 <div className="relative aspect-[16/11] w-full overflow-hidden bg-green-pale">
                   <Image
@@ -45,7 +45,7 @@ export default function ServiceFork() {
                     alt={service.imageAlt}
                     fill
                     sizes="(min-width: 768px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-700 ease-out"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-7 sm:p-8">
@@ -56,7 +56,7 @@ export default function ServiceFork() {
                   <p className="mt-3 flex-1 leading-relaxed text-ink-dim">{service.description}</p>
                   <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-ink">
                     {t("explore")}
-                    <span className="btn-arrow bg-ink text-paper transition-transform duration-500">
+                    <span className="btn-arrow bg-ink text-paper transition-transform duration-500 group-hover:translate-x-1">
                       <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
                         <path
                           d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12"
