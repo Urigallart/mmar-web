@@ -30,6 +30,7 @@ export default function Header() {
 
     e.preventDefault();
     main.classList.add("page-leaving");
+    router.prefetch(href);
     window.setTimeout(() => router.push(href), 400);
     window.setTimeout(() => main.classList.remove("page-leaving"), 3000);
   };
