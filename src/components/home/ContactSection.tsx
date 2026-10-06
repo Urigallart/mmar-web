@@ -60,7 +60,7 @@ function ContactRow({
     <div className="flex items-baseline justify-between gap-4 text-sm">
       <span className="text-white/50">{label}</span>
       {href ? (
-        <a href={href} className="font-medium text-paper underline-offset-4 hover:underline">
+        <a href={href} className="font-medium !text-white underline-offset-4 hover:underline">
           {value}
         </a>
       ) : (
