@@ -69,7 +69,8 @@ export default function AboutSection() {
 
       <Container className="mt-16">
         <Reveal y={30}>
-          <p className="mb-6 max-w-xl font-medium text-ink" style={{ fontSize: "var(--fs-lede)" }}>
+          <p className="eyebrow mb-3">{t("spaceEyebrow")}</p>
+          <p className="mb-6 max-w-xl text-ink-dim" style={{ fontSize: "var(--fs-lede)" }}>
             {t("spaceCaption")}
           </p>
           <div role="img" aria-label={t("spaceImageAlt")} className="grid grid-cols-2 gap-3 sm:gap-5">
