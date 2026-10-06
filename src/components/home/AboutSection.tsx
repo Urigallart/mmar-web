@@ -18,8 +18,8 @@ export default function AboutSection() {
       <Container className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
         <Reveal y={30}>
           <div className="flex items-center gap-3">
-            <span className="relative h-11 w-[5.25rem] flex-shrink-0 overflow-hidden rounded-full">
-              <Image src="/images/logo-mark.png" alt="" fill sizes="84px" className="object-cover" />
+            <span className="relative h-14 w-14 flex-shrink-0 overflow-hidden rounded-full">
+              <Image src="/images/logo-mark.png" alt="" fill sizes="56px" className="scale-[1.08] object-cover" />
             </span>
             <div>
               <p className="font-semibold text-ink">Mª del Mar</p>
