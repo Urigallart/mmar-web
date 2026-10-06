@@ -29,15 +29,15 @@ export default function ContactSection() {
               <p className="mt-5 max-w-lg text-white/65" style={{ fontSize: "var(--fs-lede)" }}>
                 {t("lede")}
               </p>
-              <HomeContactButtons instagramLabel={t("ctaInstagram")} />
+              <HomeContactButtons whatsappLabel={t("ctaWhatsapp")} />
             </Reveal>
 
             <Reveal y={28} delay={0.1}>
               <div className="flex flex-col gap-5 border-t border-white/15 pt-8 lg:border-t-0 lg:border-l lg:pl-10 lg:pt-0">
                 <ContactRow label={t("locationLabel")} value={t("locationValue")} />
                 <ContactRow label={t("modalityLabel")} value={t("modalityValue")} />
-                <ContactRow label={t("phoneLabel")} value={t("phoneValue")} muted />
-                <ContactRow label={t("emailLabel")} value={t("emailValue")} muted />
+                <ContactRow label={t("phoneLabel")} value={t("phoneValue")} href="tel:+34629392949" />
+                <ContactRow label={t("emailLabel")} value={t("emailValue")} href="mailto:mmarserracanta@gmail.com" />
               </div>
             </Reveal>
           </div>
@@ -50,16 +50,22 @@ export default function ContactSection() {
 function ContactRow({
   label,
   value,
-  muted = false,
+  href,
 }: {
   label: string;
   value: string;
-  muted?: boolean;
+  href?: string;
 }) {
   return (
     <div className="flex items-baseline justify-between gap-4 text-sm">
       <span className="text-white/50">{label}</span>
-      <span className={muted ? "text-white/40 italic" : "font-medium text-paper"}>{value}</span>
+      {href ? (
+        <a href={href} className="font-medium text-paper underline-offset-4 hover:underline">
+          {value}
+        </a>
+      ) : (
+        <span className="font-medium text-paper">{value}</span>
+      )}
     </div>
   );
 }

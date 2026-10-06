@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Modal } from "@/components/Modal";
 import { ContactForm } from "@/components/ContactForm";
 
-export function HomeContactButtons({ instagramLabel }: { instagramLabel: string }) {
+export function HomeContactButtons({ whatsappLabel }: { whatsappLabel: string }) {
   const tNav = useTranslations("nav");
   const [open, setOpen] = useState<"coaching" | "psicopedagogia" | null>(null);
 
@@ -13,12 +13,12 @@ export function HomeContactButtons({ instagramLabel }: { instagramLabel: string 
     <>
       <div className="mt-8 flex flex-wrap items-center gap-3.5">
         <a
-          href="https://www.instagram.com/mmar_coach"
+          href="https://wa.me/34629392949"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary !bg-paper !text-ink hover:!bg-green-pale"
         >
-          {instagramLabel}
+          {whatsappLabel}
         </a>
         <button
           type="button"

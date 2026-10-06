@@ -28,7 +28,7 @@
       "submit": "Enviar",
       "sending": "Enviando...",
       "success": "¡Gracias! He recibido tu mensaje y te responderé pronto.",
-      "error": "Ha habido un error al enviar el formulario. Vuelve a intentarlo o escríbeme por Instagram.",
+      "error": "Ha habido un error al enviar el formulario. Vuelve a intentarlo o escríbeme por WhatsApp.",
       "otherPlaceholder": "Especifica...",
       "yes": "Sí",
       "no": "No"
@@ -90,15 +90,15 @@
       "eyebrow": "Hablemos",
       "title": "¿Quieres contarme qué te está pasando?",
       "lede": "Si no tienes claro si necesitas un proceso o una consulta puntual, lo valoramos juntos.",
-      "ctaInstagram": "Escríbeme por Instagram",
       "locationLabel": "Ubicación",
       "locationValue": "Barcelona · Sarrià–Sant Gervasi",
       "modalityLabel": "Modalidad",
       "modalityValue": "Presencial y online",
       "phoneLabel": "Teléfono / WhatsApp",
-      "phoneValue": "Pendiente de confirmar",
+      "phoneValue": "629 39 29 49",
       "emailLabel": "Correo electrónico",
-      "emailValue": "Pendiente de confirmar"
+      "emailValue": "mmarserracanta@gmail.com",
+      "ctaWhatsapp": "Escríbeme por WhatsApp"
     },
     "testimonials": {
       "eyebrow": "Testimonios",
