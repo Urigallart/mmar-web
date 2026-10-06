@@ -69,6 +69,9 @@ export default function AboutSection() {
 
       <Container className="mt-16">
         <Reveal y={30}>
+          <p className="mb-6 max-w-xl font-medium text-ink" style={{ fontSize: "var(--fs-lede)" }}>
+            {t("spaceCaption")}
+          </p>
           <div role="img" aria-label={t("spaceImageAlt")} className="grid grid-cols-2 gap-3 sm:gap-5">
             {SPACE_PHOTOS.map((src) => (
               <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-[var(--radius-card)] bg-paper-deep">
@@ -76,7 +79,6 @@ export default function AboutSection() {
               </div>
             ))}
           </div>
-          <p className="mt-4 text-sm text-ink-dim">{t("spaceCaption")}</p>
         </Reveal>
       </Container>
     </section>
