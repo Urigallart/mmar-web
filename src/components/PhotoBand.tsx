@@ -8,17 +8,20 @@ export function PhotoBand({
   caption,
   ratio = "21/9",
   position,
+  maxWidth,
 }: {
   src: string;
   alt: string;
   caption?: string;
   ratio?: string;
   position?: string;
+  maxWidth?: string;
 }) {
   return (
     <section className="py-[var(--section-pad-sm)]">
       <Container>
         <Reveal y={30}>
+          <div className="mx-auto" style={{ maxWidth }}>
           <div
             className="relative w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep"
             style={{ aspectRatio: ratio }}
@@ -34,6 +37,7 @@ export function PhotoBand({
             />
           </div>
           {caption && <p className="mt-4 text-sm text-ink-dim">{caption}</p>}
+          </div>
         </Reveal>
       </Container>
     </section>
