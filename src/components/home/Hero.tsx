@@ -9,7 +9,8 @@ import { prefersReducedMotion } from "@/lib/motion";
 import { Container } from "@/components/Container";
 import { IconBadge, type IconBadgeSpec } from "@/components/IconBadge";
 
-const LEFT_X = "-4%";
+const stickerLeft = (size: number) =>
+  `max(${64 - size}px, calc(8px - max(0px, (100vw / var(--zoom) - 1240px) / 2)))`;
 
 const STICKERS: IconBadgeSpec[] = [
   {
@@ -17,21 +18,21 @@ const STICKERS: IconBadgeSpec[] = [
     alt: "Ment creativa",
     size: 130,
     rotate: -7,
-    style: { left: LEFT_X, top: "220px" },
+    style: { left: stickerLeft(130), top: "220px" },
   },
   {
     src: "/images/icons-green/mental.png",
     alt: "Benestar mental",
     size: 110,
     rotate: 6,
-    style: { left: LEFT_X, top: "395px" },
+    style: { left: stickerLeft(110), top: "395px" },
   },
   {
     src: "/images/icons-green/psicologia-2.png",
     alt: "Sessió d'acompanyament",
     size: 125,
     rotate: -6,
-    style: { left: LEFT_X, top: "550px" },
+    style: { left: stickerLeft(125), top: "550px" },
   },
 ];
 
