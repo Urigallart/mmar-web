@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import ca from "../../messages/ca.json";
 
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
@@ -20,10 +21,47 @@ export function ContactForm({ variant }: { variant: "coaching" | "psicopedagogia
     setStatus("sending");
 
     const form = e.currentTarget;
-    const formData = new FormData(form);
+    const data = new FormData(form);
+    const get = (name: string) => {
+      const values = data.getAll(name).map(String).filter(Boolean);
+      const other = String(data.get(`${name}_other`) ?? "");
+      if (other) values.push(other);
+      return values.join(", ") || "—";
+    };
+
+    const labels = ca[variant].form as unknown as Record<string, string>;
+    const rows: [string, string][] =
+      variant === "coaching"
+        ? [
+            [labels.nameLabel, get("full_name")],
+            [labels.focusLabel, get("focus")],
+            [labels.motivationLabel, get("motivation")],
+            [labels.goalLabel, get("goal")],
+            [labels.contextLabel, get("context")],
+            [labels.phoneLabel, get("phone")],
+            [labels.emailLabel, get("email")],
+          ]
+        : [
+            [labels.guardianLabel, get("guardian_name")],
+            [labels.childLabel, get("child_name_age")],
+            [labels.schoolYearLabel, get("school_year")],
+            [labels.areasLabel, get("areas")],
+            [labels.concernLabel, get("concern")],
+            [labels.priorSupportLabel, get("prior_support")],
+            [labels.phoneLabel, get("phone")],
+            [labels.emailLabel, get("email")],
+          ];
+
+    const who = get(variant === "coaching" ? "full_name" : "guardian_name");
+    const formData = new FormData();
     formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "");
-    formData.append("subject", variant === "coaching" ? "Nova consulta de Coaching" : "Nova consulta de Psicopedagogia");
+    formData.append(
+      "subject",
+      `${variant === "coaching" ? "Nova consulta de Coaching" : "Nova consulta de Psicopedagogia"} — ${who}`
+    );
     formData.append("from_name", "Mª del Mar — Web");
+    formData.append("replyto", get("email"));
+    rows.forEach(([label, value]) => formData.append(label, value));
 
     try {
       const res = await fetch(WEB3FORMS_ENDPOINT, { method: "POST", body: formData });
