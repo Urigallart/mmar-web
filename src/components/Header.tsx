@@ -54,10 +54,10 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4 sm:pt-5">
+      <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-3 pt-2.5 sm:px-4 sm:pt-5">
         <div
           className={clsx(
-            "flex w-full max-w-[1240px] items-center justify-between gap-4 rounded-full border border-border bg-paper/85 px-3 py-2.5 shadow-[0_10px_30px_-16px_rgba(32,43,40,0.3)] backdrop-blur-md transition-all duration-500 sm:px-4",
+            "flex w-full max-w-[1240px] items-center justify-between gap-3 rounded-full border border-border bg-paper/85 px-2 py-1.5 sm:gap-4 sm:px-3 sm:py-2.5 shadow-[0_10px_30px_-16px_rgba(32,43,40,0.3)] backdrop-blur-md transition-all duration-500 sm:px-4",
             (scrolled || menuOpen) &&
               "border-border-strong shadow-[0_10px_40px_-14px_rgba(32,43,40,0.25)]"
           )}
@@ -65,10 +65,10 @@ export default function Header() {
           <Link
             href="/"
             aria-label="Mª del Mar"
-            className="flex items-center gap-2 rounded-full px-2 py-1 text-[0.95rem] font-semibold tracking-tight text-ink"
+            className="flex items-center gap-2 rounded-full px-1 py-0 sm:px-2 sm:py-1 text-[0.95rem] font-semibold tracking-tight text-ink"
             onClick={() => setMenuOpen(false)}
           >
-            <span className="relative h-14 w-14 flex-shrink-0 overflow-hidden rounded-full">
+            <span className="relative h-10 w-10 flex-shrink-0 sm:h-14 sm:w-14 overflow-hidden rounded-full">
               <Image src="/images/logo-mark.png" alt="" fill sizes="56px" className="scale-[1.08] object-cover" />
             </span>
           </Link>
@@ -89,7 +89,7 @@ export default function Header() {
             <LanguageSwitcher className="hidden sm:flex" />
             <Link
               href="/#contacte"
-              className="btn btn-primary hidden !py-2.5 !px-5 text-[0.85rem] sm:inline-flex"
+              className="btn btn-primary hidden !px-3.5 !py-2 text-[0.78rem] sm:inline-flex sm:!px-5 sm:!py-2.5 sm:text-[0.85rem]"
             >
               {t("parlemNe")}
             </Link>
@@ -98,7 +98,7 @@ export default function Header() {
               aria-label={menuOpen ? t("tancarMenu") : t("obrirMenu")}
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen((v) => !v)}
-              className="relative grid h-10 w-10 flex-shrink-0 place-items-center rounded-full border border-border-strong lg:hidden"
+              className="relative grid h-9 w-9 flex-shrink-0 place-items-center rounded-full border border-border-strong sm:h-10 sm:w-10 lg:hidden"
             >
               <span
                 className={clsx(

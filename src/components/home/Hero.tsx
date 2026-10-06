@@ -178,7 +178,7 @@ export default function Hero() {
   return (
     <section
       ref={rootRef}
-      className="relative pt-36 pb-20 sm:pt-40 sm:pb-28 lg:pt-28 lg:pb-8 [@media(max-height:640px)]:lg:pt-24 [@media(max-height:640px)]:lg:pb-6"
+      className="relative pt-28 pb-20 sm:pt-40 sm:pb-28 lg:pt-28 lg:pb-8 [@media(max-height:640px)]:lg:pt-24 [@media(max-height:640px)]:lg:pb-6"
     >
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
         <div
