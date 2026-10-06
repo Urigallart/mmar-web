@@ -10,7 +10,7 @@ import { Container } from "@/components/Container";
 import { IconBadge, type IconBadgeSpec } from "@/components/IconBadge";
 
 const stickerLeft = (size: number) =>
-  `max(${64 - size}px, calc(8px - max(0px, (100vw / var(--zoom) - 1240px) / 2)))`;
+  `max(${36 - size}px, calc(8px - max(0px, (100vw / var(--zoom) - 1240px) / 2)))`;
 
 const STICKERS: IconBadgeSpec[] = [
   {
@@ -151,7 +151,7 @@ export default function Hero() {
         />
       </div>
 
-      <div aria-hidden className="pointer-events-none absolute inset-0 hidden overflow-hidden lg:block">
+      <div aria-hidden className="pointer-events-none absolute inset-0 hidden overflow-hidden min-[1180px]:block">
         <Container className="relative h-full">
           {STICKERS.map((spec) => (
             <IconBadge key={spec.src} spec={spec} />
