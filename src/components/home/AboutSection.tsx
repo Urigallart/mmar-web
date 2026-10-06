@@ -3,6 +3,13 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/Container";
 import { Reveal } from "@/components/Reveal";
 
+const SPACE_PHOTOS = [
+  "/images/space-1.webp",
+  "/images/space-2.webp",
+  "/images/space-3.webp",
+  "/images/space-4.webp",
+];
+
 export default function AboutSection() {
   const t = useTranslations("home.about");
 
@@ -62,15 +69,12 @@ export default function AboutSection() {
 
       <Container className="mt-16">
         <Reveal y={30}>
-          <div className="relative overflow-hidden rounded-[var(--radius-card)]">
-            <Image
-              src="/images/collage.png"
-              alt={t("spaceImageAlt")}
-              width={1536}
-              height={1024}
-              sizes="(min-width: 1240px) 1240px, 100vw"
-              className="w-full object-cover"
-            />
+          <div role="img" aria-label={t("spaceImageAlt")} className="grid grid-cols-2 gap-3 sm:gap-5">
+            {SPACE_PHOTOS.map((src) => (
+              <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-[var(--radius-card)] bg-paper-deep">
+                <Image src={src} alt="" fill sizes="(min-width: 1240px) 610px, 50vw" className="object-cover" />
+              </div>
+            ))}
           </div>
           <p className="mt-4 text-sm text-ink-dim">{t("spaceCaption")}</p>
         </Reveal>
