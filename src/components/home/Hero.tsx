@@ -178,7 +178,7 @@ export default function Hero() {
   return (
     <section
       ref={rootRef}
-      className="relative pt-36 pb-20 sm:pt-40 sm:pb-28 lg:pt-28 lg:pb-8 [@media(max-height:800px)]:lg:pt-24 [@media(max-height:800px)]:lg:pb-6"
+      className="relative pt-36 pb-20 sm:pt-40 sm:pb-28 lg:pt-28 lg:pb-8 [@media(max-height:640px)]:lg:pt-24 [@media(max-height:640px)]:lg:pb-6"
     >
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
         <div
@@ -197,7 +197,7 @@ export default function Hero() {
 
       <Container className="relative grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
         <div>
-          <div className="mb-6 mt-2 flex items-center justify-between gap-4 lg:mb-6 lg:mt-4 lg:block [@media(max-height:800px)]:lg:mt-1">
+          <div className="mb-6 mt-2 flex items-center justify-between gap-4 lg:mb-6 lg:mt-4 lg:block [@media(max-height:640px)]:lg:mt-1">
             <p className="hero-kicker eyebrow">{t("kicker")}</p>
             <button
               type="button"
@@ -246,7 +246,7 @@ export default function Hero() {
         </div>
 
         <div className="relative lg:-mt-16">
-          <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-lg lg:ml-auto lg:h-[68vh] lg:w-auto lg:max-w-full">
+          <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-lg lg:ml-auto lg:h-[calc(68vh/0.8)] lg:w-auto lg:max-w-full">
             <Image
               src="/images/hero-photo-v3.webp"
               alt={t("photoAlt")}

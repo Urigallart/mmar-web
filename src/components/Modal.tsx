@@ -71,7 +71,7 @@ export function Modal({
           "relative flex w-full max-w-2xl flex-col overflow-hidden rounded-[var(--radius-card)] bg-paper shadow-[0_30px_80px_-20px_rgba(32,43,40,0.45)] transition-all duration-300",
           open ? "translate-y-0 scale-100 opacity-100" : "translate-y-4 scale-[0.98] opacity-0"
         )}
-        style={{ maxHeight: "min(85vh, 900px)" }}
+        style={{ maxHeight: "min(calc(85vh / var(--zoom)), 900px)" }}
       >
         <button
           ref={closeButtonRef}
