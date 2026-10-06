@@ -46,7 +46,7 @@ export default async function CoachingPage() {
         </Container>
       </section>
 
-      <PhotoBand src="/images/group-session.png" alt={t("photoAlt")} ratio="16/9" />
+      <PhotoBand src="/images/coaching-session-v2.webp" alt={t("photoAlt")} ratio="16/9" position="50% 35%" />
 
       <section className="border-y border-border bg-white py-[var(--section-pad)]">
         <Container className="max-w-3xl">
