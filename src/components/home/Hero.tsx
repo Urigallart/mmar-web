@@ -246,7 +246,7 @@ export default function Hero() {
         </div>
 
         <div className="relative lg:-mt-16">
-          <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-lg lg:ml-auto lg:h-[calc(68vh/0.8)] lg:w-auto lg:max-w-full">
+          <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-lg lg:ml-auto lg:h-[min(calc(68vh/0.8),640px)] lg:w-auto lg:max-w-full">
             <Image
               src="/images/hero-photo-v3.webp"
               alt={t("photoAlt")}
