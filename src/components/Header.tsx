@@ -3,14 +3,23 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import clsx from "clsx";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export default function Header() {
   const t = useTranslations("nav");
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleNavClick = (e: React.MouseEvent, href: string) => {
+    setMenuOpen(false);
+    if (href === "/" && pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   const NAV_LINKS = [
     { href: "/", label: t("inici") },
@@ -71,6 +80,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="rounded-full px-4 py-2 text-base font-medium text-ink-dim transition-colors duration-300 hover:bg-white hover:text-ink"
               >
                 {link.label}
@@ -124,7 +134,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              onClick={() => setMenuOpen(false)}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="text-3xl font-medium text-ink transition-all duration-400"
               style={{
                 transitionDelay: menuOpen ? `${80 + i * 60}ms` : "0ms",
