@@ -7,11 +7,13 @@ export function PhotoBand({
   alt,
   caption,
   ratio = "21/9",
+  position,
 }: {
   src: string;
   alt: string;
   caption?: string;
   ratio?: string;
+  position?: string;
 }) {
   return (
     <section className="py-[var(--section-pad-sm)]">
@@ -27,6 +29,7 @@ export function PhotoBand({
               fill
               sizes="(min-width: 1240px) 1240px, 100vw"
               className="object-cover"
+              style={position ? { objectPosition: position } : undefined}
             />
           </div>
           {caption && <p className="mt-4 text-sm text-ink-dim">{caption}</p>}

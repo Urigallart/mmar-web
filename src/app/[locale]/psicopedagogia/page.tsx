@@ -48,7 +48,7 @@ export default async function PsicopedagogiaPage() {
         </Container>
       </section>
 
-      <PhotoBand src="/images/psicopedagogia-session.png" alt={t("photoAlt")} ratio="16/9" />
+      <PhotoBand src="/images/psicopedagogia-session-v2.webp" alt={t("photoAlt")} ratio="3/2" position="50% 62%" />
 
       <section className="border-y border-border bg-white py-[var(--section-pad)]">
         <Container>
