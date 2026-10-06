@@ -29,14 +29,13 @@ export default function ContactSection() {
               <p className="mt-5 max-w-lg text-white/65" style={{ fontSize: "var(--fs-lede)" }}>
                 {t("lede")}
               </p>
-              <HomeContactButtons whatsappLabel={t("ctaWhatsapp")} />
+              <HomeContactButtons emailLabel={t("ctaEmail")} />
             </Reveal>
 
             <Reveal y={28} delay={0.1}>
               <div className="flex flex-col gap-5 border-t border-white/15 pt-8 lg:border-t-0 lg:border-l lg:pl-10 lg:pt-0">
                 <ContactRow label={t("locationLabel")} value={t("locationValue")} />
                 <ContactRow label={t("modalityLabel")} value={t("modalityValue")} />
-                <ContactRow label={t("phoneLabel")} value={t("phoneValue")} href="tel:+34629392949" />
                 <ContactRow label={t("emailLabel")} value={t("emailValue")} href="mailto:mmarserracanta@gmail.com" />
               </div>
             </Reveal>

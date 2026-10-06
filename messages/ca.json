@@ -29,7 +29,7 @@
       "submit": "Enviar",
       "sending": "Enviant...",
       "success": "Gràcies! He rebut el teu missatge i et respondré aviat.",
-      "error": "Hi ha hagut un error en enviar el formulari. Torna-ho a provar o escriu-me per WhatsApp.",
+      "error": "Hi ha hagut un error en enviar el formulari. Torna-ho a provar o escriu-me per correu.",
       "otherPlaceholder": "Especifica...",
       "yes": "Sí",
       "no": "No"
@@ -92,15 +92,13 @@
       "eyebrow": "Parlem-ne",
       "title": "Vols explicar-me què t'està passant?",
       "lede": "Si no tens clar si necessites un procés o una consulta puntual, ho valorem junts.",
+      "ctaEmail": "Escriu per correu",
       "locationLabel": "Ubicació",
       "locationValue": "Barcelona · Sarrià–Sant Gervasi",
       "modalityLabel": "Modalitat",
       "modalityValue": "Presencial i online",
-      "phoneLabel": "Telèfon / WhatsApp",
-      "phoneValue": "+34629392949",
       "emailLabel": "Correu electrònic",
-      "emailValue": "mmarserracanta@gmail.com",
-      "ctaWhatsapp": "Escriu per WhatsApp"
+      "emailValue": "mmarserracanta@gmail.com"
     },
     "testimonials": {
       "eyebrow": "Testimonis",
@@ -246,7 +244,6 @@
       "motivationLabel": "Què t'ha portat a plantejar-te iniciar un procés de coaching?",
       "goalLabel": "Què t'agradaria canviar, millorar o aconseguir?",
       "contextLabel": "Hi ha algun aspecte de la teva situació actual que consideris important que conegui?",
-      "phoneLabel": "Telèfon",
       "emailLabel": "Correu electrònic"
     }
   },
@@ -398,7 +395,6 @@
       ],
       "concernLabel": "Què us preocupa o què us ha portat a buscar ajuda en aquest moment?",
       "priorSupportLabel": "Ha rebut anteriorment suport psicopedagògic o d'algun altre professional?",
-      "phoneLabel": "Telèfon",
       "emailLabel": "Correu electrònic"
     }
   }

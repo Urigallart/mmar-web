@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Modal } from "@/components/Modal";
 import { ContactForm } from "@/components/ContactForm";
 
-export function HomeContactButtons({ whatsappLabel }: { whatsappLabel: string }) {
+export function HomeContactButtons({ emailLabel }: { emailLabel: string }) {
   const tNav = useTranslations("nav");
   const [open, setOpen] = useState<"coaching" | "psicopedagogia" | null>(null);
 
@@ -13,12 +13,10 @@ export function HomeContactButtons({ whatsappLabel }: { whatsappLabel: string })
     <>
       <div className="mt-8 flex flex-wrap items-center gap-3.5">
         <a
-          href="https://wa.me/34629392949"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="mailto:mmarserracanta@gmail.com"
           className="btn btn-primary !bg-paper !text-ink hover:!bg-green-pale"
         >
-          {whatsappLabel}
+          {emailLabel}
         </a>
         <button
           type="button"

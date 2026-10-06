@@ -12,7 +12,6 @@ const FIELDS: Record<Variant, { name: string; label: string; required?: boolean;
     { name: "motivation", label: ca.coaching.form.motivationLabel },
     { name: "goal", label: ca.coaching.form.goalLabel },
     { name: "context", label: ca.coaching.form.contextLabel },
-    { name: "phone", label: ca.coaching.form.phoneLabel },
     { name: "email", label: ca.coaching.form.emailLabel, required: true },
   ],
   psicopedagogia: [
@@ -22,7 +21,6 @@ const FIELDS: Record<Variant, { name: string; label: string; required?: boolean;
     { name: "areas", label: ca.psicopedagogia.form.areasLabel, other: true },
     { name: "concern", label: ca.psicopedagogia.form.concernLabel },
     { name: "prior_support", label: ca.psicopedagogia.form.priorSupportLabel },
-    { name: "phone", label: ca.psicopedagogia.form.phoneLabel },
     { name: "email", label: ca.psicopedagogia.form.emailLabel, required: true },
   ],
 };

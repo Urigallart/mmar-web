@@ -38,7 +38,6 @@ export function ContactForm({ variant }: { variant: "coaching" | "psicopedagogia
             [labels.motivationLabel, get("motivation")],
             [labels.goalLabel, get("goal")],
             [labels.contextLabel, get("context")],
-            [labels.phoneLabel, get("phone")],
             [labels.emailLabel, get("email")],
           ]
         : [
@@ -48,7 +47,6 @@ export function ContactForm({ variant }: { variant: "coaching" | "psicopedagogia
             [labels.areasLabel, get("areas")],
             [labels.concernLabel, get("concern")],
             [labels.priorSupportLabel, get("prior_support")],
-            [labels.phoneLabel, get("phone")],
             [labels.emailLabel, get("email")],
           ];
 
@@ -168,10 +166,7 @@ export function ContactForm({ variant }: { variant: "coaching" | "psicopedagogia
           </>
         )}
 
-        <div className="grid gap-6 sm:grid-cols-2">
-          <Field label={t("phoneLabel")} name="phone" type="tel" />
-          <Field label={t("emailLabel")} name="email" type="email" required />
-        </div>
+        <Field label={t("emailLabel")} name="email" type="email" required />
 
         {status === "error" && (
           <p role="alert" className="text-sm text-red-600">
