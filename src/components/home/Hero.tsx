@@ -204,7 +204,7 @@ export default function Hero() {
               aria-label={tAbout("eyebrow")}
               className="hero-kicker relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-4 ring-white shadow-[0_10px_30px_-10px_rgba(32,43,40,0.45)] transition-transform active:scale-95 lg:hidden"
             >
-              <Image src="/images/hero-photo-v2.jpg" alt="" fill sizes="64px" className="object-cover" />
+              <Image src="/images/hero-photo-v3.webp" alt="" fill sizes="64px" className="object-cover object-[50%_20%]" />
             </button>
           </div>
           <div className="flex items-center gap-3">
@@ -247,7 +247,7 @@ export default function Hero() {
         <div className="relative lg:-mt-16">
           <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-lg lg:ml-auto lg:max-h-[68vh]">
             <Image
-              src="/images/hero-photo-v2.jpg"
+              src="/images/hero-photo-v3.webp"
               alt={t("photoAlt")}
               fill
               priority
@@ -280,7 +280,7 @@ export default function Hero() {
               ✕
             </button>
             <div className="relative h-28 w-28 overflow-hidden rounded-full ring-4 ring-white shadow-[0_20px_50px_-15px_rgba(20,28,26,0.55)]">
-              <Image src="/images/hero-photo-v2.jpg" alt="" fill sizes="112px" className="object-cover" />
+              <Image src="/images/hero-photo-v3.webp" alt="" fill sizes="112px" className="object-cover object-[50%_20%]" />
             </div>
             <p className="mt-5 font-semibold text-white">Mª del Mar</p>
             <p className="text-sm text-white/80">{tAbout("role")}</p>
