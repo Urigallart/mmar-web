@@ -53,18 +53,22 @@ export function ContactForm({ variant }: { variant: "coaching" | "psicopedagogia
           ];
 
     const who = get(variant === "coaching" ? "full_name" : "guardian_name");
-    const formData = new FormData();
-    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "");
-    formData.append(
-      "subject",
-      `${variant === "coaching" ? "Nova consulta de Coaching" : "Nova consulta de Psicopedagogia"} — ${who}`
-    );
-    formData.append("from_name", "Mª del Mar — Web");
-    formData.append("replyto", get("email"));
-    rows.forEach(([label, value]) => formData.append(label, value));
+    const payload: Record<string, string> = {
+      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "",
+    };
+    payload.subject = `${variant === "coaching" ? "Nova consulta de Coaching" : "Nova consulta de Psicopedagogia"} — ${who}`;
+    payload.from_name = "Mª del Mar — Web";
+    payload.replyto = get("email");
+    rows.forEach(([label, value]) => {
+      payload[label] = value;
+    });
 
     try {
-      const res = await fetch(WEB3FORMS_ENDPOINT, { method: "POST", body: formData });
+      const res = await fetch(WEB3FORMS_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
+      });
       const json = await res.json();
       if (json.success) {
         setStatus("success");
