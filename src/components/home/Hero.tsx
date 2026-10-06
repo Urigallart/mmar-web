@@ -247,7 +247,7 @@ export default function Hero() {
               className="object-cover"
             />
           </div>
-          <div className="absolute -bottom-6 -left-6 hidden rounded-2xl border border-border bg-white/90 px-5 py-4 shadow-[0_20px_50px_-20px_rgba(32,43,40,0.35)] backdrop-blur sm:block">
+          <div className="mt-4 hidden w-fit rounded-2xl border border-border bg-white px-5 py-3.5 sm:block lg:ml-auto">
             <p className="text-sm font-semibold text-ink">{t("statValue")}</p>
             <p className="text-xs text-ink-dim">{t("statLabel")}</p>
           </div>
