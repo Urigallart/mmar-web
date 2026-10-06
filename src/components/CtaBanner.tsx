@@ -33,7 +33,7 @@ export function CtaBanner({
               <button
                 type="button"
                 onClick={onClick}
-                className="btn btn-primary relative flex-shrink-0 !bg-paper !text-ink hover:!bg-green-pale"
+                className="btn btn-primary relative flex-shrink-0 !bg-paper !text-ink"
               >
                 {ctaLabel}
                 <span className="btn-arrow bg-ink text-paper">
@@ -51,7 +51,7 @@ export function CtaBanner({
             ) : (
               <Link
                 href="/#contacte"
-                className="btn btn-primary relative flex-shrink-0 !bg-paper !text-ink hover:!bg-green-pale"
+                className="btn btn-primary relative flex-shrink-0 !bg-paper !text-ink"
               >
                 {ctaLabel}
                 <span className="btn-arrow bg-ink text-paper">

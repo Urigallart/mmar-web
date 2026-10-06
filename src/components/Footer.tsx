@@ -22,7 +22,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="grid h-9 w-9 place-items-center rounded-full border border-border-strong text-ink-dim transition-colors duration-300 hover:border-ink hover:text-ink"
+              className="grid h-9 w-9 place-items-center rounded-full border border-border-strong text-ink-dim transition-colors duration-300"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                 <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" strokeWidth="1.6" />
@@ -35,7 +35,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="grid h-9 w-9 place-items-center rounded-full border border-border-strong text-ink-dim transition-colors duration-300 hover:border-ink hover:text-ink"
+              className="grid h-9 w-9 place-items-center rounded-full border border-border-strong text-ink-dim transition-colors duration-300"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                 <rect x="2.5" y="2.5" width="19" height="19" rx="4" stroke="currentColor" strokeWidth="1.6" />
@@ -55,19 +55,19 @@ export default function Footer() {
         <nav className="grid grid-cols-2 gap-x-12 gap-y-3 text-sm sm:flex sm:gap-16">
           <div className="flex flex-col gap-3">
             <span className="eyebrow mb-1">{t("footer.acompanyament")}</span>
-            <Link href="/coaching" className="text-ink-dim transition-colors hover:text-ink">
+            <Link href="/coaching" className="text-ink-dim transition-colors">
               {t("nav.coaching")}
             </Link>
-            <Link href="/psicopedagogia" className="text-ink-dim transition-colors hover:text-ink">
+            <Link href="/psicopedagogia" className="text-ink-dim transition-colors">
               {t("nav.psicopedagogia")}
             </Link>
           </div>
           <div className="flex flex-col gap-3">
             <span className="eyebrow mb-1">{t("footer.web")}</span>
-            <Link href="/#sobre-mi" className="text-ink-dim transition-colors hover:text-ink">
+            <Link href="/#sobre-mi" className="text-ink-dim transition-colors">
               {t("nav.sobreMi")}
             </Link>
-            <Link href="/#contacte" className="text-ink-dim transition-colors hover:text-ink">
+            <Link href="/#contacte" className="text-ink-dim transition-colors">
               {t("nav.contacte")}
             </Link>
           </div>

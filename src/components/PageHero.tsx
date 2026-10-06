@@ -19,7 +19,7 @@ export function PageHero({
         <Reveal y={12}>
           <Link
             href="/"
-            className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-ink-dim transition-colors hover:text-ink"
+            className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-ink-dim transition-colors"
           >
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
               <path
