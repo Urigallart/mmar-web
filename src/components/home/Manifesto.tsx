@@ -1,10 +1,8 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/Container";
 
 export default function Manifesto() {
   const text = useTranslations("home")("manifesto");
-  const role = useTranslations("home.about")("role");
 
   return (
     <section className="py-[var(--section-pad)]">
@@ -22,15 +20,6 @@ export default function Manifesto() {
           >
             {text}
           </blockquote>
-          <figcaption className="mt-8 flex items-center gap-3.5 border-t border-green/30 pt-6">
-            <span className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-full">
-              <Image src="/images/logo-mark.png" alt="" fill sizes="48px" className="scale-[1.08] object-cover" />
-            </span>
-            <span>
-              <span className="block font-semibold text-ink">Mª del Mar</span>
-              <span className="block text-sm text-ink-dim">{role}</span>
-            </span>
-          </figcaption>
         </figure>
       </Container>
     </section>
