@@ -78,9 +78,9 @@ export default async function CoachingPage() {
         </Container>
       </section>
 
-      <section className="border-y border-border bg-white py-[var(--section-pad)]">
+      <section className="py-[var(--section-pad)]" style={{ background: "var(--color-green)" }}>
         <Container>
-          <SectionHeading eyebrow={t("areas.eyebrow")} title={t("areas.title")} lede={t("areas.lede")} />
+          <SectionHeading eyebrow={t("areas.eyebrow")} title={t("areas.title")} lede={t("areas.lede")} light />
           <div className="mt-10 rounded-[var(--radius-card)] bg-green-pale p-6 sm:p-10">
             <CheckList items={areas} columns={2} />
           </div>

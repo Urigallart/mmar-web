@@ -61,10 +61,10 @@ export default async function PsicopedagogiaPage() {
         </Container>
       </section>
 
-      <section className="py-[var(--section-pad)]">
+      <section className="py-[var(--section-pad)]" style={{ background: "var(--color-green)" }}>
         <Container className="max-w-3xl">
-          <SectionHeading eyebrow={t("workSection.eyebrow")} title={t("workSection.title")} />
-          <div className="mt-8 flex flex-col gap-5 text-ink-dim" style={{ fontSize: "var(--fs-lede)", lineHeight: 1.6 }}>
+          <SectionHeading eyebrow={t("workSection.eyebrow")} title={t("workSection.title")} light />
+          <div className="mt-8 flex flex-col gap-5 text-white/80" style={{ fontSize: "var(--fs-lede)", lineHeight: 1.6 }}>
             <Reveal y={16}>
               <p>{t("workSection.p1")}</p>
             </Reveal>
