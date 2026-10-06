@@ -14,6 +14,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const NAV_LINKS = [
+    { href: "/", label: t("inici") },
     { href: "/coaching", label: t("coaching") },
     { href: "/psicopedagogia", label: t("psicopedagogia") },
     { href: "/#sobre-mi", label: t("sobreMi") },
@@ -77,7 +78,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-full px-4 py-2 text-sm font-medium text-ink-dim transition-colors duration-300"
+                className="rounded-full px-4 py-2 text-base font-medium text-ink-dim transition-colors duration-300"
               >
                 {link.label}
               </Link>
