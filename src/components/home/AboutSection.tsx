@@ -7,7 +7,7 @@ const SPACE_PHOTOS = [
   "/images/space-1.webp",
   "/images/space-2.webp",
   "/images/space-3.webp",
-  "/images/space-4.webp",
+  "/images/space-5.webp",
 ];
 
 export default function AboutSection() {
