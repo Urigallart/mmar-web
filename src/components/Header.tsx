@@ -3,13 +3,14 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import clsx from "clsx";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export default function Header() {
   const t = useTranslations("nav");
   const pathname = usePathname();
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -18,7 +19,19 @@ export default function Header() {
     if (href === "/" && pathname === "/") {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
     }
+
+    const targetPath = href.split("#")[0] || "/";
+    const changesPage = targetPath !== pathname;
+    const main = document.querySelector("main");
+    const modified = e.metaKey || e.ctrlKey || e.shiftKey || e.altKey;
+    if (!changesPage || !main || modified || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    e.preventDefault();
+    main.classList.add("page-leaving");
+    window.setTimeout(() => router.push(href), 400);
+    window.setTimeout(() => main.classList.remove("page-leaving"), 3000);
   };
 
   const NAV_LINKS = [
