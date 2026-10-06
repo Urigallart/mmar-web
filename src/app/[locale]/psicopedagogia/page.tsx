@@ -23,7 +23,6 @@ export async function generateMetadata({
 
 export default async function PsicopedagogiaPage() {
   const t = await getTranslations("psicopedagogia");
-  const tCommon = await getTranslations("common");
   const audience = t.raw("audience.items") as string[];
   const blocks = t.raw("workSection.blocks") as InfoBlock[];
   const steps = t.raw("process.steps") as ProcessStep[];
@@ -34,7 +33,6 @@ export default async function PsicopedagogiaPage() {
         eyebrow={t("hero.eyebrow")}
         title={t("hero.title")}
         lede={t("hero.lede")}
-        backLabel={tCommon("backToHome")}
       />
 
       <section className="pb-[var(--section-pad-sm)]">

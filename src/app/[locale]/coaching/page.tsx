@@ -21,7 +21,6 @@ export async function generateMetadata({
 
 export default async function CoachingPage() {
   const t = await getTranslations("coaching");
-  const tCommon = await getTranslations("common");
   const situations = t.raw("situations.items") as string[];
   const areas = t.raw("areas.items") as string[];
   const steps = t.raw("process.steps") as ProcessStep[];
@@ -32,7 +31,6 @@ export default async function CoachingPage() {
         eyebrow={t("hero.eyebrow")}
         title={t("hero.title")}
         lede={t("hero.lede")}
-        backLabel={tCommon("backToHome")}
       />
 
       <section className="pb-[var(--section-pad-sm)]">
