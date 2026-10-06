@@ -71,6 +71,30 @@ export default function Hero() {
   const t = useTranslations("home.hero");
   const tAbout = useTranslations("home.about");
   const rootRef = useRef<HTMLDivElement>(null);
+  const stickersRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = stickersRef.current;
+    if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const p = Math.min(1, Math.max(0, window.scrollY / (window.innerHeight * 0.5)));
+      el.style.transform = `translate3d(${-p * 220}px, 0, 0)`;
+      el.style.opacity = String(1 - p);
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, []);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [aboutVisible, setAboutVisible] = useState(false);
 
@@ -153,9 +177,11 @@ export default function Hero() {
 
       <div aria-hidden className="pointer-events-none absolute inset-0 hidden overflow-hidden min-[1180px]:block">
         <Container className="relative h-full">
-          {STICKERS.map((spec) => (
-            <IconBadge key={spec.src} spec={spec} />
-          ))}
+          <div ref={stickersRef} className="absolute inset-0 will-change-[transform,opacity]">
+            {STICKERS.map((spec) => (
+              <IconBadge key={spec.src} spec={spec} />
+            ))}
+          </div>
         </Container>
       </div>
 
