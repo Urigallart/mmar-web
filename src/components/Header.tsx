@@ -29,6 +29,37 @@ export default function Header() {
     { href: "/#contacte", label: t("contacte") },
   ];
 
+  const [homeSection, setHomeSection] = useState<"inici" | "sobre-mi" | "contacte">("inici");
+
+  useEffect(() => {
+    if (pathname !== "/") return;
+    const visible = new Set<string>();
+    const update = () =>
+      setHomeSection(visible.has("contacte") ? "contacte" : visible.has("sobre-mi") ? "sobre-mi" : "inici");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) visible.add(entry.target.id);
+          else visible.delete(entry.target.id);
+        });
+        update();
+      },
+      { rootMargin: "-40% 0px -59% 0px" }
+    );
+    ["sobre-mi", "contacte"].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
+  }, [pathname]);
+
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/" && homeSection === "inici";
+    if (href === "/#sobre-mi") return pathname === "/" && homeSection === "sobre-mi";
+    if (href === "/#contacte") return pathname === "/" && homeSection === "contacte";
+    return pathname === href;
+  };
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
@@ -81,7 +112,13 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="rounded-full px-4 py-2 text-base font-medium text-ink-dim transition-colors duration-300 hover:bg-white hover:text-ink"
+                aria-current={isActive(link.href) ? "page" : undefined}
+                className={clsx(
+                  "rounded-full px-4 py-2 text-base font-medium transition-colors duration-300 hover:bg-white hover:text-ink",
+                  isActive(link.href)
+                    ? "text-ink underline decoration-green-deep decoration-2 underline-offset-[6px]"
+                    : "text-ink-dim"
+                )}
               >
                 {link.label}
               </Link>
@@ -135,7 +172,11 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-3xl font-medium text-ink transition-all duration-400"
+              aria-current={isActive(link.href) ? "page" : undefined}
+              className={clsx(
+                "text-3xl font-medium text-ink transition-all duration-400",
+                isActive(link.href) && "underline decoration-green-deep decoration-2 underline-offset-[8px]"
+              )}
               style={{
                 transitionDelay: menuOpen ? `${80 + i * 60}ms` : "0ms",
                 transform: menuOpen ? "translateY(0)" : "translateY(16px)",
