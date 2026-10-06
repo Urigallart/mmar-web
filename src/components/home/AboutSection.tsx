@@ -10,16 +10,7 @@ export default function AboutSection() {
     <section id="sobre-mi" className="py-[var(--section-pad)]">
       <Container className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
         <Reveal y={30}>
-          <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[var(--radius-card)] bg-paper-deep">
-            <Image
-              src="/images/monitor-reflective.png"
-              alt={t("photoAlt")}
-              fill
-              sizes="(min-width: 1024px) 380px, 90vw"
-              className="object-cover"
-            />
-          </div>
-          <div className="mt-5 flex items-center gap-3">
+          <div className="flex items-center gap-3">
             <span className="relative h-11 w-11 flex-shrink-0 overflow-hidden rounded-full">
               <Image src="/images/logo-mark.png" alt="" fill sizes="44px" className="object-cover" />
             </span>

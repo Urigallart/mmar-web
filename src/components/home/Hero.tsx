@@ -159,8 +159,9 @@ export default function Hero() {
         });
       });
 
-      gsap.to(".hero-media img", {
-        yPercent: 8,
+      gsap.fromTo(".hero-media img", { yPercent: 0, scale: 1.06 }, {
+        yPercent: 3,
+        scale: 1.06,
         ease: "none",
         scrollTrigger: {
           trigger: root,
@@ -245,7 +246,7 @@ export default function Hero() {
         </div>
 
         <div className="relative lg:-mt-16">
-          <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-lg lg:ml-auto lg:max-h-[68vh]">
+          <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-lg lg:ml-auto lg:h-[68vh] lg:w-auto lg:max-w-full">
             <Image
               src="/images/hero-photo-v3.webp"
               alt={t("photoAlt")}
