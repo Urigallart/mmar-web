@@ -100,76 +100,39 @@ export default function Hero() {
       tl.fromTo(
         ".hero-kicker",
         { opacity: 0, y: 14 },
-        { opacity: 1, y: 0, duration: 0.7 },
-        0.1
+        { opacity: 1, y: 0, duration: 0.5 },
+        0.05
       )
         .fromTo(
           ".hero-line",
           { opacity: 0, y: 20 },
-          { opacity: 1, y: 0, duration: 0.9 },
-          0.25
+          { opacity: 1, y: 0, duration: 0.6 },
+          0.12
         )
         .fromTo(
           ".hero-lede",
           { opacity: 0, y: 16 },
-          { opacity: 1, y: 0, duration: 0.8 },
-          0.7
+          { opacity: 1, y: 0, duration: 0.55 },
+          0.3
         )
         .fromTo(
           ".hero-cta",
           { opacity: 0, y: 16 },
-          { opacity: 1, y: 0, duration: 0.7, stagger: 0.08 },
-          0.82
+          { opacity: 1, y: 0, duration: 0.5, stagger: 0.06 },
+          0.4
         )
         .fromTo(
           ".hero-media",
-          { opacity: 0, scale: 1.06 },
-          { opacity: 1, scale: 1, duration: 1.3, ease: "power2.out" },
-          0.35
+          { opacity: 0 },
+          { opacity: 1, duration: 0.7, ease: "power2.out" },
+          0.15
         )
         .fromTo(
           ".icon-badge",
-          { opacity: 0, scale: 0.5 },
-          { opacity: 1, scale: 1, duration: 0.7, stagger: 0.09, ease: "back.out(1.8)" },
-          0.5
+          { opacity: 0, scale: 0.8 },
+          { opacity: 1, scale: 1, duration: 0.5, stagger: 0.06, ease: "power2.out" },
+          0.25
         );
-
-      tl.eventCallback("onComplete", () => {
-        gsap.utils.toArray<HTMLElement>(".icon-badge").forEach((el, i) => {
-          const isLeft = i < 3;
-          const dir = isLeft ? -1 : 1;
-          gsap.fromTo(
-            el,
-            { opacity: 1, scale: 1, x: 0, yPercent: 0 },
-            {
-              x: dir * (160 + i * 30),
-              yPercent: isLeft ? -55 : 55,
-              rotate: `+=${dir * 50}`,
-              scale: 0.4,
-              opacity: 0,
-              ease: "none",
-              scrollTrigger: {
-                trigger: root,
-                start: `top top+=${40 + i * 25}`,
-                end: "bottom top",
-                scrub: true,
-              },
-            }
-          );
-        });
-      });
-
-      gsap.fromTo(".hero-media img", { yPercent: 0, scale: 1.06 }, {
-        yPercent: 3,
-        scale: 1.06,
-        ease: "none",
-        scrollTrigger: {
-          trigger: root,
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      });
     }, root);
 
     return () => ctx.revert();

@@ -4,7 +4,6 @@ import { useEffect, useRef, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import { useTranslations } from "next-intl";
 import clsx from "clsx";
-import { lenisRef } from "@/lib/lenis";
 
 function subscribeNoop() {
   return () => {};
@@ -37,13 +36,11 @@ export function Modal({
     document.addEventListener("keydown", onKey);
     document.documentElement.style.overflow = "hidden";
     document.body.style.overflow = "hidden";
-    lenisRef.current?.stop();
     closeButtonRef.current?.focus();
     return () => {
       document.removeEventListener("keydown", onKey);
       document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
-      lenisRef.current?.start();
     };
   }, [open, onClose]);
 
@@ -85,7 +82,6 @@ export function Modal({
           </svg>
         </button>
         <div
-          data-lenis-prevent
           className="min-h-0 overflow-y-auto overscroll-contain px-6 py-10 sm:px-12 sm:py-12"
         >
           {children}

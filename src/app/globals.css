@@ -47,6 +47,8 @@
 html {
   background: var(--color-paper);
   color-scheme: light;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 @media (min-width: 1024px) {
@@ -54,14 +56,6 @@ html {
     --zoom: 0.8;
     zoom: 0.8;
   }
-}
-
-html.lenis {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto;
 }
 
 body {

@@ -1,9 +1,3 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-import { gsap, ScrollTrigger } from "@/lib/gsap";
-import { prefersReducedMotion } from "@/lib/motion";
-
 export type ProcessStep = {
   number: string;
   title: string;
@@ -11,86 +5,9 @@ export type ProcessStep = {
 };
 
 export function ProcessTimeline({ steps }: { steps: ProcessStep[] }) {
-  const rootRef = useRef<HTMLDivElement>(null);
-  const lineRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const root = rootRef.current;
-    const line = lineRef.current;
-    if (!root || !line) return;
-
-    if (prefersReducedMotion()) {
-      gsap.set(line, { scaleY: 1 });
-      gsap.set(root.querySelectorAll(".process-step, .process-badge"), {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-      });
-      return;
-    }
-
-    const ctx = gsap.context(() => {
-      gsap.set(line, { scaleY: 0, transformOrigin: "top" });
-      gsap.to(line, {
-        scaleY: 1,
-        ease: "none",
-        scrollTrigger: {
-          trigger: root,
-          start: "top 70%",
-          end: "bottom 60%",
-          scrub: 0.6,
-        },
-      });
-
-      const items = root.querySelectorAll(".process-step");
-      items.forEach((item) => {
-        gsap.fromTo(
-          item,
-          { opacity: 0, y: 30 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.7,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: item,
-              start: "top 85%",
-              toggleActions: "play none none reverse",
-            },
-          }
-        );
-        const badge = item.querySelector(".process-badge");
-        if (badge) {
-          gsap.fromTo(
-            badge,
-            { scale: 0.6, opacity: 0 },
-            {
-              scale: 1,
-              opacity: 1,
-              duration: 0.6,
-              delay: 0.1,
-              ease: "back.out(2.2)",
-              scrollTrigger: {
-                trigger: item,
-                start: "top 85%",
-                toggleActions: "play none none reverse",
-              },
-            }
-          );
-        }
-      });
-    }, root);
-
-    return () => ctx.revert();
-  }, [steps]);
-
   return (
-    <div ref={rootRef} className="relative">
-      <div className="absolute left-[19px] top-2 bottom-2 w-px bg-border sm:left-[23px]" />
-      <div
-        ref={lineRef}
-        className="absolute left-[19px] top-2 bottom-2 w-px bg-green sm:left-[23px]"
-      />
+    <div className="relative">
+      <div className="absolute left-[19px] top-2 bottom-2 w-px bg-green/60 sm:left-[23px]" />
       <ol className="flex flex-col gap-12 sm:gap-14">
         {steps.map((step) => (
           <li key={step.number} className="process-step relative flex gap-6 pl-0 sm:gap-8">
@@ -110,6 +27,3 @@ export function ProcessTimeline({ steps }: { steps: ProcessStep[] }) {
   );
 }
 
-export function refreshTimelines() {
-  ScrollTrigger.refresh();
-}

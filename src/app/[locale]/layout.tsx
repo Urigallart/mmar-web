@@ -8,7 +8,6 @@ import "../globals.css";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SmoothScroll from "@/components/SmoothScroll";
 
 const onest = Onest({
   variable: "--font-onest",
@@ -67,11 +66,9 @@ export default async function LocaleLayout({
       <body className="flex min-h-full flex-col overflow-x-clip antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="grain" />
-          <SmoothScroll>
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </SmoothScroll>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

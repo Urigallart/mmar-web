@@ -6,7 +6,6 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import clsx from "clsx";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { lenisRef } from "@/lib/lenis";
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -31,15 +30,9 @@ export default function Header() {
   useEffect(() => {
     document.documentElement.style.overflow = menuOpen ? "hidden" : "";
     document.body.style.overflow = menuOpen ? "hidden" : "";
-    if (menuOpen) {
-      lenisRef.current?.stop();
-    } else {
-      lenisRef.current?.start();
-    }
     return () => {
       document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
-      lenisRef.current?.start();
     };
   }, [menuOpen]);
 
