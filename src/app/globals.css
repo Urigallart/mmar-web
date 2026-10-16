@@ -104,6 +104,14 @@ a {
   color: var(--color-green-deep);
 }
 
+@media (max-width: 1023px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
 @keyframes page-enter {
   from {
     opacity: 0;
