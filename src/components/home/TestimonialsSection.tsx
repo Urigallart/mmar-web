@@ -34,10 +34,10 @@ export default function TestimonialsSection() {
           </Reveal>
         </div>
 
-        <RevealGroup className="mt-12 grid gap-6 lg:grid-cols-3" stagger={0.1}>
-          {items.map((item) => (
+        <RevealGroup className="mt-12 grid gap-6 lg:grid-cols-2" stagger={0.1}>
+          {items.map((item, i) => (
             <figure
-              key={item.name}
+              key={i}
               className="flex h-full flex-col rounded-[var(--radius-card)] border border-border bg-white px-7 py-8"
             >
               <QuoteMark />
@@ -46,7 +46,7 @@ export default function TestimonialsSection() {
               </blockquote>
               <figcaption className="mt-6 border-t border-border pt-4">
                 <p className="font-medium text-ink">{item.name}</p>
-                <p className="text-sm text-ink-dim">{item.role}</p>
+                {item.role && <p className="text-sm text-ink-dim">{item.role}</p>}
               </figcaption>
             </figure>
           ))}

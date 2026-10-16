@@ -105,19 +105,24 @@
       "lede": "Fragmentos de cómo viven el proceso, con su privacidad siempre protegida.",
       "items": [
         {
-          "quote": "Llegué sin saber muy bien qué necesitaba y, sesión a sesión, me ha ayudado a poner orden y a ganar confianza en mis propias decisiones.",
-          "name": "L.",
-          "role": "Proceso de coaching individual"
+          "quote": "Nuestra hija acababa el bachillerato con muchas dudas sobre qué estudiar. Este proceso le sirvió para conocerse mejor, ver qué opciones encajaban con ella y entender que no hace falta tenerlo todo claro desde el principio: siempre se puede rectificar.",
+          "name": "Familia",
+          "role": "Orientación académica"
         },
         {
-          "quote": "Su acompañamiento con mi hijo ha sido clave para entender cómo aprende y para mejorar su relación con la escuela.",
-          "name": "Madre de un alumno acompañado",
+          "quote": "Nos ha ayudado a entender mejor las dificultades de nuestro hijo y a ver que no siempre es por falta de ganas. Las pautas que hemos recibido nos han dado herramientas para saber cómo ayudarle en casa.",
+          "name": "Familia",
           "role": "Intervención psicopedagógica"
         },
         {
-          "quote": "Cercana, directa y muy profesional. Me sentí escuchada desde la primera sesión.",
-          "name": "R.",
-          "role": "Consulta puntual"
+          "quote": "Me he sentido escuchada y acompañada desde el primer momento. Me ha ayudado a ordenar miedos y dudas como madre y a afrontar las situaciones con más calma y confianza.",
+          "name": "Madre",
+          "role": ""
+        },
+        {
+          "quote": "He aprendido a poner en práctica recursos y herramientas útiles para el día a día. Contar con una mirada externa me ha ayudado a ver que, con ganas y actitud, muchas situaciones tienen solución. Muy recomendable.",
+          "name": "Persona acompañada",
+          "role": ""
         }
       ]
     },
