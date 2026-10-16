@@ -1,17 +1,22 @@
 import { Link } from "@/i18n/navigation";
 import { Container } from "./Container";
 import { Reveal } from "./Reveal";
+import { BookingButton } from "./BookingButton";
 
 export function CtaBanner({
   title,
   lede,
   ctaLabel,
   onClick,
+  bookingUrl,
+  bookingOpenLabel,
 }: {
   title: string;
   lede: string;
   ctaLabel: string;
   onClick?: () => void;
+  bookingUrl?: string;
+  bookingOpenLabel?: string;
 }) {
   return (
     <section className="py-[var(--section-pad-sm)]">
@@ -29,7 +34,9 @@ export function CtaBanner({
               </h2>
               <p className="mt-2.5 text-white/65">{lede}</p>
             </div>
-            {onClick ? (
+            {bookingUrl ? (
+              <BookingButton label={ctaLabel} url={bookingUrl} openLabel={bookingOpenLabel ?? ""} />
+            ) : onClick ? (
               <button
                 type="button"
                 onClick={onClick}

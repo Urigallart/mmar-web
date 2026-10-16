@@ -17,7 +17,13 @@ export default async function Home() {
       <ServiceFork />
       <AboutSection />
       <TestimonialsSection />
-      <CtaBanner title={t("title")} lede={t("lede")} ctaLabel={t("ctaLabel")} />
+      <CtaBanner
+        title={t("title")}
+        lede={t("lede")}
+        ctaLabel={t("ctaLabel")}
+        bookingUrl={process.env.NEXT_PUBLIC_BOOKING_URL}
+        bookingOpenLabel={t("bookingOpen")}
+      />
       <ContactSection />
     </>
   );

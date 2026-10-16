@@ -130,7 +130,8 @@
       "eyebrow": "Primer paso",
       "title": "Primera sesión, gratuita y sin compromiso",
       "lede": "15 minutos para conocernos, contarme tu situación y ver juntos si puedo ayudarte.",
-      "ctaLabel": "Reserva tu sesión"
+      "ctaLabel": "Reserva tu sesión",
+      "bookingOpen": "Abrir el calendario en una pestaña nueva"
     }
   },
   "coaching": {

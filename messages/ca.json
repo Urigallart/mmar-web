@@ -130,7 +130,8 @@
       "eyebrow": "Primer pas",
       "title": "Primera sessió, gratuïta i sense compromís",
       "lede": "15 minuts per conèixer-nos, explicar-me la teva situació i veure junts si puc ajudar-te.",
-      "ctaLabel": "Reserva la teva sessió"
+      "ctaLabel": "Reserva la teva sessió",
+      "bookingOpen": "Obre el calendari en una pestanya nova"
     }
   },
   "coaching": {
