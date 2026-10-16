@@ -279,14 +279,18 @@ export default function Hero() {
             <p className="mt-5 font-semibold text-white">Mª del Mar</p>
             <p className="text-sm text-white/80">{tAbout("role")}</p>
             <p className="mt-4 text-center text-sm italic leading-relaxed text-white/90">{tAbout("quote")}</p>
-            <Link
-              href="/#sobre-mi"
-              onClick={closeAbout}
+            <a
+              href="#sobre-mi"
+              onClick={(e) => {
+                e.preventDefault();
+                closeAbout();
+                document.getElementById("sobre-mi")?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
               className="btn btn-primary mt-6 w-full justify-center"
             >
               {tAbout("eyebrow")}
               <ArrowIcon />
-            </Link>
+            </a>
           </div>
         </div>,
         document.body
