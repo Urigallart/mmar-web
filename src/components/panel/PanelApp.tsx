@@ -248,7 +248,7 @@ function BookingsTab({ bookings, onCancel }: { bookings: Booking[]; onCancel: (i
     <div className="flex flex-col gap-4">
       {upcoming.map((b) => (
         <article key={b.id} className="rounded-2xl border border-border bg-white p-6">
-          <p className="text-sm font-medium capitalize text-green-deep">
+          <p className="text-sm font-medium text-green-deep first-letter:uppercase">
             {formatDay(b.date, "ca")} · {b.time}
           </p>
           <p className="mt-2 text-lg font-semibold">{b.name}</p>
@@ -322,7 +322,7 @@ function CalendarTab({
 
   return (
     <div>
-      <div className="rounded-2xl border border-border bg-white p-5 sm:p-6">
+      <div className="max-w-md rounded-2xl border border-border bg-white p-5 sm:p-6">
         <div className="mb-4 flex items-center justify-between">
           <button
             type="button"
@@ -332,7 +332,7 @@ function CalendarTab({
           >
             ‹
           </button>
-          <p className="font-medium capitalize">{monthLabel}</p>
+          <p className="font-medium first-letter:uppercase">{monthLabel}</p>
           <button
             type="button"
             onClick={() => shiftMonth(1)}
@@ -385,7 +385,7 @@ function CalendarTab({
 
       {selected && (
         <div className="mt-6 rounded-2xl border border-border bg-white p-5 sm:p-6">
-          <p className="font-semibold capitalize">{formatDay(selected, "ca")}</p>
+          <p className="font-semibold first-letter:uppercase">{formatDay(selected, "ca")}</p>
 
           <div className="mt-4 flex flex-wrap gap-3">
             <button
