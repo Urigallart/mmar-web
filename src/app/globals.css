@@ -124,7 +124,7 @@ main.page-leaving {
 }
 
 .page-enter {
-  animation: page-enter 0.9s var(--ease-out) both;
+  animation: page-enter 0.9s var(--ease-out) backwards;
 }
 
 @media (prefers-reduced-motion: reduce) {

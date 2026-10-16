@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { createPortal } from "react-dom";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { gsap } from "@/lib/gsap";
@@ -254,7 +255,8 @@ export default function Hero() {
         </div>
       </Container>
 
-      {aboutOpen && (
+      {aboutOpen &&
+        createPortal(
         <div
           className={`fixed inset-0 z-50 flex items-center justify-center p-8 backdrop-blur-md transition-opacity duration-300 lg:hidden ${aboutVisible ? "bg-ink/70 opacity-100" : "bg-ink/0 opacity-0"}`}
           onClick={closeAbout}
@@ -286,7 +288,8 @@ export default function Hero() {
               <ArrowIcon />
             </Link>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </section>
   );
