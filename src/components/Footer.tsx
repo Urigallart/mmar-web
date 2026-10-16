@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="max-w-xs">
           <Link href="/" aria-label="Mª del Mar" className="flex items-center gap-2 text-[0.95rem] font-semibold text-ink">
             <span className="relative h-14 w-14 flex-shrink-0 overflow-hidden rounded-full">
-              <Image src="/images/logo-mark.png" alt="" fill sizes="56px" className="scale-[1.08] object-cover" />
+              <Image src="/images/logo-mark.png" alt="" fill loading="eager" sizes="56px" className="scale-[1.08] object-cover" />
             </span>
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-ink-dim">{t("footer.tagline")}</p>
