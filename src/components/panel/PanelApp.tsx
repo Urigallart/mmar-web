@@ -210,8 +210,8 @@ function Login({ onSuccess }: { onSuccess: () => void }) {
   }
 
   return (
-    <main className="grid min-h-screen place-items-center px-5 text-ink">
-      <form onSubmit={submit} className="w-full max-w-sm rounded-[var(--radius-card)] border border-border bg-white p-8">
+    <main className="grid min-h-screen grid-cols-[minmax(0,1fr)] place-items-center px-5 text-ink">
+      <form onSubmit={submit} className="w-full max-w-sm rounded-[var(--radius-card)] border border-border bg-white p-6 sm:p-8">
         <p className="eyebrow mb-2">Mª del Mar</p>
         <h1 className="font-semibold tracking-tight" style={{ fontSize: "var(--fs-h3)" }}>
           Panell de gestió
