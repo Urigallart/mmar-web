@@ -56,14 +56,14 @@ function ContactRow({
   href?: string;
 }) {
   return (
-    <div className="flex items-baseline justify-between gap-4 text-sm">
+    <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 text-sm">
       <span className="text-white/50">{label}</span>
       {href ? (
-        <a href={href} className="font-medium !text-white underline-offset-4 hover:underline">
+        <a href={href} className="min-w-0 font-medium !text-white underline-offset-4 [overflow-wrap:anywhere] hover:underline">
           {value}
         </a>
       ) : (
-        <span className="font-medium text-paper">{value}</span>
+        <span className="min-w-0 font-medium text-paper [overflow-wrap:anywhere]">{value}</span>
       )}
     </div>
   );
