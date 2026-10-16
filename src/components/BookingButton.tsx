@@ -123,7 +123,7 @@ function BookingFlow() {
             >
               ‹
             </button>
-            <p className="font-medium capitalize text-ink">{monthLabel}</p>
+            <p className="font-medium text-ink first-letter:uppercase">{monthLabel}</p>
             <button
               type="button"
               onClick={() => shiftMonth(1)}
