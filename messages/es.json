@@ -419,6 +419,8 @@
     "sending": "Enviando...",
     "successTitle": "¡Solicitud enviada!",
     "successText": "Hemos recibido tu reserva para el {when}. Te escribiré por correo para confirmarla.",
-    "error": "No se ha podido enviar. Vuelve a intentarlo o escríbeme por correo."
+    "error": "No se ha podido enviar. Vuelve a intentarlo o escríbeme por correo.",
+    "loading": "Cargando el calendario...",
+    "taken": "Esta hora ya se ha reservado. Elige otra."
   }
 }

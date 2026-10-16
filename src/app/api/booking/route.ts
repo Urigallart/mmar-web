@@ -1,5 +1,6 @@
 import { buildHtml } from "@/lib/email";
-import { formatDay, isSlotValid, wallToUtc } from "@/lib/booking";
+import { availableSlots, formatDay, wallToUtc, type Booking } from "@/lib/booking";
+import { getBookings, getSchedule, saveBookings } from "@/lib/store";
 
 const TO = process.env.CONTACT_TO ?? "mmarserracanta@gmail.com";
 const FROM = process.env.RESEND_FROM ?? "Mª del Mar — Web <onboarding@resend.dev>";
@@ -41,13 +42,29 @@ export async function POST(request: Request) {
   const email = clean(body.email, 200);
   const message = clean(body.message, 2000);
 
-  if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !isSlotValid(date, time)) {
+  if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
     return Response.json({ success: false }, { status: 400 });
   }
 
+  const [schedule, bookings] = await Promise.all([getSchedule(), getBookings()]);
+  if (!availableSlots(date, schedule, bookings).includes(time)) {
+    return Response.json({ success: false, code: "taken" }, { status: 409 });
+  }
+
+  const booking: Booking = {
+    id: crypto.randomUUID(),
+    date,
+    time,
+    name,
+    email,
+    message,
+    createdAt: new Date().toISOString(),
+  };
+  await saveBookings([...bookings, booking]);
+
   const when = `${formatDay(date, "ca")} · ${time} (hora de Barcelona)`;
   const start = wallToUtc(date, time);
-  const end = new Date(start.getTime() + 15 * 60 * 1000);
+  const end = new Date(start.getTime() + schedule.sessionMinutes * 60 * 1000);
   const ics = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
@@ -87,6 +104,7 @@ export async function POST(request: Request) {
 
   if (!res.ok) {
     console.error("Resend booking error", res.status, await res.text());
+    await saveBookings(bookings);
     return Response.json({ success: false }, { status: 502 });
   }
   return Response.json({ success: true });

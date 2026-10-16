@@ -1,10 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import clsx from "clsx";
 import { Modal } from "./Modal";
-import { dateKey, formatDay, slotsFor, wallNow, weekdayOf } from "@/lib/booking";
+import { dateKey, formatDay, wallNow, weekdayOf } from "@/lib/booking";
 
 export function BookingButton({ label }: { label: string }) {
   const [open, setOpen] = useState(false);
@@ -37,7 +37,7 @@ export function BookingButton({ label }: { label: string }) {
   );
 }
 
-type Status = "idle" | "sending" | "success" | "error";
+type Status = "idle" | "sending" | "success" | "error" | "taken";
 
 function BookingFlow() {
   const t = useTranslations("booking");
@@ -47,6 +47,23 @@ function BookingFlow() {
   const [day, setDay] = useState<string | null>(null);
   const [time, setTime] = useState<string | null>(null);
   const [status, setStatus] = useState<Status>("idle");
+  const [days, setDays] = useState<Record<string, string[]> | null>(null);
+  const [loadError, setLoadError] = useState(false);
+
+  const loadDays = useCallback(async () => {
+    try {
+      const res = await fetch("/api/availability", { cache: "no-store" });
+      const json = await res.json();
+      setDays(json.days ?? {});
+      setLoadError(false);
+    } catch {
+      setLoadError(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    loadDays();
+  }, [loadDays]);
   const [form, setForm] = useState({ name: "", email: "", message: "", website: "" });
 
   const monthLabel = new Intl.DateTimeFormat(locale, { month: "long", year: "numeric", timeZone: "UTC" }).format(
@@ -66,7 +83,7 @@ function BookingFlow() {
     ...Array.from({ length: firstOffset }, () => null),
     ...Array.from({ length: daysInMonth }, (_, i) => dateKey(cursor.y, cursor.m, i + 1)),
   ];
-  const hasAvailability = (key: string) => slotsFor(key).length > 0;
+  const hasAvailability = (key: string) => (days?.[key]?.length ?? 0) > 0;
   const atCurrentMonth = cursor.y === today.y && cursor.m === today.m;
 
   const shiftMonth = (delta: number) => {
@@ -74,7 +91,7 @@ function BookingFlow() {
     setCursor({ y: d.getUTCFullYear(), m: d.getUTCMonth() + 1 });
   };
 
-  const times = day ? slotsFor(day) : [];
+  const times = day ? (days?.[day] ?? []) : [];
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -86,7 +103,15 @@ function BookingFlow() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ date: day, time, ...form }),
       });
-      setStatus(res.ok ? "success" : "error");
+      if (res.ok) {
+        setStatus("success");
+      } else if (res.status === 409) {
+        setStatus("taken");
+        setTime(null);
+        loadDays();
+      } else {
+        setStatus("error");
+      }
     } catch {
       setStatus("error");
     }
@@ -111,6 +136,9 @@ function BookingFlow() {
       </h2>
       <p className="mt-2 text-ink-dim">{t("intro")}</p>
 
+      {days === null ? (
+        <p className="mt-8 text-ink-dim">{loadError ? t("error") : t("loading")}</p>
+      ) : (
       <div className="mt-8 grid gap-8 sm:grid-cols-[1.15fr_1fr]">
         <div>
           <div className="mb-4 flex items-center justify-between">
@@ -196,6 +224,7 @@ function BookingFlow() {
           )}
         </div>
       </div>
+      )}
 
       {day && time && (
         <form onSubmit={submit} className="mt-8 flex flex-col gap-5 border-t border-border pt-8">
@@ -240,6 +269,11 @@ function BookingFlow() {
               className="rounded-xl border border-border bg-paper px-4 py-3 text-ink outline-none focus:border-green-deep focus:ring-2 focus:ring-green-deep/20"
             />
           </label>
+          {status === "taken" && (
+            <p role="alert" className="text-sm text-red-600">
+              {t("taken")}
+            </p>
+          )}
           {status === "error" && (
             <p role="alert" className="text-sm text-red-600">
               {t("error")}

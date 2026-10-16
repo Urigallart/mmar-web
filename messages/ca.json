@@ -419,6 +419,8 @@
     "sending": "Enviant...",
     "successTitle": "Sol·licitud enviada!",
     "successText": "Hem rebut la teva reserva per al {when}. T'escriuré per correu per confirmar-la.",
-    "error": "No s'ha pogut enviar. Torna-ho a provar o escriu-me per correu."
+    "error": "No s'ha pogut enviar. Torna-ho a provar o escriu-me per correu.",
+    "loading": "Carregant el calendari...",
+    "taken": "Aquesta hora ja s'ha reservat. Tria'n una altra."
   }
 }
