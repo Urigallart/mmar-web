@@ -21,8 +21,7 @@ export default async function Home() {
         title={t("title")}
         lede={t("lede")}
         ctaLabel={t("ctaLabel")}
-        bookingUrl={process.env.NEXT_PUBLIC_BOOKING_URL}
-        bookingOpenLabel={t("bookingOpen")}
+        booking
       />
       <ContactSection />
     </>

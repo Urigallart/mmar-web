@@ -8,15 +8,13 @@ export function CtaBanner({
   lede,
   ctaLabel,
   onClick,
-  bookingUrl,
-  bookingOpenLabel,
+  booking,
 }: {
   title: string;
   lede: string;
   ctaLabel: string;
   onClick?: () => void;
-  bookingUrl?: string;
-  bookingOpenLabel?: string;
+  booking?: boolean;
 }) {
   return (
     <section className="py-[var(--section-pad-sm)]">
@@ -34,8 +32,8 @@ export function CtaBanner({
               </h2>
               <p className="mt-2.5 text-white/65">{lede}</p>
             </div>
-            {bookingUrl ? (
-              <BookingButton label={ctaLabel} url={bookingUrl} openLabel={bookingOpenLabel ?? ""} />
+            {booking ? (
+              <BookingButton label={ctaLabel} />
             ) : onClick ? (
               <button
                 type="button"

@@ -130,8 +130,7 @@
       "eyebrow": "Primer paso",
       "title": "Primera sesión, gratuita y sin compromiso",
       "lede": "15 minutos para conocernos, contarme tu situación y ver juntos si puedo ayudarte.",
-      "ctaLabel": "Reserva tu sesión",
-      "bookingOpen": "Abrir el calendario en una pestaña nueva"
+      "ctaLabel": "Reserva tu sesión"
     }
   },
   "coaching": {
@@ -402,5 +401,24 @@
       "priorSupportLabel": "¿Ha recibido anteriormente apoyo psicopedagógico o de algún otro profesional?",
       "emailLabel": "Correo electrónico"
     }
+  },
+  "booking": {
+    "eyebrow": "Primera sesión",
+    "title": "Reserva tu primera sesión",
+    "intro": "Sesión gratuita y sin compromiso de 15 minutos. Elige el día y la hora que mejor te vengan.",
+    "chooseDay": "Elige un día",
+    "chooseTime": "Elige una hora",
+    "noTimes": "No hay horas libres este día.",
+    "timeZoneNote": "Horas de Barcelona",
+    "prevMonth": "Mes anterior",
+    "nextMonth": "Mes siguiente",
+    "nameLabel": "Nombre y apellidos",
+    "emailLabel": "Correo electrónico",
+    "messageLabel": "¿Quieres añadir algo? (opcional)",
+    "confirm": "Solicitar reserva",
+    "sending": "Enviando...",
+    "successTitle": "¡Solicitud enviada!",
+    "successText": "Hemos recibido tu reserva para el {when}. Te escribiré por correo para confirmarla.",
+    "error": "No se ha podido enviar. Vuelve a intentarlo o escríbeme por correo."
   }
 }
