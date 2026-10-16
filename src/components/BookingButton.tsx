@@ -62,8 +62,19 @@ function BookingFlow() {
   }, []);
 
   useEffect(() => {
-    loadDays();
-  }, [loadDays]);
+    let cancelled = false;
+    fetch("/api/availability", { cache: "no-store" })
+      .then((res) => res.json())
+      .then((json) => {
+        if (!cancelled) setDays(json.days ?? {});
+      })
+      .catch(() => {
+        if (!cancelled) setLoadError(true);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
   const [form, setForm] = useState({ name: "", email: "", message: "", website: "" });
 
   const monthLabel = new Intl.DateTimeFormat(locale, { month: "long", year: "numeric", timeZone: "UTC" }).format(

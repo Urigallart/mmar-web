@@ -15,7 +15,7 @@ export default function ContactSection() {
             className="pointer-events-none absolute -right-24 -top-24 h-[380px] w-[380px] rounded-full opacity-30 blur-3xl"
             style={{ background: "radial-gradient(circle, var(--color-green), transparent 70%)" }}
           />
-          <div className="relative grid gap-14 lg:grid-cols-[1.2fr_1fr] lg:items-center">
+          <div className="relative grid grid-cols-[minmax(0,1fr)] gap-14 lg:grid-cols-[1.2fr_1fr] lg:items-center">
             <Reveal y={28}>
               <p className="eyebrow mb-5" style={{ color: "var(--color-green-pale)" }}>
                 {t("eyebrow")}

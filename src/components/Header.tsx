@@ -116,7 +116,7 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
           >
             <span className="relative h-10 w-10 flex-shrink-0 sm:h-14 sm:w-14 overflow-hidden rounded-full">
-              <Image src="/images/logo-mark.png" alt="" fill sizes="56px" className="scale-[1.08] object-cover" />
+              <Image src="/images/logo-mark.png" alt="" fill priority sizes="56px" className="scale-[1.08] object-cover" />
             </span>
           </Link>
 

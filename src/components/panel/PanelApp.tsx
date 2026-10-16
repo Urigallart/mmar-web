@@ -58,8 +58,24 @@ export default function PanelApp() {
   }, []);
 
   useEffect(() => {
-    load();
-  }, [load]);
+    let cancelled = false;
+    fetch("/api/admin/data", { cache: "no-store" })
+      .then(async (res) => {
+        if (cancelled) return;
+        if (res.status === 401) return setPhase("login");
+        const json = await res.json();
+        if (cancelled) return;
+        setSchedule(json.schedule);
+        setBookings(json.bookings);
+        setPhase("ready");
+      })
+      .catch(() => {
+        if (!cancelled) setPhase("login");
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   async function saveSchedule(next: Schedule, okMessage = "Desat") {
     const previous = schedule;

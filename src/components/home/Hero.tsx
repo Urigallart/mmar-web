@@ -5,8 +5,6 @@ import Image from "next/image";
 import { createPortal } from "react-dom";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { gsap } from "@/lib/gsap";
-import { prefersReducedMotion } from "@/lib/motion";
 import { Container } from "@/components/Container";
 import { IconBadge, type IconBadgeSpec } from "@/components/IconBadge";
 
@@ -71,8 +69,7 @@ function MobileSticker({ spec }: { spec: MobileStickerSpec }) {
 export default function Hero() {
   const t = useTranslations("home.hero");
   const tAbout = useTranslations("home.about");
-  const rootRef = useRef<HTMLDivElement>(null);
-  const stickersRef = useRef<HTMLDivElement>(null);
+    const stickersRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const el = stickersRef.current;
@@ -109,64 +106,8 @@ export default function Hero() {
     window.setTimeout(() => setAboutOpen(false), 280);
   };
 
-  useEffect(() => {
-    const root = rootRef.current;
-    if (!root) return;
-
-    if (prefersReducedMotion()) {
-      gsap.set(
-        ".hero-kicker, .hero-line, .hero-lede, .hero-cta, .hero-media, .icon-badge",
-        { opacity: 1, y: 0, scale: 1 }
-      );
-      return;
-    }
-
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-      tl.fromTo(
-        ".hero-kicker",
-        { opacity: 0, y: 14 },
-        { opacity: 1, y: 0, duration: 0.5 },
-        0.05
-      )
-        .fromTo(
-          ".hero-line",
-          { opacity: 0, y: 20 },
-          { opacity: 1, y: 0, duration: 0.6 },
-          0.12
-        )
-        .fromTo(
-          ".hero-lede",
-          { opacity: 0, y: 16 },
-          { opacity: 1, y: 0, duration: 0.55 },
-          0.3
-        )
-        .fromTo(
-          ".hero-cta",
-          { opacity: 0, y: 16 },
-          { opacity: 1, y: 0, duration: 0.5, stagger: 0.06 },
-          0.4
-        )
-        .fromTo(
-          ".hero-media",
-          { opacity: 0 },
-          { opacity: 1, duration: 0.7, ease: "power2.out" },
-          0.15
-        )
-        .fromTo(
-          ".icon-badge",
-          { opacity: 0, scale: 0.8 },
-          { opacity: 1, scale: 1, duration: 0.5, stagger: 0.06, ease: "power2.out" },
-          0.25
-        );
-    }, root);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
     <section
-      ref={rootRef}
       className="relative pt-28 pb-20 sm:pt-40 sm:pb-28 lg:pt-28 lg:pb-8 [@media(max-height:640px)]:lg:pt-24 [@media(max-height:640px)]:lg:pb-6"
     >
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -196,12 +137,12 @@ export default function Hero() {
               aria-label={tAbout("eyebrow")}
               className="hero-kicker relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-4 ring-white shadow-[0_10px_30px_-10px_rgba(32,43,40,0.45)] transition-transform active:scale-95 lg:hidden"
             >
-              <Image src="/images/hero-photo-v2.jpg" alt="" fill sizes="64px" className="origin-[52%_38%] scale-[1.9] object-cover object-[52%_38%]" />
+              <Image src="/images/hero-photo-v2.jpg" alt="" fill priority sizes="64px" className="origin-[52%_38%] scale-[1.9] object-cover object-[52%_38%]" />
             </button>
           </div>
           <div className="flex items-center gap-3">
             <h1
-              className="hero-line flex-1 font-semibold tracking-tight text-balance"
+              className="hero-line min-w-0 flex-1 font-semibold tracking-tight text-balance"
               style={{ fontSize: "var(--fs-display)", lineHeight: 1.08, color: "#1a2e29" }}
             >
               {t("titleMain")}
@@ -236,7 +177,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative lg:-mt-16">
+        <div className="relative lg:mt-4 min-[1280px]:-mt-8">
           <div className="hero-media relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-card)] bg-paper-deep sm:max-w-lg lg:ml-auto lg:h-[min(calc(68vh/0.8),640px)] lg:w-auto lg:max-w-full">
             <Image
               src="/images/hero-photo-v2.jpg"

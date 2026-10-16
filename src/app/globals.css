@@ -51,6 +51,18 @@ html {
   scroll-padding-top: 6rem;
 }
 
+@media (max-width: 359px) {
+  :root {
+    --fs-display: 2.1rem;
+  }
+
+  .btn {
+    max-width: 100%;
+    white-space: normal;
+    text-align: left;
+  }
+}
+
 @media (min-width: 1024px) {
   :root {
     --zoom: 0.8;
@@ -109,6 +121,86 @@ a {
   select,
   textarea {
     font-size: 16px;
+  }
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(var(--rise, 16px));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hero-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-pop {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.hero-kicker {
+  --rise: 14px;
+  animation: hero-rise 0.5s var(--ease-out) 0.05s backwards;
+}
+
+.hero-line {
+  --rise: 20px;
+  animation: hero-rise 0.6s var(--ease-out) 0.12s backwards;
+}
+
+.hero-lede {
+  animation: hero-rise 0.55s var(--ease-out) 0.3s backwards;
+}
+
+.hero-cta {
+  animation: hero-rise 0.5s var(--ease-out) 0.4s backwards;
+}
+
+.hero-cta + .hero-cta {
+  animation-delay: 0.46s;
+}
+
+.hero-media {
+  animation: hero-fade 0.7s ease-out 0.15s backwards;
+}
+
+.icon-badge {
+  animation: hero-pop 0.5s ease-out 0.25s backwards;
+}
+
+.icon-badge:nth-child(2) {
+  animation-delay: 0.31s;
+}
+
+.icon-badge:nth-child(3) {
+  animation-delay: 0.37s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-kicker,
+  .hero-line,
+  .hero-lede,
+  .hero-cta,
+  .hero-media,
+  .icon-badge {
+    animation: none;
   }
 }
 

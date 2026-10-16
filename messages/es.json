@@ -422,5 +422,15 @@
     "error": "No se ha podido enviar. Vuelve a intentarlo o escríbeme por correo.",
     "loading": "Cargando el calendario...",
     "taken": "Esta hora ya se ha reservado. Elige otra."
+  },
+  "notFound": {
+    "title": "Esta página no existe",
+    "text": "Puede que el enlace haya cambiado o esté mal escrito. Vuelve al inicio para continuar.",
+    "cta": "Volver al inicio"
+  },
+  "errorPage": {
+    "title": "Algo no ha ido bien",
+    "text": "Ha habido un error al cargar la página. Prueba a intentarlo de nuevo.",
+    "cta": "Intentarlo de nuevo"
   }
 }

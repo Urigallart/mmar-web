@@ -422,5 +422,15 @@
     "error": "No s'ha pogut enviar. Torna-ho a provar o escriu-me per correu.",
     "loading": "Carregant el calendari...",
     "taken": "Aquesta hora ja s'ha reservat. Tria'n una altra."
+  },
+  "notFound": {
+    "title": "Aquesta pàgina no existeix",
+    "text": "Potser l'enllaç ha canviat o s'ha escrit malament. Torna a l'inici per continuar.",
+    "cta": "Torna a l'inici"
+  },
+  "errorPage": {
+    "title": "Alguna cosa no ha anat bé",
+    "text": "Hi ha hagut un error en carregar la pàgina. Prova de tornar-ho a intentar.",
+    "cta": "Tornar-ho a provar"
   }
 }
