@@ -48,6 +48,26 @@ export async function generateMetadata({
   };
 }
 
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mmar-web.vercel.app";
+
+function structuredData(locale: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Maria del Mar — Psicopedagoga i Coach",
+    alternateName: "Mª del Mar",
+    url: `${SITE}/${locale}`,
+    description:
+      locale === "es"
+        ? "Psicopedagoga y coach en Barcelona: coaching y consultas puntuales para jóvenes y adultos, e intervención psicopedagógica para niños y adolescentes."
+        : "Psicopedagoga i coach a Barcelona: coaching i consultes puntuals per a joves i adults, i intervenció psicopedagògica per a infants i adolescents.",
+    areaServed: "Barcelona",
+    address: { "@type": "PostalAddress", addressLocality: "Barcelona", addressCountry: "ES" },
+    knowsLanguage: ["ca", "es"],
+    founder: { "@type": "Person", name: "Maria del Mar", jobTitle: "Psicopedagoga i coach" },
+  };
+}
+
 export default async function LocaleLayout({
   children,
   params,
@@ -64,6 +84,10 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${onest.variable} h-full`}>
       <body className="flex min-h-full flex-col overflow-x-clip antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData(locale)) }}
+        />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="grain" />
           <Header />
