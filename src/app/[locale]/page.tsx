@@ -4,6 +4,7 @@ import Manifesto from "@/components/home/Manifesto";
 import ServiceFork from "@/components/home/ServiceFork";
 import AboutSection from "@/components/home/AboutSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
+import FaqSection from "@/components/home/FaqSection";
 import ContactSection from "@/components/home/ContactSection";
 import { CtaBanner } from "@/components/CtaBanner";
 
@@ -17,6 +18,7 @@ export default async function Home() {
       <ServiceFork />
       <AboutSection />
       <TestimonialsSection />
+      <FaqSection />
       <CtaBanner
         title={t("title")}
         lede={t("lede")}

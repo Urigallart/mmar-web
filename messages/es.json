@@ -131,6 +131,36 @@
       "title": "Primera sesión, gratuita y sin compromiso",
       "lede": "15 minutos para conocernos, contarme tu situación y ver juntos si puedo ayudarte.",
       "ctaLabel": "Reserva tu sesión"
+    },
+    "faq": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "Psicopedagoga y coach en Barcelona: preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Qué diferencia hay entre coaching y psicopedagogía?",
+          "a": "La psicopedagogía acompaña a niños y adolescentes, y a sus familias, en el aprendizaje, la atención, la organización, la motivación y la autonomía. El coaching va dirigido a jóvenes y adultos que quieren ganar claridad, tomar decisiones o afrontar cambios. Son dos disciplinas distintas pero complementarias."
+        },
+        {
+          "q": "¿Dónde se hacen las sesiones?",
+          "a": "En Barcelona, en la zona de Sarrià–Sant Gervasi, de forma presencial. Las consultas de coaching, y las entrevistas y seguimientos con familias, también se pueden hacer online."
+        },
+        {
+          "q": "¿Para quién es la intervención psicopedagógica?",
+          "a": "Para niños y adolescentes con dificultades de aprendizaje, atención, organización, motivación o autonomía, con diagnóstico (por ejemplo dislexia o TDAH) o sin él."
+        },
+        {
+          "q": "¿Cuándo puede ayudar un proceso de coaching?",
+          "a": "Cuando tienes una decisión importante por delante, vives una etapa de cambio, te cuesta saber qué quieres o necesitas recuperar confianza. Se puede hacer con un proceso de varias sesiones o con consultas puntuales."
+        },
+        {
+          "q": "¿La primera sesión tiene coste?",
+          "a": "No. La primera sesión es gratuita y sin compromiso, dura 15 minutos y sirve para conocernos y ver juntos si puedo ayudarte."
+        },
+        {
+          "q": "¿Cómo puedo reservar?",
+          "a": "Puedes elegir día y hora en el calendario de esta web, con el botón «Reserva tu sesión», o escribirme por correo."
+        }
+      ]
     }
   },
   "coaching": {

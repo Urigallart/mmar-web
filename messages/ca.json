@@ -131,6 +131,36 @@
       "title": "Primera sessió, gratuïta i sense compromís",
       "lede": "15 minuts per conèixer-nos, explicar-me la teva situació i veure junts si puc ajudar-te.",
       "ctaLabel": "Reserva la teva sessió"
+    },
+    "faq": {
+      "eyebrow": "Preguntes freqüents",
+      "title": "Psicopedagoga i coach a Barcelona: preguntes freqüents",
+      "items": [
+        {
+          "q": "Quina diferència hi ha entre coaching i psicopedagogia?",
+          "a": "La psicopedagogia acompanya infants i adolescents, i les seves famílies, en l'aprenentatge, l'atenció, l'organització, la motivació i l'autonomia. El coaching s'adreça a joves i adults que volen guanyar claredat, prendre decisions o afrontar canvis. Són dues disciplines diferents però complementàries."
+        },
+        {
+          "q": "On es fan les sessions?",
+          "a": "A Barcelona, a la zona de Sarrià–Sant Gervasi, de manera presencial. Les consultes de coaching, i les entrevistes i els seguiments amb famílies, també es poden fer online."
+        },
+        {
+          "q": "Per a qui és la intervenció psicopedagògica?",
+          "a": "Per a infants i adolescents amb dificultats d'aprenentatge, atenció, organització, motivació o autonomia, amb diagnòstic (per exemple dislèxia o TDAH) o sense."
+        },
+        {
+          "q": "Quan pot ajudar un procés de coaching?",
+          "a": "Quan tens una decisió important al davant, vius una etapa de canvi, et costa saber què vols o necessites recuperar confiança. Es pot fer amb un procés de diverses sessions o amb consultes puntuals."
+        },
+        {
+          "q": "La primera sessió té cost?",
+          "a": "No. La primera sessió és gratuïta i sense compromís, dura 15 minuts i serveix per conèixer-nos i veure junts si puc ajudar-te."
+        },
+        {
+          "q": "Com puc reservar?",
+          "a": "Pots triar dia i hora al calendari d'aquesta web, amb el botó «Reserva la teva sessió», o escriure'm per correu."
+        }
+      ]
     }
   },
   "coaching": {
