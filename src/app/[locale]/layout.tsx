@@ -8,6 +8,7 @@ import "../globals.css";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const onest = Onest({
   variable: "--font-onest",
@@ -94,6 +95,7 @@ export default async function LocaleLayout({
           <main className="flex-1">{children}</main>
           <Footer />
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
